@@ -9,10 +9,7 @@ import Button from "../Button";
 import NavLogoDark from "@/images/NavLogoDark.svg";
 import NavLogoLight from "@/images/NavLogoLight.svg";
 import DarkModeIcon, { LightModeIcon } from "../vectors/ModeIcon";
-
-interface NavbarProps {
-	handleClick?: () => void;
-}
+import { NavbarProps } from "@/types";
 
 const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
 	({ handleClick }, ref) => {

@@ -1,16 +1,12 @@
-import { useDarkmode } from "@/Context/DarkMode";
+import { useDarkmode } from "@/context/DarkMode";
+import { IconContainerProps } from "@/types";
 
 export default function IconContainer({
 	icon,
 	dark,
 	otherstyles,
 	href,
-}: {
-	icon: React.ReactNode;
-	dark?: boolean;
-	otherstyles?: string;
-	href?: string;
-}) {
+}: IconContainerProps) {
 	const isDarkmode = useDarkmode();
 	return (
 		<a href={href} target="_blank">

@@ -1,11 +1,7 @@
 "use client";
 
 import { createContext, useState, useEffect, useContext } from "react";
-
-interface DarkmodeContextType {
-	isDarkmode: boolean;
-	setIsDarkmode: React.Dispatch<React.SetStateAction<boolean>>;
-}
+import { DarkmodeContextType } from "@/types";
 
 export const DarkmodeContext = createContext<DarkmodeContextType>({
 	isDarkmode: false,

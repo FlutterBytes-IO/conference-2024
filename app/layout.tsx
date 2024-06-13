@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "FLUTTERBYTES CONFERENCE 2024 | COMING SOON",
+	title: "FLUTTERBYTES CONFERENCE 2024",
 	description:
 		"Join us at Flutterbytes conference to gain technical knowledge, and network with quality people.",
 	keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 		"Techies",
 	],
 	openGraph: {
-		title: "FLUTTERBYTES CONFERENCE 2024 | COMING SOON",
+		title: "FLUTTERBYTES CONFERENCE 2024",
 		description:
 			"Join us at Flutterbytes conference to gain technical knowledge, and network with quality people.",
 		images: [

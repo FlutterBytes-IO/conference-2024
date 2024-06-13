@@ -16,14 +16,28 @@
 	}
 }
 
-body {
-	color: rgb(var(--foreground-rgb));
+.horizontal-grad {
 	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+		to right,
+		#1167b1 0%,
+		#187bcd 21%,
+		#2a9df4 42%,
+		#2a9df4 57%,
+		#187bcd 80%,
+		#1167b1 100%
+	);
+}
+
+.vertical-grad {
+	background: linear-gradient(
+		to bottom,
+		#1167b1 0%,
+		#187bcd 21%,
+		#2a9df4 42%,
+		#2a9df4 57%,
+		#187bcd 80%,
+		#1167b1 100%
+	);
 }
 
 @layer utilities {
