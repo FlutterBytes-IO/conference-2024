@@ -6,6 +6,33 @@
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
+	--horizontal-grad: linear-gradient(
+		to right,
+		#1167b1 0%,
+		#187bcd 21%,
+		#2a9df4 42%,
+		#2a9df4 57%,
+		#187bcd 80%,
+		#1167b1 100%
+	);
+	--horizontal-grad-opacity: linear-gradient(
+		to right,
+		#1166b183 0%,
+		#187ccd80 21%,
+		#2a9cf481 42%,
+		#2a9cf480 57%,
+		#187ccd85 80%,
+		#1166b17e 100%
+	);
+	--vertical-grad: linear-gradient(
+		to bottom,
+		#1167b1 0%,
+		#187bcd 21%,
+		#2a9df4 42%,
+		#2a9df4 57%,
+		#187bcd 80%,
+		#1167b1 100%
+	);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,28 +43,28 @@
 	}
 }
 
-.horizontal-grad {
-	background: linear-gradient(
-		to right,
-		#1167b1 0%,
-		#187bcd 21%,
-		#2a9df4 42%,
-		#2a9df4 57%,
-		#187bcd 80%,
-		#1167b1 100%
-	);
+.horizontal-grad-border {
+	position: relative;
+	padding: 8px;
+	border-radius: 250px;
+	overflow: hidden;
+	background: var(--horizontal-grad-opacity);
 }
 
-.vertical-grad {
-	background: linear-gradient(
-		to bottom,
-		#1167b1 0%,
-		#187bcd 21%,
-		#2a9df4 42%,
-		#2a9df4 57%,
-		#187bcd 80%,
-		#1167b1 100%
-	);
+.horizontal-grad-border-container {
+	border: 2px solid #187bcd;
+	@apply p-2 rounded-[250px] border-t-0 border-x-0;
+}
+
+.horizontal-grad-border::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	background: white;
+	border-radius: 250px;
 }
 
 @layer utilities {
