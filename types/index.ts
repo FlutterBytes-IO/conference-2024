@@ -21,3 +21,18 @@ export interface IconContainerProps {
 	otherstyles?: string;
 	href?: string;
 }
+
+interface KeyValueProps {
+	key: string;
+	value: string;
+}
+
+interface TableRow {
+	key: string;
+	[key: string]: string;
+}
+
+export interface TableComponentProps {
+	tableHead?: KeyValueProps[];
+	tableBody?: TableRow[];
+}

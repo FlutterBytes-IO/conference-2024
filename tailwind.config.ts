@@ -17,6 +17,9 @@ const config: Config = {
 					400: "#1167B1",
 					500: "#03254C",
 				},
+				fbc_blue: {
+					100: "#D0EFFF",
+				},
 				neutral: {
 					300: "#DEE2E4",
 					400: "#BCC5CB",
