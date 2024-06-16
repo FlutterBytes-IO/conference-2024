@@ -1,13 +1,15 @@
 import { TableComponentProps } from "@/types";
+import { RightArrow2 } from "./vectors/RightArrow";
 
 export default function TableComponent({
 	tableHead = headCells,
 	tableBody = bodyCells,
+	more,
 }: TableComponentProps) {
 	return (
-		<div className="border-[0.5px] border-neutral-500 rounded-[40px] max-w-[877px] flex flex-col">
+		<div className="border-[0.5px] border-neutral-500 text-neutral-700 rounded-[40px] max-w-[877px] flex flex-col">
 			<table className="w-full">
-				<thead>
+				<thead className="font-semibold">
 					<tr>
 						{tableHead.map((item) => (
 							<th
@@ -27,9 +29,11 @@ export default function TableComponent({
 								index === tableBody.length - 1 ? "last-row-no-border" : ""
 							}`}
 						>
-							{tableHead.map((innerItem) => (
+							{tableHead.map((innerItem, index) => (
 								<td
-									className="py-4 px-2.5 border border-neutral-300 text-center"
+									className={`py-4 px-2.5 border border-neutral-300 text-center ${
+										index === 1 ? "font-medium" : "text-sm font-normal"
+									} ${index === tableHead.length - 1 ? "px-5" : ""}`}
 									key={`${innerItem.key}-${item.key}`}
 								>
 									{item[innerItem.key]}
@@ -39,6 +43,19 @@ export default function TableComponent({
 					))}
 				</tbody>
 			</table>
+			{more &&
+				(more || (
+					<div className="border-t border-neutral-300 py-2 px-32 flex items-center justify-between">
+						<div className="py-4 px-2.5">
+							<span className="text-neutral-600 font-semibold italic text-center">
+								20+ more sessions
+							</span>
+						</div>
+						<button className="border border-blue-200 rounded-[40px] p-3 pl-5 flex items-center gap-x-2 text-sm text-blue-200 font-semibold">
+							Full agenda of the event <RightArrow2 />
+						</button>
+					</div>
+				))}
 		</div>
 	);
 }

@@ -1,4 +1,4 @@
-import { useDarkmode } from "@/Context/DarkMode";
+import { useDarkmode } from "@/context/DarkMode";
 
 export default function LeftArrow({ dark }: { dark?: boolean }) {
 	const isDarkmode = useDarkmode();

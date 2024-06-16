@@ -1,3 +1,5 @@
+import { ReactElement } from "react";
+
 export interface NavbarProps {
 	handleClick?: () => void;
 }
@@ -35,4 +37,5 @@ interface TableRow {
 export interface TableComponentProps {
 	tableHead?: KeyValueProps[];
 	tableBody?: TableRow[];
+	more?: ReactElement;
 }

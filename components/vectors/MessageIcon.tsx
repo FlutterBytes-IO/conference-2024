@@ -1,4 +1,5 @@
-import { useDarkmode } from "@/Context/DarkMode";
+"use client";
+import { useDarkmode } from "@/context/DarkMode";
 
 export default function MessageIcon({
 	dark,
