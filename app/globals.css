@@ -43,6 +43,50 @@
 	}
 }
 
+.grad-container {
+	position: relative;
+	width: 100vw;
+	height: 120vh;
+	pointer-events: none;
+}
+
+.gradient-bg::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background-image: url("/images/flutter-grid.svg");
+	background-position: center;
+	background-size: contain;
+	opacity: 0.2;
+	filter: invert(1);
+}
+
+.gradient-bg::after {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background-image: radial-gradient(at 100% 60px, #e0f5ff 0px, transparent 50%),
+		radial-gradient(at 0% 280px, #cce9ff 0px, transparent 50%),
+		radial-gradient(
+			at 201px 140px,
+			rgba(255, 255, 255, 0.8) 0px,
+			transparent 50%
+		),
+		radial-gradient(at 347.2px 0, #ffffff 0px, transparent 50%),
+		radial-gradient(
+			at calc(100% - 318.92px) 60px,
+			rgba(255, 255, 255, 0.8) 0px,
+			transparent 50%
+		);
+	z-index: 1;
+	filter: blur(100px) saturate(150%);
+	/* opacity: 0.3; */
+}
+
 .horizontal-grad-border {
 	position: relative;
 	padding: 8px;
