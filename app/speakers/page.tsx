@@ -1,3 +1,8 @@
 export default function Speakers() {
-	return <></>;
-}
+	return (
+	  <main className="min-h-screen gradient-no-grid">
+		
+	  </main>
+	);
+  }
+  
