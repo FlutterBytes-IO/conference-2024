@@ -133,6 +133,23 @@ tbody tr:last-child td {
 	border-bottom: 0;
 }
 
+.text-gradient {
+ background: linear-gradient(
+    95.49deg,
+    rgba(43, 158, 245, 1) 1.384096685796976%,
+    rgba(17, 103, 177, 1) 12.821680307388306%,
+    rgba(24, 123, 205, 1) 27.445006370544434%,
+    rgba(42, 157, 244, 1) 41.925984621047974%,
+    rgba(42, 157, 244, 1) 57.130300998687744%,
+    rgba(24, 123, 205, 1) 72.40303158760071%,
+    rgba(17, 103, 177, 1) 85.05947589874268%,
+    rgba(43, 158, 245, 1) 97.53729701042175%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
