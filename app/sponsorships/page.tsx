@@ -34,11 +34,11 @@ export default function Sponsorships() {
           <div className="flex w-full flex-col justify-center sm:sm:flex-row gap-2 mt-8">
             <Button
               children={"Send us a mail"}
-			  otherstyles="flex justify-center w-full sm:w-fit"
+              otherstyles="flex justify-center capitalize w-full sm:w-fit"
             />
             <Button
               children={"Copy phone number"}
-              otherstyles="flex w-full bg-transparent text-[#2A9DF4] border-[1.5px] border-[#2A9DF4] justify-center sm:w-fit"
+              otherstyles="flex w-full bg-transparent !text-[#2A9DF4] capitalize border-[1.5px] border-[#2A9DF4] justify-center sm:w-fit"
             />
           </div>
         </div>
