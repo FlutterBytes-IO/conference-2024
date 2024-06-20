@@ -1,4 +1,140 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+	--horizontal-grad: linear-gradient(
+		to right,
+		#1167b1 0%,
+		#187bcd 21%,
+		#2a9df4 42%,
+		#2a9df4 57%,
+		#187bcd 80%,
+		#1167b1 100%
+	);
+	--horizontal-grad-opacity: linear-gradient(
+		to right,
+		#1166b183 0%,
+		#187ccd80 21%,
+		#2a9cf481 42%,
+		#2a9cf480 57%,
+		#187ccd85 80%,
+		#1166b17e 100%
+	);
+	--vertical-grad: linear-gradient(
+		to bottom,
+		#1167b1 0%,
+		#187bcd 21%,
+		#2a9df4 42%,
+		#2a9df4 57%,
+		#187bcd 80%,
+		#1167b1 100%
+	);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+.grad-container {
+	position: relative;
+	width: 100vw;
+	height: 120vh;
+	pointer-events: none;
+}
+
+.gradient-bg::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background-image: url("/images/flutter-grid.svg");
+	background-position: center;
+	background-size: contain;
+	opacity: 0.2;
+	filter: invert(1);
+}
+
+.gradient-bg::after {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background-image: radial-gradient(at 100% 60px, #e0f5ff 0px, transparent 50%),
+		radial-gradient(at 0% 280px, #cce9ff 0px, transparent 50%),
+		radial-gradient(
+			at 201px 140px,
+			rgba(255, 255, 255, 0.8) 0px,
+			transparent 50%
+		),
+		radial-gradient(at 347.2px 0, #ffffff 0px, transparent 50%),
+		radial-gradient(
+			at calc(100% - 318.92px) 60px,
+			rgba(255, 255, 255, 0.8) 0px,
+			transparent 50%
+		);
+	z-index: 1;
+	filter: blur(100px) saturate(150%);
+	/* opacity: 0.3; */
+}
+
+.horizontal-grad-border {
+	position: relative;
+	padding: 8px;
+	border-radius: 250px;
+	overflow: hidden;
+	background: var(--horizontal-grad-opacity);
+}
+
+.horizontal-grad-border-container {
+	border: 2px solid #187bcd;
+	@apply p-2 rounded-[250px] border-t-0 border-x-0;
+}
+
+.horizontal-grad-border::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	background: white;
+	border-radius: 250px;
+}
+
+.nav-shadow {
+	box-shadow: 0 2px 24px 2px rgba(0, 0, 0, 4%);
+}
+
+tr > th,
+tr > td {
+	border-left: 0;
+	border-top: 0;
+}
+
+thead th:last-child {
+	border-right: 0;
+}
+
+tbody td:last-child {
+	border-right: 0;
+}
+
+tbody tr:last-child td {
+	border-bottom: 0;
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
