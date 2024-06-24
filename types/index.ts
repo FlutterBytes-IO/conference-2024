@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import React from "react";
 
 export interface NavbarProps {
 	handleClick?: () => void;
@@ -10,11 +10,13 @@ export interface DarkmodeContextType {
 }
 
 export interface ButtonProps {
-	children: React.ReactNode;
 	otherstyles?: string;
 	onClick?: () => void;
 	type?: "button" | "submit" | "reset";
 	disabled?: boolean;
+	variant?: string;
+	icon?: React.ReactNode;
+	children: React.ReactNode;
 }
 
 export interface IconContainerProps {
@@ -37,5 +39,5 @@ interface TableRow {
 export interface TableComponentProps {
 	tableHead?: KeyValueProps[];
 	tableBody?: TableRow[];
-	more?: ReactElement;
+	more?: React.ReactElement;
 }

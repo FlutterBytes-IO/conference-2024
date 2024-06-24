@@ -6,27 +6,33 @@
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
-	--horizontal-grad: linear-gradient(to right,
-			#1167b1 0%,
-			#187bcd 21%,
-			#2a9df4 42%,
-			#2a9df4 57%,
-			#187bcd 80%,
-			#1167b1 100%);
-	--horizontal-grad-opacity: linear-gradient(to right,
-			#1166b183 0%,
-			#187ccd80 21%,
-			#2a9cf481 42%,
-			#2a9cf480 57%,
-			#187ccd85 80%,
-			#1166b17e 100%);
-	--vertical-grad: linear-gradient(to bottom,
-			#1167b1 0%,
-			#187bcd 21%,
-			#2a9df4 42%,
-			#2a9df4 57%,
-			#187bcd 80%,
-			#1167b1 100%);
+	--horizontal-grad: linear-gradient(
+		to right,
+		#1167b1 0%,
+		#187bcd 21%,
+		#2a9df4 42%,
+		#2a9df4 57%,
+		#187bcd 80%,
+		#1167b1 100%
+	);
+	--horizontal-grad-opacity: linear-gradient(
+		to right,
+		#1166b183 0%,
+		#187ccd80 21%,
+		#2a9cf481 42%,
+		#2a9cf480 57%,
+		#187ccd85 80%,
+		#1166b17e 100%
+	);
+	--vertical-grad: linear-gradient(
+		to bottom,
+		#1167b1 0%,
+		#187bcd 21%,
+		#2a9df4 42%,
+		#2a9df4 57%,
+		#187bcd 80%,
+		#1167b1 100%
+	);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,46 +41,6 @@
 		--background-start-rgb: 0, 0, 0;
 		--background-end-rgb: 0, 0, 0;
 	}
-}
-
-.grad-container {
-	position: relative;
-	width: 100vw;
-	height: 120vh;
-	pointer-events: none;
-}
-
-.gradient-bg::before {
-	position: absolute;
-	content: "";
-	height: 100%;
-	width: 100%;
-	top: 0;
-	background-image: url("/images/flutter-grid.svg");
-	background-position: center;
-	background-size: contain;
-	opacity: 0.2;
-	filter: invert(1);
-}
-
-.gradient-bg::after {
-	position: absolute;
-	content: "";
-	height: 100%;
-	width: 100%;
-	top: 0;
-	background-image: radial-gradient(at 100% 60px, #e0f5ff 0px, transparent 50%),
-		radial-gradient(at 0% 280px, #cce9ff 0px, transparent 50%),
-		radial-gradient(at 201px 140px,
-			rgba(255, 255, 255, 0.8) 0px,
-			transparent 50%),
-		radial-gradient(at 347.2px 0, #ffffff 0px, transparent 50%),
-		radial-gradient(at calc(100% - 318.92px) 60px,
-			rgba(255, 255, 255, 0.8) 0px,
-			transparent 50%);
-	z-index: 1;
-	filter: blur(100px) saturate(150%);
-	/* opacity: 0.3; */
 }
 
 .gradient-no-grid::before {
@@ -96,31 +62,33 @@
 	width: 100%;
 	top: 0;
 	right: 0;
-	background-image:
-		radial-gradient(at 0% 500px, #cce9ff 0px, transparent 50%),
+	background-image: radial-gradient(at 0% 500px, #cce9ff 0px, transparent 50%),
 		radial-gradient(at 35% 0px, #cce9ff 0px, transparent 40%),
 		radial-gradient(at 100% 280px, #cce9ff 0px, transparent 50%),
-		radial-gradient(at 201px 140px,
+		radial-gradient(
+			at 201px 140px,
 			rgba(255, 255, 255, 0.8) 0px,
-			transparent 50%),
+			transparent 50%
+		),
 		radial-gradient(at 347.2px 0, #ffffff 0px, transparent 50%),
-		radial-gradient(at calc(100% - 318.92px) 60px,
+		radial-gradient(
+			at calc(100% - 318.92px) 60px,
 			rgba(255, 255, 255, 0.8) 0px,
-			transparent 50%);
+			transparent 50%
+		);
 	z-index: 1;
 	filter: blur(80px) saturate(150%);
 	/* opacity: 0.3; */
-
 }
 
-.about-container {
-	background-size: 1000px;
+.main-container {
+	background: url("/images/flutter-grid.svg");
+	background-size: cover;
+	background-position: center;
 	background-repeat: repeat;
 }
 
-.about-container::before,
-.speaker-container::before,
-.agenda-container::before {
+.main-container::before {
 	position: absolute;
 	content: "";
 	height: 250px;
@@ -128,14 +96,12 @@
 	top: -200px;
 	left: -50px;
 	border-radius: 250px;
-	background: rgba(255, 255, 255, 0.80);
+	background: rgba(255, 255, 255, 0.8);
 	filter: blur(82px);
 	z-index: -10;
 }
 
-.about-container::after,
-.speaker-container::after,
-.agenda-container::after {
+.main-container::after {
 	position: absolute;
 	content: "";
 	height: 250px;
@@ -143,19 +109,15 @@
 	top: -150px;
 	right: 100px;
 	border-radius: 250px;
-	background: rgba(255, 255, 255, 0.80);
+	background: rgba(255, 255, 255, 0.8);
 	filter: blur(82px);
 	z-index: -10;
 }
 @media (max-width: 768px) {
-	.about-container::before,
-    .speaker-container::before,
-    .agenda-container::before,
-	.about-container::after,
-    .speaker-container::after,
-    .agenda-container::after {
-        background: none;
-    }
+	.main-container::before,
+	.main-container::after {
+		background: none;
+	}
 }
 
 .horizontal-grad-border {
@@ -186,8 +148,8 @@
 	box-shadow: 0 2px 24px 2px rgba(0, 0, 0, 4%);
 }
 
-tr>th,
-tr>td {
+tr > th,
+tr > td {
 	border-left: 0;
 	border-top: 0;
 }
@@ -205,20 +167,20 @@ tbody tr:last-child td {
 }
 
 .text-gradient {
- background: linear-gradient(
-    95.49deg,
-    rgba(43, 158, 245, 1) 1.384096685796976%,
-    rgba(17, 103, 177, 1) 12.821680307388306%,
-    rgba(24, 123, 205, 1) 27.445006370544434%,
-    rgba(42, 157, 244, 1) 41.925984621047974%,
-    rgba(42, 157, 244, 1) 57.130300998687744%,
-    rgba(24, 123, 205, 1) 72.40303158760071%,
-    rgba(17, 103, 177, 1) 85.05947589874268%,
-    rgba(43, 158, 245, 1) 97.53729701042175%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: linear-gradient(
+		95.49deg,
+		rgba(43, 158, 245, 1) 1.384096685796976%,
+		rgba(17, 103, 177, 1) 12.821680307388306%,
+		rgba(24, 123, 205, 1) 27.445006370544434%,
+		rgba(42, 157, 244, 1) 41.925984621047974%,
+		rgba(42, 157, 244, 1) 57.130300998687744%,
+		rgba(24, 123, 205, 1) 72.40303158760071%,
+		rgba(17, 103, 177, 1) 85.05947589874268%,
+		rgba(43, 158, 245, 1) 97.53729701042175%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 @layer utilities {
@@ -228,7 +190,17 @@ tbody tr:last-child td {
 }
 
 .heading-text {
-	background: linear-gradient(95deg, #2B9EF5 6.27%, #1167B1 16.51%, #187BCD 29.61%, #2A9DF4 42.57%, #2A9DF4 56.18%, #187BCD 69.86%, #1167B1 81.19%, #2B9EF5 92.36%);
+	background: linear-gradient(
+		95deg,
+		#2b9ef5 6.27%,
+		#1167b1 16.51%,
+		#187bcd 29.61%,
+		#2a9df4 42.57%,
+		#2a9df4 56.18%,
+		#187bcd 69.86%,
+		#1167b1 81.19%,
+		#2b9ef5 92.36%
+	);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

@@ -32,6 +32,6 @@ export const links2 = [
 	},
 	{
 		value: "Organising committee",
-		link: "#organisers",
+		link: "/organisers",
 	},
 ];
