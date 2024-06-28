@@ -31,7 +31,116 @@ export const links2 = [
 		link: "/speakers",
 	},
 	{
-		value: "Organising committee",
-		link: "/organisers",
+		value: "Organizing committee",
+		link: "/organizers",
 	},
 ];
+
+export const currentSpeakers = [
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+]
+
+export const pastSpeakers = [
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+]
+
+export const committee = [
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+	{
+		name: 'Rebecca Omolabake',
+		role: 'Senior Flutter Developer, EdenLife',
+		image: '/images/Avatar.png',
+	},
+]

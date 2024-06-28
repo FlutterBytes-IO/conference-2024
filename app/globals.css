@@ -205,3 +205,17 @@ tbody tr:last-child td {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.text-container{
+	background-image: url("/images/flutter-grid.svg");
+	background-color: #ebf8ff;
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat;
+}
+
+@media (max-width: 700px) {
+	.text-container{
+		background: none;
+	}
+}
