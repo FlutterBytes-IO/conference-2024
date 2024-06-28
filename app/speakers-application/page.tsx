@@ -32,8 +32,8 @@ export default function Speakers() {
 				</div>
 			</div>
 			{/* <div className="bg-[#EBF8FF] pt-[120px]"> */}
-			<div className="pt-[120px]">
-				<div className="flex justify-center rounded-xl border border-blue-200 bg-gray-100 max-w-[920px] mx-auto relative z-10 py-10 mb-[211px]">
+			<div className="pt-[120px] pb-[211px]">
+				<div className="flex justify-center rounded-xl border border-blue-200 bg-gray-100 max-w-[920px] mx-auto relative z-10 py-10">
 					<iframe
 						src="https://docs.google.com/forms/d/e/1FAIpQLSd39eMZC47UoCR1yAJOlTyj5G8L5qv3LB4Z64Gxbt7JZLyOLg/viewform?embedded=true"
 						width="640"

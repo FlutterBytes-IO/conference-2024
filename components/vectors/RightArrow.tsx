@@ -1,3 +1,5 @@
+"use client";
+
 import { useDarkmode } from "@/context/DarkMode";
 
 export default function RightArrow({ dark }: { dark?: boolean }) {

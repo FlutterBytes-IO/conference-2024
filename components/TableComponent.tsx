@@ -1,10 +1,12 @@
 import { TableComponentProps } from "@/types";
 import { RightArrow2 } from "./vectors/RightArrow";
+import Button from "./Button";
 
 export default function TableComponent({
 	tableHead = headCells,
 	tableBody = bodyCells,
 	more,
+	isHomePage,
 }: TableComponentProps) {
 	return (
 		<div className="border-[0.5px] border-neutral-500 text-neutral-700 rounded-[40px] max-w-[877px] flex flex-col">
@@ -43,7 +45,7 @@ export default function TableComponent({
 					))}
 				</tbody>
 			</table>
-			{more &&
+			{isHomePage &&
 				(more || (
 					<div className="border-t border-neutral-300 py-2 px-32 flex items-center justify-between">
 						<div className="py-4 px-2.5">
@@ -51,9 +53,14 @@ export default function TableComponent({
 								20+ more sessions
 							</span>
 						</div>
-						<button className="border border-blue-200 rounded-[40px] p-3 pl-5 flex items-center gap-x-2 text-sm text-blue-200 font-semibold">
+						<Button
+							component="link"
+							href="/agenda"
+							variant="outlined"
+							otherstyles="p-3 pl-5 text-sm font-semibold !bg-transparent"
+						>
 							Full agenda of the event <RightArrow2 />
-						</button>
+						</Button>
 					</div>
 				))}
 		</div>

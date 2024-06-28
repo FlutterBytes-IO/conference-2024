@@ -16,7 +16,10 @@ export interface ButtonProps {
 	disabled?: boolean;
 	variant?: string;
 	icon?: React.ReactNode;
+	leftIcon?: React.ReactNode;
 	children: React.ReactNode;
+	component?: "button" | "link";
+	href?: string;
 }
 
 export interface IconContainerProps {
@@ -40,4 +43,9 @@ export interface TableComponentProps {
 	tableHead?: KeyValueProps[];
 	tableBody?: TableRow[];
 	more?: React.ReactElement;
+	isHomePage?: boolean;
+}
+
+export interface TabStepComponentProps {
+	[key: number]: JSX.Element;
 }

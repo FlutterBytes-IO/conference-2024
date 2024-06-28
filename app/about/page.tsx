@@ -3,7 +3,7 @@ import { RightArrow2 } from "@/components/vectors/RightArrow";
 
 export default function About() {
 	return (
-		<main className="min-h-screen gradient-no-grid max-w-[920px] mx-auto w-full">
+		<section className="min-h-screen gradient-no-grid max-w-[920px] mx-auto w-full">
 			<h2 className="font-gigaSans flex mx-auto w-fit text-center mt-[140px] px-5 border-y-[1.5px] border-fbc_blue-100 text-[32px] font-semibold relative z-10 heading-text">
 				About us
 			</h2>
@@ -43,7 +43,7 @@ export default function About() {
 					</ul>
 				</div>
 			</div>
-			<div className="flex flex-col gap-y-10 mb-[100px]">
+			<div className="flex flex-col gap-y-10 mb-[100px] bg-blue-50">
 				<h3 className="border-y-[1.5px] w-fit self-center border-fbc_blue-100 text-[28px] leading-[42px] text-center py-2.5 px-5 text-gradient font-semibold">
 					Meet the Organizing Committee
 				</h3>
@@ -64,6 +64,6 @@ export default function About() {
 					</Button>
 				</div>
 			</div>
-		</main>
+		</section>
 	);
 }

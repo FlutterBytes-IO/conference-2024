@@ -35,3 +35,27 @@ export const links2 = [
 		link: "/organisers",
 	},
 ];
+
+let i = 1;
+
+export const saturdayAgenda = Array(14)
+	.fill("")
+	.map((_, i) => ({
+		timeline: "10:03pm 8:04am",
+		session:
+			"Flutter for Enterprise: Scaling and Integrating with Existing Systems",
+		anchor: "Rebecca Omolabake, Christopher Nwosu-Madueke",
+		day: "Friday",
+		key: `key-${i + 1}`,
+	}));
+
+export const fridayAgenda = Array(5)
+	.fill("")
+	.map((_, i) => ({
+		timeline: "10:03pm 8:04am",
+		session:
+			"Flutter for Enterprise: Scaling and Integrating with Existing Systems",
+		anchor: "Rebecca Omolabake, Christopher Nwosu-Madueke",
+		day: "Friday",
+		key: `key-${i + 1}`,
+	}));
