@@ -20,7 +20,7 @@ export default function Button({
 				variant === "contained"
 					? "bg-blue-200 text-white"
 					: "bg-white border border-blue-200 text-blue-200"
-			} ${otherstyles}`}
+			} btn-hover ${otherstyles}`}
 		>
 			{children} {icon && icon}
 		</button>

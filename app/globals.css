@@ -183,6 +183,15 @@ tbody tr:last-child td {
 	-webkit-text-fill-color: transparent;
 }
 
+.btn-hover {
+	transition: transform .4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.btn-hover:hover{
+	transform: scale(.98);
+	transition: transform .4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
