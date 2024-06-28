@@ -190,3 +190,21 @@ tbody tr:last-child td {
 .inner-shadow {
 	box-shadow: inset 0 7px 24px 0 #1891f357;
 }
+
+.inner-shadow {
+	box-shadow: inset 0 7px 24px 0 #1891f357;
+}
+
+.text-container {
+	background-image: url("/images/flutter-grid.svg");
+	background-color: #ebf8ff;
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat;
+}
+
+@media (max-width: 700px) {
+	.text-container {
+		background: none;
+	}
+}
