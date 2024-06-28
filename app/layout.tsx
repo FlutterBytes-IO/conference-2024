@@ -42,7 +42,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className={`${inter.className} bg-blue-50 overflow-x-hidden`}>
+				<div className="main-container bg-blend-multiply" />
 				<DarkmodeProvider>
 					<Navbar />
 					{children}

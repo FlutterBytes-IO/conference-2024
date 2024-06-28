@@ -1,7 +1,7 @@
 export const links1 = [
 	{
 		value: "Apply to speak",
-		link: "/speakers",
+		link: "/speakers-application",
 	},
 	{
 		value: "Apply to volunteer",
@@ -20,7 +20,7 @@ export const links1 = [
 export const links2 = [
 	{
 		value: "Event Agenda",
-		link: "#event-agendas",
+		link: "/agenda",
 	},
 	{
 		value: "Gallery & Testimonials",
@@ -28,10 +28,10 @@ export const links2 = [
 	},
 	{
 		value: "Speakers",
-		link: "#speakers",
+		link: "/speakers",
 	},
 	{
 		value: "Organising committee",
-		link: "#organisers",
+		link: "/organisers",
 	},
 ];

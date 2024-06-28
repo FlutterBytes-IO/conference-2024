@@ -1,48 +1,71 @@
-import Image from "next/image";
-import Button from "@/components/Button";
+"use client";
 
+import Image from "next/image";
+import { useState } from "react";
+
+import Button from "@/components/Button";
 import heroImage from "@/public/images/sponsorship-img.png";
+import { RightArrow2 } from "@/components/vectors/RightArrow";
+import CopyIcon from "@/components/vectors/CopyIcon";
+import TickIcon from "@/components/vectors/TickIcon";
 
 export default function Sponsorships() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    const phoneNumber = "+2348108627764";
+    navigator.clipboard.writeText(phoneNumber).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
   return (
-    <section className="gradient-bg">
-      <main className="flex relative z-10 px-4 py-32 md:py-[180px] flex-col items-center md:w-4/5 sm:w-full mx-0 sm:mx-auto">
-        <div className="mb-12 border-y-2 border-fbc_blue-100 py-[10px]">
-          <h1 className="text-gradient text-center text-xl md:text-3xl font-semibold">
-            Become a Sponsor of FlutterBytes Conference 2024!
-          </h1>
-        </div>
+    <section className="min-h-screen gradient-no-grid max-w-[922px] mx-auto">
+      <h2 className="font-gigaSans md:px-[33px] relative z-10 text-[2rem] leading-[38px] text-center mt-[140px] py-[10px] px-5 border-y-[1.5px] border-fbc_blue-100 font-semibold heading-text">
+        Become a Sponsor of FlutterBytes Conference 2024!
+      </h2>
+      <div className="flex relative z-10 px-4 mt-[50px] flex-col items-center">
         <Image
           src={heroImage}
           alt="Image of some of our sponsors on the FlutterBytes Conference merch"
-          className="mb-12 md:h-auto sm:max-w-[80%]"
+          className="mb-12"
         />
-        <div className="flex flex-col items-center max-w-[700px]">
+        <div className="flex flex-col items-center xl:px-[111px] mb-[168px]">
           <div>
-            <p className="text-center">
+            <p className="text-center text-xl text-blue-500">
               Join us as a sponsor at Conference Name and connect with a
               targeted audience of number professionals, thought leaders, and
               innovators.{" "}
             </p>
             <br />
-            <p className="text-center">
-              By sponsoring our event, you'll be able to achieve your marketing
-              goals and make a lasting impact. Contact us to discuss sponsorship
-              packages and opportunities.{" "}
+            <p className="text-center text-xl text-blue-500">
+              By sponsoring our event, you&apos;ll be able to achieve your
+              marketing goals and make a lasting impact. Contact us to discuss
+              sponsorship packages and opportunities.{" "}
             </p>
           </div>
-          <div className="flex w-full flex-col justify-center sm:sm:flex-row gap-2 mt-8">
+          <div className="flex w-full flex-col justify-center items-center sm:flex-row gap-4 mt-10">
+            <a href="mailto:contact.flutterbytes@gmail.com">
+              <Button
+                variant="contained"
+                otherstyles="text-base font-semibold"
+                icon={<RightArrow2 color="#fff" />}
+              >
+                Send us a mail
+              </Button>
+            </a>
             <Button
-              children={"Send us a mail"}
-              otherstyles="flex justify-center capitalize w-full sm:w-fit"
-            />
-            <Button
-              children={"Copy phone number"}
-              otherstyles="flex w-full bg-transparent !text-[#2A9DF4] capitalize border-[1.5px] border-[#2A9DF4] justify-center sm:w-fit"
-            />
+              variant="outlined"
+              otherstyles="text-base font-semibold"
+              icon={copied ? <TickIcon fill="#2a9df4" /> : <CopyIcon />}
+              onClick={handleCopy}
+            >
+              {copied ? "Copied!" : "Copy phone number"}
+            </Button>
           </div>
         </div>
-      </main>
+      </div>
     </section>
   );
 }

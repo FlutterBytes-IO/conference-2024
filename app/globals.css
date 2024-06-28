@@ -43,34 +43,28 @@
 	}
 }
 
-.grad-container {
-	position: relative;
-	width: 100vw;
-	height: 120vh;
-	pointer-events: none;
-}
-
-.gradient-bg::before {
+.gradient-no-grid::before {
 	position: absolute;
 	content: "";
 	height: 100%;
 	width: 100%;
 	top: 0;
-	background-image: url("/images/flutter-grid.svg");
 	background-position: center;
 	background-size: contain;
 	opacity: 0.2;
 	filter: invert(1);
 }
 
-.gradient-bg::after {
+.gradient-no-grid::after {
 	position: absolute;
 	content: "";
 	height: 100%;
 	width: 100%;
 	top: 0;
-	background-image: radial-gradient(at 100% 60px, #e0f5ff 0px, transparent 50%),
-		radial-gradient(at 0% 280px, #cce9ff 0px, transparent 50%),
+	right: 0;
+	background-image: radial-gradient(at 0% 500px, #cce9ff 0px, transparent 50%),
+		radial-gradient(at 35% 0px, #cce9ff 0px, transparent 40%),
+		radial-gradient(at 100% 280px, #cce9ff 0px, transparent 50%),
 		radial-gradient(
 			at 201px 140px,
 			rgba(255, 255, 255, 0.8) 0px,
@@ -83,8 +77,47 @@
 			transparent 50%
 		);
 	z-index: 1;
-	filter: blur(100px) saturate(150%);
+	filter: blur(80px) saturate(150%);
 	/* opacity: 0.3; */
+}
+
+.main-container {
+	background: url("/images/flutter-grid.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat;
+}
+
+.main-container::before {
+	position: absolute;
+	content: "";
+	height: 250px;
+	width: 250px;
+	top: -200px;
+	left: -50px;
+	border-radius: 250px;
+	background: rgba(255, 255, 255, 0.8);
+	filter: blur(82px);
+	z-index: -10;
+}
+
+.main-container::after {
+	position: absolute;
+	content: "";
+	height: 250px;
+	width: 250px;
+	top: -150px;
+	right: 100px;
+	border-radius: 250px;
+	background: rgba(255, 255, 255, 0.8);
+	filter: blur(82px);
+	z-index: -10;
+}
+@media (max-width: 768px) {
+	.main-container::before,
+	.main-container::after {
+		background: none;
+	}
 }
 
 .horizontal-grad-border {
@@ -134,24 +167,50 @@ tbody tr:last-child td {
 }
 
 .text-gradient {
- background: linear-gradient(
-    95.49deg,
-    rgba(43, 158, 245, 1) 1.384096685796976%,
-    rgba(17, 103, 177, 1) 12.821680307388306%,
-    rgba(24, 123, 205, 1) 27.445006370544434%,
-    rgba(42, 157, 244, 1) 41.925984621047974%,
-    rgba(42, 157, 244, 1) 57.130300998687744%,
-    rgba(24, 123, 205, 1) 72.40303158760071%,
-    rgba(17, 103, 177, 1) 85.05947589874268%,
-    rgba(43, 158, 245, 1) 97.53729701042175%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: linear-gradient(
+		95.49deg,
+		rgba(43, 158, 245, 1) 1.384096685796976%,
+		rgba(17, 103, 177, 1) 12.821680307388306%,
+		rgba(24, 123, 205, 1) 27.445006370544434%,
+		rgba(42, 157, 244, 1) 41.925984621047974%,
+		rgba(42, 157, 244, 1) 57.130300998687744%,
+		rgba(24, 123, 205, 1) 72.40303158760071%,
+		rgba(17, 103, 177, 1) 85.05947589874268%,
+		rgba(43, 158, 245, 1) 97.53729701042175%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.btn-hover {
+	transition: transform .4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.btn-hover:hover{
+	transform: scale(.98);
+	transition: transform .4s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
 	}
+}
+
+.heading-text {
+	background: linear-gradient(
+		95deg,
+		#2b9ef5 6.27%,
+		#1167b1 16.51%,
+		#187bcd 29.61%,
+		#2a9df4 42.57%,
+		#2a9df4 56.18%,
+		#187bcd 69.86%,
+		#1167b1 81.19%,
+		#2b9ef5 92.36%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

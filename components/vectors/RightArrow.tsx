@@ -19,7 +19,7 @@ export default function RightArrow({ dark }: { dark?: boolean }) {
 	);
 }
 
-export function RightArrow2() {
+export function RightArrow2({ color }: { color?: string }) {
 	return (
 		<svg
 			width="24"
@@ -30,7 +30,7 @@ export function RightArrow2() {
 		>
 			<path
 				d="M3.75 12H20.25M20.25 12L13.5 5.25M20.25 12L13.5 18.75"
-				stroke="#2A9DF4"
+				stroke={color || "#2A9DF4"}
 				stroke-width="1.5"
 				stroke-linecap="round"
 				stroke-linejoin="round"
