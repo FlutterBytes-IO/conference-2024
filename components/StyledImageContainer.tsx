@@ -8,6 +8,8 @@ export default function StyledImageContainer({ src }: { src: string }) {
 			<Image
 				src={src || Avatar}
 				alt="profile"
+				width={200}
+				height={300}
 				className="object-cover horizontal-grad-border w-full h-full"
 			/>
 		</div>
