@@ -36,9 +36,6 @@ export const links2 = [
 	},
 ];
 
-<<<<<<< HEAD
-let i = 1;
-
 export const saturdayAgenda = Array(14)
 	.fill("")
 	.map((_, i) => ({
@@ -60,113 +57,30 @@ export const fridayAgenda = Array(5)
 		day: "Friday",
 		key: `key-${i + 1}`,
 	}));
-=======
-export const currentSpeakers = [
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-]
 
-export const pastSpeakers = [
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-]
+export const currentSpeakers = Array(8)
+	.fill("")
+	.map((_, i) => ({
+		name: "Rebecca Omolabake",
+		role: "Senior Flutter Developer, EdenLife",
+		image: "/images/Avatar.png",
+		key: `key-${i + 1}`,
+	}));
 
-export const committee = [
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-	{
-		name: 'Rebecca Omolabake',
-		role: 'Senior Flutter Developer, EdenLife',
-		image: '/images/Avatar.png',
-	},
-]
->>>>>>> 5456a56ab6c57665246d52502a85da6ce6bf6867
+export const pastSpeakers = Array(8)
+	.fill("")
+	.map((_, i) => ({
+		name: "Rebecca Omolabake",
+		role: "Senior Flutter Developer, EdenLife",
+		image: "/images/Avatar.png",
+		key: `key-${i + 1}`,
+	}));
+
+export const committee = Array(8)
+	.fill("")
+	.map((_, i) => ({
+		name: "Rebecca Omolabake",
+		role: "Senior Flutter Developer, EdenLife",
+		image: "/images/Avatar.png",
+		key: `key-${i + 1}`,
+	}));
