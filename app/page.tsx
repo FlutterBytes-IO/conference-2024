@@ -7,7 +7,7 @@ import TicketIcon from "@/components/vectors/TicketIcon";
 
 export default function Home() {
 	return (
-		<section className="flex min-h-screen flex-col gradient-no-grid max-w-[922px] w-full mx-auto relative">
+		<section className="flex min-h-screen flex-col gradient-no-grid max-w-[922px] w-full mx-auto">
 			<div className="max-w-[758px] mx-auto w-full flex flex-col justify-center items-center mt-[140px] px-5 z-10 min-h-screen">
 				<p className="text-neutral-700 text-xl font-medium pt-2.5 px-6 pb-3 border-b mb-3">
 					The Global Impact of African Flutter Developers/Engineers
@@ -155,6 +155,198 @@ export default function Home() {
 						icon={<RightArrow2 />}
 					>
 						See all Speakers
+					</Button>
+				</div>
+			</div>
+			<div className="flex flex-col items-center relative z-10 py-[120px]">
+				<h3 className="text-center mb-[52px] text-neutral-900 w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold">
+					FlutterBytes Conference 2024 is being sponsored by:
+				</h3>
+				<div className="grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-5 md:gap-10 mb-12">
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Google.png"
+							otherstyles="!w-[150px] !h-[180px] p-2.5"
+							innerstyles="border-4"
+						/>
+						<p className="mt-3 mb-1 font-semibold text-neutral-700">Google</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Platinum Sponsor
+						</p>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Eden-life.png"
+							otherstyles="!w-[150px] !h-[180px] p-2.5"
+							innerstyles="border-4"
+						/>
+						<p className="mt-3 mb-1 font-semibold text-neutral-700">Google</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Platinum Sponsor
+						</p>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Flutter.png"
+							otherstyles="!w-[150px] !h-[180px] p-2.5"
+							innerstyles="border-4"
+						/>
+						<p className="mt-3 mb-1 font-semibold text-neutral-700">Google</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Platinum Sponsor
+						</p>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Google.png"
+							otherstyles="!w-[150px] !h-[180px] p-2.5"
+							innerstyles="border-4"
+						/>
+						<p className="mt-3 mb-1 font-semibold text-neutral-700">Google</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Platinum Sponsor
+						</p>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Google.png"
+							otherstyles="!w-[150px] !h-[180px] p-2.5"
+							innerstyles="border-4"
+						/>
+						<p className="mt-3 mb-1 font-semibold text-neutral-700">Google</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Platinum Sponsor
+						</p>
+					</div>
+				</div>
+				<div className="grid grid-cols-3 md:grid-cols-7 gap-y-10 gap-x-4 md:gap-10 place-content-center mb-12">
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Flutter.png"
+							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
+							innerstyles="border-4"
+						/>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Honeycomb.png"
+							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
+							innerstyles="border-4"
+						/>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Flutter-like.png"
+							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
+							innerstyles="border-4"
+						/>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/F-logo.png"
+							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
+							innerstyles="border-4"
+						/>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Google.png"
+							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
+							innerstyles="border-4"
+						/>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Google.png"
+							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
+							innerstyles="border-4"
+						/>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer
+							src="/images/Google.png"
+							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
+							innerstyles="border-4"
+						/>
+					</div>
+				</div>
+				<div className="flex justify-center">
+					<Button
+						component="link"
+						href="/sponsorships"
+						icon={<RightArrow2 color="#fff" />}
+						otherstyles="py-4 w-full"
+					>
+						Be a sponsor
+					</Button>
+				</div>
+			</div>
+			<div className="flex flex-col items-center relative z-10 py-[120px] -mx-[120px]">
+				<h3 className="text-center mb-[52px] text-neutral-600 w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold">
+					Testimonials and Pictures from Previous Editions of FlutterBytes
+					Conference
+				</h3>
+			</div>
+			<div className="flex flex-col items-center relative z-10 py-[120px]">
+				<h3 className="text-center mb-[52px] heading-text w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold">
+					Meet the Organizing Committee
+				</h3>
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
+					<div className="flex flex-col items-center">
+						<StyledImageContainer />
+						<p className="mt-3 mb-1 font-semibold text-neutral-700">
+							Jamiu Okanlawon
+						</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Senior Flutter Developer, EdenLife
+						</p>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer />
+						<p className="mt-3 mb-1 font-semibold text-neutral-700">
+							David Adegoke
+						</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Engineering Manager, Raptures Entertainment
+						</p>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer />
+						<p className="mt-3 mb-1 font-semibold text-neutral-700">
+							Mariam Hamzat
+						</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Rich woman with multiple roles
+						</p>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer />
+						<p className="mt-3 mb-1 font-semibold text-neutral-700">
+							+20 other committee members
+						</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Across 10 teams for effective conference planning.
+						</p>
+					</div>
+				</div>
+				<div className="self-center flex items-center gap-x-10">
+					<Button
+						component="link"
+						href="/volunteer"
+						variant="contained"
+						otherstyles="text-base font-semibold py-3 px-5"
+						icon={<RightArrow2 color="#fff" />}
+					>
+						Apply to volunteer
+					</Button>
+					<Button
+						component="link"
+						href="/organizers"
+						variant="outlined"
+						otherstyles="text-base font-semibold py-3 px-5"
+						icon={<RightArrow2 />}
+					>
+						See full committee
 					</Button>
 				</div>
 			</div>

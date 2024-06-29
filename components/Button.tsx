@@ -36,7 +36,7 @@ export default function Button({
 					type={type || "button"}
 					onClick={onClick}
 					className={`rounded-[30px] ${
-						icon && "!pr-3"
+						icon && "pr-3"
 					} w-fit py-2 px-2 md:px-4 flex items-center gap-2 font-medium text-xs md:text-sm ${
 						variant === "contained"
 							? "bg-blue-200 text-white"
