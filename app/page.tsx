@@ -1,6 +1,8 @@
 import Button from "@/components/Button";
 import Agenda from "@/components/Agenda";
-import StyledImageContainer from "@/components/StyledImageContainer";
+import StyledImageContainer, {
+	StyledLogoContainer,
+} from "@/components/StyledImageContainer";
 import { RightArrow2 } from "@/components/vectors/RightArrow";
 import CalendarIcon from "@/components/vectors/CalendarIcon";
 import TicketIcon from "@/components/vectors/TicketIcon";
@@ -164,10 +166,11 @@ export default function Home() {
 				</h3>
 				<div className="grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-5 md:gap-10 mb-12">
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Google.png"
 							otherstyles="!w-[150px] !h-[180px] p-2.5"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="bg-multicolor-grad"
 						/>
 						<p className="mt-3 mb-1 font-semibold text-neutral-700">Google</p>
 						<p className="text-sm text-neutral-700 text-center">
@@ -175,10 +178,11 @@ export default function Home() {
 						</p>
 					</div>
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Eden-life.png"
 							otherstyles="!w-[150px] !h-[180px] p-2.5"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="bg-green-grad"
 						/>
 						<p className="mt-3 mb-1 font-semibold text-neutral-700">Google</p>
 						<p className="text-sm text-neutral-700 text-center">
@@ -186,10 +190,11 @@ export default function Home() {
 						</p>
 					</div>
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Flutter.png"
 							otherstyles="!w-[150px] !h-[180px] p-2.5"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="bg-multicolor-grad"
 						/>
 						<p className="mt-3 mb-1 font-semibold text-neutral-700">Google</p>
 						<p className="text-sm text-neutral-700 text-center">
@@ -197,10 +202,11 @@ export default function Home() {
 						</p>
 					</div>
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Google.png"
 							otherstyles="!w-[150px] !h-[180px] p-2.5"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="bg-multicolor-grad"
 						/>
 						<p className="mt-3 mb-1 font-semibold text-neutral-700">Google</p>
 						<p className="text-sm text-neutral-700 text-center">
@@ -208,10 +214,11 @@ export default function Home() {
 						</p>
 					</div>
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Google.png"
 							otherstyles="!w-[150px] !h-[180px] p-2.5"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="bg-multicolor-grad"
 						/>
 						<p className="mt-3 mb-1 font-semibold text-neutral-700">Google</p>
 						<p className="text-sm text-neutral-700 text-center">
@@ -221,52 +228,58 @@ export default function Home() {
 				</div>
 				<div className="grid grid-cols-3 md:grid-cols-7 gap-y-10 gap-x-4 md:gap-10 place-content-center mb-12">
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Flutter.png"
 							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="bg-blue-grad"
 						/>
 					</div>
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Honeycomb.png"
 							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="!bg-black/60"
 						/>
 					</div>
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Flutter-like.png"
 							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="bg-blue-grad"
 						/>
 					</div>
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/F-logo.png"
 							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
 						/>
 					</div>
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Google.png"
 							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="bg-multicolor-grad"
 						/>
 					</div>
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Google.png"
 							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="bg-multicolor-grad"
 						/>
 					</div>
 					<div className="flex flex-col items-center">
-						<StyledImageContainer
+						<StyledLogoContainer
 							src="/images/Google.png"
 							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-							innerstyles="border-4"
+							innerstyles="border-4 border-white"
+							bgStyles="bg-multicolor-grad"
 						/>
 					</div>
 				</div>
@@ -321,7 +334,7 @@ export default function Home() {
 					</div>
 					<div className="flex flex-col items-center">
 						<StyledImageContainer />
-						<p className="mt-3 mb-1 font-semibold text-neutral-700">
+						<p className="mt-3 mb-1 font-semibold text-neutral-700 text-center">
 							+20 other committee members
 						</p>
 						<p className="text-sm text-neutral-700 text-center">

@@ -32,6 +32,14 @@ const config = {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
 			},
+			backgroundImage: {
+				"multicolor-grad":
+					"linear-gradient(to right, rgba(66, 133, 244, 0.8) 4%, rgba(234, 67, 53, 0.8) 28%, rgba(251, 188, 5, 0.8) 52%, rgba(66, 133, 244, 0.8) 73%, rgba(234, 67, 53, 0.8) 100%)",
+				"green-grad":
+					"linear-gradient(to right, rgba(0, 194, 103, 0.6) 4%, rgba(255, 255, 255, 0.6) 45%, rgba(0, 194, 103, 0.6) 100%)",
+				"blue-grad":
+					"linear-gradient(to right, rgba(69, 209, 253, 0.6) 4%, rgba(8, 89, 157, 0.6) 97%)",
+			},
 			colors: {
 				blue: {
 					50: "#EBF8FF",

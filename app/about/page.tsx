@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import StyledImageContainer from "@/components/StyledImageContainer";
 import { RightArrow2 } from "@/components/vectors/RightArrow";
 
 export default function About() {
@@ -43,12 +44,56 @@ export default function About() {
 					</ul>
 				</div>
 			</div>
-			<div className="flex flex-col gap-y-10 mb-[100px] bg-blue-50">
+			<div className="flex flex-col gap-y-10 mb-[100px] ">
 				<h3 className="border-y-[1.5px] w-fit self-center border-fbc_blue-100 text-[28px] leading-[42px] text-center py-2.5 px-5 text-gradient font-semibold">
 					Meet the Organizing Committee
 				</h3>
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
+					<div className="flex flex-col items-center">
+						<StyledImageContainer />
+						<p className="mt-3 mb-1 font-semibold text-neutral-700 text-center">
+							Jamiu
+							<br className="max-md:hidden" /> Okanlawon
+						</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Senior Flutter Developer, EdenLife
+						</p>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer />
+						<p className="mt-3 mb-1 font-semibold text-neutral-700 text-center">
+							David
+							<br className="max-md:hidden" /> Adegoke
+						</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Engineering Manager, Raptures Entertainment
+						</p>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer />
+						<p className="mt-3 mb-1 font-semibold text-neutral-700 text-center">
+							Mariam
+							<br className="max-md:hidden" /> Hamzat
+						</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Rich woman with multiple roles
+						</p>
+					</div>
+					<div className="flex flex-col items-center">
+						<StyledImageContainer />
+						<p className="mt-3 mb-1 font-semibold text-neutral-700 text-center">
+							+20 other committee
+							<br className="max-md:hidden" /> members
+						</p>
+						<p className="text-sm text-neutral-700 text-center">
+							Across 10 teams for effective conference planning.
+						</p>
+					</div>
+				</div>
 				<div className="flex w-full flex-col justify-center items-center sm:flex-row gap-4 mt-10">
 					<Button
+						component="link"
+						href="/volunteer"
 						variant="contained"
 						otherstyles="text-base font-semibold"
 						icon={<RightArrow2 color="#fff" />}
@@ -56,6 +101,8 @@ export default function About() {
 						Apply to volunteer
 					</Button>
 					<Button
+						component="link"
+						href="/organizers"
 						variant="outlined"
 						otherstyles="text-base font-semibold"
 						icon={<RightArrow2 />}

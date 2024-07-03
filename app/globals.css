@@ -81,6 +81,26 @@
 	/* opacity: 0.3; */
 }
 
+.background-styles {
+	position: relative;
+	border-radius: 250px;
+	background: linear-gradient(
+			to right,
+			rgba(17, 102, 177, 0.51) 0%,
+			rgba(24, 124, 205, 0.5) 21%,
+			rgba(42, 156, 244, 0.51) 42%,
+			rgba(42, 156, 244, 0.5) 57%,
+			rgba(24, 124, 205, 0.52) 80%,
+			rgba(17, 102, 177, 0.49) 100%
+		),
+		url("/images/Avatar.png");
+	background-clip: border-box;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 8px;
+}
+
 .main-container {
 	background: url("/images/flutter-grid.svg");
 	background-size: cover;
