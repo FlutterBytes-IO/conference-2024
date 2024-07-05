@@ -43,43 +43,45 @@
 	}
 }
 
-.gradient-no-grid::before {
-	position: absolute;
-	content: "";
-	height: 100%;
-	width: 100%;
-	top: 0;
-	background-position: center;
-	background-size: contain;
-	opacity: 0.2;
-	filter: invert(1);
+@media (min-width: 768px){
+	.gradient-no-grid::before {
+		position: absolute;
+		content: "";
+		height: 100%;
+		width: 100%;
+		top: 0;
+		background-position: center;
+		background-size: contain;
+		opacity: 0.2;
+		filter: invert(1);
+	}
+	
+	.gradient-no-grid::after {
+		position: absolute;
+		content: "";
+		height: 100%;
+		width: 100%;
+		top: 0;
+		right: 0;
+		background-image: radial-gradient(at 0% 500px, #cce9ff 0px, transparent 50%),
+			radial-gradient(at 35% 0px, #cce9ff 0px, transparent 40%),
+			radial-gradient(at 100% 280px, #cce9ff 0px, transparent 50%),
+			radial-gradient(
+				at 201px 140px,
+				rgba(255, 255, 255, 0.8) 0px,
+				transparent 50%
+			),
+			radial-gradient(at 347.2px 0, #ffffff 0px, transparent 50%),
+			radial-gradient(
+				at calc(100% - 318.92px) 60px,
+				rgba(255, 255, 255, 0.8) 0px,
+				transparent 50%
+			);
+		z-index: 1;
+		filter: blur(80px) saturate(150%);
+	}
 }
 
-.gradient-no-grid::after {
-	position: absolute;
-	content: "";
-	height: 100%;
-	width: 100%;
-	top: 0;
-	right: 0;
-	background-image: radial-gradient(at 0% 500px, #cce9ff 0px, transparent 50%),
-		radial-gradient(at 35% 0px, #cce9ff 0px, transparent 40%),
-		radial-gradient(at 100% 280px, #cce9ff 0px, transparent 50%),
-		radial-gradient(
-			at 201px 140px,
-			rgba(255, 255, 255, 0.8) 0px,
-			transparent 50%
-		),
-		radial-gradient(at 347.2px 0, #ffffff 0px, transparent 50%),
-		radial-gradient(
-			at calc(100% - 318.92px) 60px,
-			rgba(255, 255, 255, 0.8) 0px,
-			transparent 50%
-		);
-	z-index: 1;
-	filter: blur(80px) saturate(150%);
-	/* opacity: 0.3; */
-}
 
 .background-styles {
 	position: relative;
