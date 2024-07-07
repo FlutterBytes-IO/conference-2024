@@ -31,12 +31,12 @@ export interface IconContainerProps {
 
 interface KeyValueProps {
 	key: string;
-	value: string;
+	value: string | React.ReactElement;
 }
 
 interface TableRow {
 	key: string;
-	[key: string]: string;
+	[key: string]: string | React.ReactElement;
 }
 
 export interface TableComponentProps {

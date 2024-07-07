@@ -1,20 +1,24 @@
 import Button from "@/components/Button";
 import Agenda from "@/components/Agenda";
+import GallerySection from "@/components/GallerySection";
 import StyledImageContainer, {
 	StyledLogoContainer,
 } from "@/components/StyledImageContainer";
 import { RightArrow2 } from "@/components/vectors/RightArrow";
 import CalendarIcon from "@/components/vectors/CalendarIcon";
 import TicketIcon from "@/components/vectors/TicketIcon";
+import BeyondTheBorders from "@/components/vectors/BeyondTheBorders";
 
 export default function Home() {
+
 	return (
-		<section className="flex min-h-screen flex-col gradient-no-grid max-w-[922px] w-full mx-auto">
-			<div className="max-w-[758px] mx-auto w-full flex flex-col justify-center items-center mt-[140px] px-5 z-10 min-h-screen">
-				<p className="text-neutral-700 text-xl font-medium pt-2.5 px-6 pb-3 border-b mb-3">
+		<section className="flex min-h-screen flex-col gradient-no-grid max-w-[922px] w-full mx-auto p-5 sm:p-0">
+			<div className="max-w-[758px] mx-auto w-full flex flex-col justify-center items-center mt-[140px] md:pb-[213px] px-5 z-10 min-h-screen">
+				 <BeyondTheBorders />
+				<p className="text-neutral-700 text-center md:text-xl font-medium px-6 pb-3 border-b mb-3">
 					The Global Impact of African Flutter Developers/Engineers
 				</p>
-				<p className="text-4xl leading-[67.2px] text-neutral-500 text-center mb-8">
+				<p className="text-xl max-md:font-medium md:text-4xl leading-[67.2px] text-neutral-500 text-center mb-8">
 					&#123;FlutterBytes Conference 2024&#125;
 				</p>
 				<Button
@@ -41,8 +45,8 @@ export default function Home() {
 							</p>
 						</div>
 					</div>
-					<div className="row-start-3 row-end-5 flex gap-8 md:gap-3">
-						<div className="bg-[url('/images/stat-bg.png')] rounded-2xl bg-center bg-cover py-10 px-[46px] flex place-content-center basis-[43%]">
+					<div className="md:row-start-3 md:row-end-5 flex flex-col md:flex-row gap-8 md:gap-3">
+						<div className="bg-[url('/images/stat-bg.png')] rounded-2xl bg-center bg-cover py-10 px-[46px] flex place-content-center md:basis-[43%]">
 							<div className="bg-white grid grid-cols-2 py-[17px] px-6 rounded-xl border border-blue-200 inner-shadow">
 								<div className="flex flex-col text-center place-content-center">
 									<p className="font-semibold text-[2rem] leading-[38px] text-gradient">
@@ -78,9 +82,9 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="basis-[57%] flex bg-[url('/images/map-bg.png')] rounded-2xl bg-center bg-cover place-content-center border border-neutral-400"></div>
+						<div className="md:basis-[57%] max-md:h-[280px] flex bg-[url('/images/map-bg.png')] rounded-2xl bg-center bg-cover place-content-center border border-neutral-400"></div>
 					</div>
-					<div className="row-auto bg-fbc_blue-100 rounded-2xl py-9 px-9 flex items-center justify-between">
+					<div className="row-auto bg-fbc_blue-100 rounded-2xl py-9 px-9 flex flex-col gap-3 md:flex-row items-start md:items-center justify-between">
 						<p className="text-blue-500 font-semibold text-[28px] leading-[33.6px] max-w-[270px]">
 							Don’t miss out on all the fun!
 						</p>
@@ -94,12 +98,12 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="bg-blue-50 relative z-10 pt-[116px] pb-32 flex flex-col items-center -mx-60">
+			<div className="bg-blue-50 relative z-10 pt-[116px] pb-32 flex flex-col items-center max-md:px-5 w-screen -mx-[50vw] left-1/2 right-1/2">
 				<Agenda isHomePage />
 			</div>
 			<div className="flex flex-col items-center relative z-10 py-[120px]">
 				<h3 className="text-center mb-[52px] heading-text w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[2rem] leading-[38px] font-semibold">
-					Agenda for FlutterBytes Conference 2024
+					Meet the amazing lineup of Speakers
 				</h3>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
 					<div className="flex flex-col items-center">
@@ -160,7 +164,7 @@ export default function Home() {
 					</Button>
 				</div>
 			</div>
-			<div className="flex flex-col items-center relative z-10 py-[120px]">
+			<div className="flex flex-col items-center relative z-10 pb-[120px]">
 				<h3 className="text-center mb-[52px] text-neutral-900 w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold">
 					FlutterBytes Conference 2024 is being sponsored by:
 				</h3>
@@ -213,7 +217,7 @@ export default function Home() {
 							Platinum Sponsor
 						</p>
 					</div>
-					<div className="flex flex-col items-center">
+					<div className="flex flex-col items-center col-span-2 md:col-span-1">
 						<StyledLogoContainer
 							src="/images/Google.png"
 							otherstyles="!w-[150px] !h-[180px] p-2.5"
@@ -274,7 +278,7 @@ export default function Home() {
 							bgStyles="bg-multicolor-grad"
 						/>
 					</div>
-					<div className="flex flex-col items-center">
+					<div className="flex flex-col items-center col-span-3 md:col-span-1">
 						<StyledLogoContainer
 							src="/images/Google.png"
 							otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
@@ -294,11 +298,12 @@ export default function Home() {
 					</Button>
 				</div>
 			</div>
-			<div className="flex flex-col items-center relative z-10 py-[120px] -mx-[120px]">
-				<h3 className="text-center mb-[52px] text-neutral-600 w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold">
+			<div className="flex gap-y-[52px] flex-col items-center relative z-10 pt-[120px] w-screen -mx-[50vw] right-1/2 left-1/2">
+				<h3 className="text-center text-neutral-600 w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold">
 					Testimonials and Pictures from Previous Editions of FlutterBytes
 					Conference
 				</h3>
+				<GallerySection />
 			</div>
 			<div className="flex flex-col items-center relative z-10 py-[120px]">
 				<h3 className="text-center mb-[52px] heading-text w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold">

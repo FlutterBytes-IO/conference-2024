@@ -40,6 +40,9 @@ const config = {
 				"blue-grad":
 					"linear-gradient(to right, rgba(69, 209, 253, 0.6) 4%, rgba(8, 89, 157, 0.6) 97%)",
 			},
+			gridTemplateColumns: {
+				agenda: "80px 1fr",
+			},
 			colors: {
 				blue: {
 					50: "#EBF8FF",

@@ -46,7 +46,7 @@ export default function RootLayout({
 				<div className="main-container bg-blend-multiply" />
 				<DarkmodeProvider>
 					<Navbar />
-					<main>{children}</main>
+					<main className="overflow-x-hidden">{children}</main>
 					<Footer />
 				</DarkmodeProvider>
 			</body>
