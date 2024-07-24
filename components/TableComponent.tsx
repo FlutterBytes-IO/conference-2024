@@ -3,8 +3,8 @@ import { TableComponentProps } from "@/types";
 import { RightArrow2 } from "./vectors/RightArrow";
 import Button from "./Button";
 
-const smlScreen = window.matchMedia("(max-width: 767px)").matches;
 
+const smlScreen = window?.matchMedia("(max-width: 767px)").matches;
 export default function TableComponent({
 	tableHead = smlScreen ? headCellsMobile : headCells,
 	tableBody = bodyCells,
