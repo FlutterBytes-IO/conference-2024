@@ -1,4 +1,4 @@
-"use client"; // This is a client component
+"use client";
 import Lineup from "@/components/Lineup";
 import { committee } from "@/utils/data";
 import { useEffect, useState } from "react";

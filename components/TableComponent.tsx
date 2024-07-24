@@ -1,3 +1,4 @@
+'use client'
 import { TableComponentProps } from "@/types";
 import { RightArrow2 } from "./vectors/RightArrow";
 import Button from "./Button";
