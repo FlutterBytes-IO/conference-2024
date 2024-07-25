@@ -7,7 +7,7 @@ import { RightArrow2 } from "@/components/vectors/RightArrow";
 import CalendarIcon from "@/components/vectors/CalendarIcon";
 import TicketIcon from "@/components/vectors/TicketIcon";
 import BeyondTheBorders from "@/components/vectors/BeyondTheBorders";
-import { AgendaHome } from "../components/AgendaHome";
+import { Agenda } from "../components/Agenda";
 
 export default function Home() {
 
@@ -99,7 +99,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="bg-blue-50 relative z-10 pt-[116px] pb-32 flex flex-col items-center max-md:px-5 w-screen -mx-[50vw] left-1/2 right-1/2">
-				<AgendaHome />
+				<Agenda isHomePage={true} />
 			</div>
 			<div className="flex flex-col items-center relative z-10 py-[120px]">
 				<h3 className="text-center mb-[52px] heading-text w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[2rem] leading-[38px] font-semibold">

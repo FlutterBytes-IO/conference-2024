@@ -5,8 +5,7 @@ import TableComponent from "./TableComponent";
 import { TabStepComponentProps } from "@/types";
 import { fridayAgenda, saturdayAgenda } from "@/utils/data";
 
-export const Agenda = () => {
-	const isHomePage: boolean = false;
+export const Agenda = ({ isHomePage }: { isHomePage?: boolean }) => {
   const steps = [
     {
       id: 1,
