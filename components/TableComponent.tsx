@@ -1,15 +1,37 @@
-import { TableComponentProps } from "@/types";
+'use client'
+import { KeyValueProps, TableComponentProps } from "@/types";
 import { RightArrow2 } from "./vectors/RightArrow";
 import Button from "./Button";
+import { useEffect, useState } from "react";
 
-const smlScreen = window.matchMedia("(max-width: 767px)").matches;
+function useIsSmlScreen() {
+	const [isSmlScreen, setIsSmlScreen] = useState(false);
+  
+	useEffect(() => {
+	  const checkScreenSize = () => {
+		setIsSmlScreen(window.matchMedia("(max-width: 767px)").matches);
+	  };
+  
+	  checkScreenSize();
+	  window.addEventListener('resize', checkScreenSize);
+  
+	  return () => window.removeEventListener('resize', checkScreenSize);
+	}, []);
+  
+	return isSmlScreen;
+  }
 
 export default function TableComponent({
-	tableHead = smlScreen ? headCellsMobile : headCells,
-	tableBody = bodyCells,
+	tableBody= bodyCells,
 	more,
 	isHomePage,
 }: TableComponentProps) {
+	const isSmlScreen = useIsSmlScreen();
+  const [tableHead, setTableHead] = useState<KeyValueProps[]>([]);
+
+  useEffect(() => {
+    setTableHead(isSmlScreen ? headCellsMobile : headCells);
+  }, [isSmlScreen]);
 	return (
 		<div className="border-[0.5px] border-neutral-500 text-neutral-700 rounded-[40px] w-[400px] md:w-full md:max-w-[877px] flex flex-col">
 			<table className="w-full max-md:flex max-md:flex-col max-md:gap-y-6 overflow-hidden">

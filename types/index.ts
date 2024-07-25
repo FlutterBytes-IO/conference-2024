@@ -29,12 +29,12 @@ export interface IconContainerProps {
 	href?: string;
 }
 
-interface KeyValueProps {
+export interface KeyValueProps {
 	key: string;
 	value: string | React.ReactElement;
 }
 
-interface TableRow {
+export interface TableRow {
 	key: string;
 	[key: string]: string | React.ReactElement;
 }
