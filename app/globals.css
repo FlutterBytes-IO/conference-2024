@@ -155,7 +155,17 @@ tr > td {
 @media (max-width: 768px) {
 	tr > th,
 	tr > td {
-		border-top: 1px solid black;
+		border: 1px solid black;
+	}
+
+	tr > th:nth-child(2) {
+		border-top: 0;
+		border-right: 0;
+	}
+
+	tr > th:nth-child(1) {
+		border-top: 0;
+		border-left: 0;
 	}
 }
 
