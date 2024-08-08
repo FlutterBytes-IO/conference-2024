@@ -12,12 +12,32 @@ import { Agenda } from "../components/Agenda";
 
 export default function Home() {
   return (
-    <section className="flex min-h-screen flex-col gradient-no-grid max-w-[922px] w-full mx-auto p-5 sm:p-0">
-      <div className="max-w-[758px] mx-auto w-full flex flex-col justify-center items-center mt-[140px] md:pb-[213px] px-5 z-10 min-h-screen">
-        <BeyondTheBorders />
-        <p className="text-neutral-700 text-center md:text-xl font-medium px-6 pb-3 border-b mb-3">
+    <section className="flex min-h-screen flex-col gradient-no-grid max-w-[922px] w-full mx-auto p-5 lg:p-0">
+      <div className="max-w-[758px] relative mx-auto w-full flex flex-col md:justify-center items-center mt-[140px] md:pb-[213px] max-md:mb-[120px] px-5 z-10 md:min-h-screen">
+        <Image
+          src="/images/BeyondBordersText.png"
+          width={644}
+          height={335}
+          alt="beyond-borders"
+          className="object-contain z-10"
+        />
+        <Image
+          src="/images/GlobeAnimation.gif"
+          width={120}
+          height={120}
+          alt="beyond-borders"
+          className="object-contain hidden md:block absolute left-[260px] lg:left-[280px] top-[230px]"
+        />
+        <Image
+          src="/images/GlobeAnimationsml.gif"
+          width={70}
+          height={70}
+          alt="beyond-borders"
+          className="object-contain md:hidden absolute top-[70px] max-xs:left-[130px] left-[135px]"
+        />
+        {/* <p className="text-neutral-700 text-center md:text-xl font-medium px-6 pb-3 border-b mb-3 italic">
           The Global Impact of African Flutter Developers/Engineers
-        </p>
+        </p> */}
         <p className="text-xl max-md:font-medium md:text-4xl leading-[67.2px] text-neutral-500 text-center mb-8">
           &#123;FlutterBytes Conference 2024&#125;
         </p>
@@ -357,7 +377,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="self-center flex items-center gap-x-10">
+        <div className="self-center flex flex-col md:flex-row gap-y-5 items-center gap-x-10">
           <Button
             component="link"
             href="/volunteer"
