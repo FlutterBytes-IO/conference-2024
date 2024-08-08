@@ -41,7 +41,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
       >
         <Link
           href="/"
-          className="relative max-lg:after:hidden after:absolute after:content-[''] after:left-full after:top-1/2 after:-translate-y-1/2 after:w-full after:overflow-hidden after:h-px after:bg-fbc_blue-100"
+          className="relative max-lg:after:hidden after:absolute after:content-[''] after:left-full after:top-1/2 after:-translate-y-1/2 after:w-[170%] after:overflow-hidden after:h-px after:bg-fbc_blue-100"
         >
           <Image
             src={isDarkmode ? NavLogoDark : NavLogoLight}
@@ -78,7 +78,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             About us
           </Link>
         </div>
-        <div className="hidden lg:flex items-center gap-x-3 relative before:max-lg:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[135%] before:h-px before:bg-fbc_blue-100">
+        <div className="hidden lg:flex items-center gap-x-3 relative before:max-lg:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[170%] before:h-px before:bg-fbc_blue-100">
           <Button onClick={handleClick}>Get Tickets</Button>
           <button onClick={() => setIsDarkmode((prev) => !prev)}>
             {isDarkmode ? <DarkModeIcon /> : <LightModeIcon />}

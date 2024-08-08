@@ -3,242 +3,251 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-	--horizontal-grad: linear-gradient(
-		to right,
-		#1167b1 0%,
-		#187bcd 21%,
-		#2a9df4 42%,
-		#2a9df4 57%,
-		#187bcd 80%,
-		#1167b1 100%
-	);
-	--horizontal-grad-opacity: linear-gradient(
-		to right,
-		#1166b183 0%,
-		#187ccd80 21%,
-		#2a9cf481 42%,
-		#2a9cf480 57%,
-		#187ccd85 80%,
-		#1166b17e 100%
-	);
-	--vertical-grad: linear-gradient(
-		to bottom,
-		#1167b1 0%,
-		#187bcd 21%,
-		#2a9df4 42%,
-		#2a9df4 57%,
-		#187bcd 80%,
-		#1167b1 100%
-	);
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --horizontal-grad: linear-gradient(
+    to right,
+    #1167b1 0%,
+    #187bcd 21%,
+    #2a9df4 42%,
+    #2a9df4 57%,
+    #187bcd 80%,
+    #1167b1 100%
+  );
+  --horizontal-grad-opacity: linear-gradient(
+    to right,
+    #1166b183 0%,
+    #187ccd80 21%,
+    #2a9cf481 42%,
+    #2a9cf480 57%,
+    #187ccd85 80%,
+    #1166b17e 100%
+  );
+  --vertical-grad: linear-gradient(
+    to bottom,
+    #1167b1 0%,
+    #187bcd 21%,
+    #2a9df4 42%,
+    #2a9df4 57%,
+    #187bcd 80%,
+    #1167b1 100%
+  );
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
 }
 
-@media (min-width: 768px){
-	.gradient-no-grid::before {
-		position: absolute;
-		content: "";
-		height: 100%;
-		width: 100%;
-		top: 0;
-		background-position: center;
-		background-size: contain;
-		opacity: 0.2;
-		filter: invert(1);
-	}
-	
-	.gradient-no-grid::after {
-		position: absolute;
-		content: "";
-		height: 100%;
-		width: 100%;
-		top: 0;
-		right: 0;
-		background-image: radial-gradient(at 0% 500px, #cce9ff 0px, transparent 50%),
-			radial-gradient(at 35% 0px, #cce9ff 0px, transparent 40%),
-			radial-gradient(at 100% 280px, #cce9ff 0px, transparent 50%),
-			radial-gradient(
-				at 201px 140px,
-				rgba(255, 255, 255, 0.8) 0px,
-				transparent 50%
-			),
-			radial-gradient(at 347.2px 0, #ffffff 0px, transparent 50%),
-			radial-gradient(
-				at calc(100% - 318.92px) 60px,
-				rgba(255, 255, 255, 0.8) 0px,
-				transparent 50%
-			);
-		z-index: 1;
-		filter: blur(80px) saturate(150%);
-	}
-}
+@media (min-width: 768px) {
+  .gradient-no-grid::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.2;
+    filter: invert(1);
+  }
 
+  .gradient-no-grid::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-image: radial-gradient(at 0% 500px, #cce9ff 0px, transparent 50%),
+      radial-gradient(at 35% 0px, #cce9ff 0px, transparent 40%),
+      radial-gradient(at 100% 280px, #cce9ff 0px, transparent 50%),
+      radial-gradient(
+        at 201px 140px,
+        rgba(255, 255, 255, 0.8) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 347.2px 0, #ffffff 0px, transparent 50%),
+      radial-gradient(
+        at calc(100% - 318.92px) 60px,
+        rgba(255, 255, 255, 0.8) 0px,
+        transparent 50%
+      );
+    z-index: 1;
+    filter: blur(80px) saturate(150%);
+  }
+}
 
 .background-styles {
-	position: relative;
-	border-radius: 250px;
-	background: linear-gradient(
-			to right,
-			rgba(17, 102, 177, 0.51) 0%,
-			rgba(24, 124, 205, 0.5) 21%,
-			rgba(42, 156, 244, 0.51) 42%,
-			rgba(42, 156, 244, 0.5) 57%,
-			rgba(24, 124, 205, 0.52) 80%,
-			rgba(17, 102, 177, 0.49) 100%
-		),
-		url("/images/Avatar.png");
-	background-clip: border-box;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding: 8px;
+  position: relative;
+  border-radius: 250px;
+  background: linear-gradient(
+      to right,
+      rgba(17, 102, 177, 0.51) 0%,
+      rgba(24, 124, 205, 0.5) 21%,
+      rgba(42, 156, 244, 0.51) 42%,
+      rgba(42, 156, 244, 0.5) 57%,
+      rgba(24, 124, 205, 0.52) 80%,
+      rgba(17, 102, 177, 0.49) 100%
+    ),
+    url("/images/Avatar.png");
+  background-clip: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8px;
 }
 
 .main-container {
-	background: url("/images/flutter-grid.svg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: repeat;
+  background: url("/images/flutter-grid.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .main-container::before {
-	position: absolute;
-	content: "";
-	height: 250px;
-	width: 250px;
-	top: -200px;
-	left: -50px;
-	border-radius: 250px;
-	background: rgba(255, 255, 255, 0.8);
-	filter: blur(82px);
-	z-index: -10;
+  position: absolute;
+  content: "";
+  height: 250px;
+  width: 250px;
+  top: -200px;
+  left: -50px;
+  border-radius: 250px;
+  background: rgba(255, 255, 255, 0.8);
+  filter: blur(82px);
+  z-index: -10;
 }
 
 .main-container::after {
-	position: absolute;
-	content: "";
-	height: 250px;
-	width: 250px;
-	top: -150px;
-	right: 100px;
-	border-radius: 250px;
-	background: rgba(255, 255, 255, 0.8);
-	filter: blur(82px);
-	z-index: -10;
+  position: absolute;
+  content: "";
+  height: 250px;
+  width: 250px;
+  top: -150px;
+  right: 100px;
+  border-radius: 250px;
+  background: rgba(255, 255, 255, 0.8);
+  filter: blur(82px);
+  z-index: -10;
 }
 @media (max-width: 768px) {
-	.main-container::before,
-	.main-container::after {
-		background: none;
-	}
+  .main-container::before,
+  .main-container::after {
+    background: none;
+  }
 }
 
 .nav-shadow {
-	box-shadow: 0 2px 24px 2px rgba(0, 0, 0, 4%);
+  box-shadow: 0 2px 24px 2px rgba(0, 0, 0, 4%);
 }
 
 tr > th,
 tr > td {
-	border-left: 0;
-	border-top: 0;
+  border-left: 0;
+  border-top: 0;
 }
 
 @media (max-width: 768px) {
-	tr > th,
-	tr > td {
-		border: 1px solid black;
-	}
+  tr > th,
+  tr > td {
+    border: 1px solid black;
+  }
 
-	tr > th:nth-child(2) {
-		border-top: 0;
-		border-right: 0;
-	}
+  tr > th:nth-child(2) {
+    border-top: 0;
+    border-right: 0;
+  }
 
-	tr > th:nth-child(1) {
-		border-top: 0;
-		border-left: 0;
-	}
+  tr > th:nth-child(1) {
+    border-top: 0;
+    border-left: 0;
+  }
 }
 
 thead th:last-child {
-	border-right: 0;
+  border-right: 0;
 }
 
 tbody td:last-child {
-	border-right: 0;
+  border-right: 0;
 }
 
 tbody tr:last-child td {
-	border-bottom: 0;
+  border-bottom: 0;
 }
 
 .text-gradient {
-	background: linear-gradient(
-		95.49deg,
-		rgba(43, 158, 245, 1) 1.384096685796976%,
-		rgba(17, 103, 177, 1) 12.821680307388306%,
-		rgba(24, 123, 205, 1) 27.445006370544434%,
-		rgba(42, 157, 244, 1) 41.925984621047974%,
-		rgba(42, 157, 244, 1) 57.130300998687744%,
-		rgba(24, 123, 205, 1) 72.40303158760071%,
-		rgba(17, 103, 177, 1) 85.05947589874268%,
-		rgba(43, 158, 245, 1) 97.53729701042175%
-	);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    95.49deg,
+    rgba(43, 158, 245, 1) 1.384096685796976%,
+    rgba(17, 103, 177, 1) 12.821680307388306%,
+    rgba(24, 123, 205, 1) 27.445006370544434%,
+    rgba(42, 157, 244, 1) 41.925984621047974%,
+    rgba(42, 157, 244, 1) 57.130300998687744%,
+    rgba(24, 123, 205, 1) 72.40303158760071%,
+    rgba(17, 103, 177, 1) 85.05947589874268%,
+    rgba(43, 158, 245, 1) 97.53729701042175%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
+  .text-balance {
+    text-wrap: balance;
+  }
 }
 
 .heading-text {
-	background: linear-gradient(
-		95deg,
-		#2b9ef5 6.27%,
-		#1167b1 16.51%,
-		#187bcd 29.61%,
-		#2a9df4 42.57%,
-		#2a9df4 56.18%,
-		#187bcd 69.86%,
-		#1167b1 81.19%,
-		#2b9ef5 92.36%
-	);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    95deg,
+    #2b9ef5 6.27%,
+    #1167b1 16.51%,
+    #187bcd 29.61%,
+    #2a9df4 42.57%,
+    #2a9df4 56.18%,
+    #187bcd 69.86%,
+    #1167b1 81.19%,
+    #2b9ef5 92.36%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .inner-shadow {
-	box-shadow: inset 0 7px 24px 0 #1891f357;
+  box-shadow: inset 0 7px 24px 0 #1891f357;
 }
 
 .inner-shadow {
-	box-shadow: inset 0 7px 24px 0 #1891f357;
+  box-shadow: inset 0 7px 24px 0 #1891f357;
 }
 
 .text-container {
-	background-image: url("/images/flutter-grid.svg");
-	background-color: #ebf8ff;
-	background-size: cover;
-	background-position: center;
-	background-repeat: repeat;
+  background-image: url("/images/flutter-grid.svg");
+  background-color: #ebf8ff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.btn-grad:hover {
+  background-image: linear-gradient(
+    to right,
+    #1167b1 4%,
+    #2a9df4 50%,
+    #2a9df4 75%,
+    #1167b1 100%
+  );
 }
 
 @media (max-width: 700px) {
-	.text-container {
-		background: none;
-	}
+  .text-container {
+    background: none;
+  }
 }
