@@ -32,7 +32,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
       <nav
         ref={ref}
         className={`px-5 md:px-10 top-0 bg-opacity-[88%] blur-[4%] ${
-          scrollPosition! > 50 ? "bg-white" : "bg-transparent"
+          scrollPosition! > 50 ? "bg-transparent" : "bg-transparent"
         } py-5 transition-all z-20 duration-500 flex items-center justify-between fixed w-screen ${
           isDarkmode
             ? "border-[#1167B1] hero-grad-dark"

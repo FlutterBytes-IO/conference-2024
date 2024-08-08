@@ -23,17 +23,17 @@ export default function Home() {
         />
         <Image
           src="/images/GlobeAnimation.gif"
-          width={120}
-          height={120}
+          width={140}
+          height={140}
           alt="beyond-borders"
-          className="object-contain hidden md:block absolute left-[260px] lg:left-[280px] top-[230px]"
+          className="object-contain hidden md:block absolute left-[265px] top-[210px]"
         />
         <Image
           src="/images/GlobeAnimationsml.gif"
-          width={70}
-          height={70}
+          width={80}
+          height={80}
           alt="beyond-borders"
-          className="object-contain md:hidden absolute top-[70px] max-xs:left-[130px] left-[135px]"
+          className="object-contain md:hidden absolute top-[60px] max-xs:left-[125px] left-[130px]"
         />
         {/* <p className="text-neutral-700 text-center md:text-xl font-medium px-6 pb-3 border-b mb-3 italic">
           The Global Impact of African Flutter Developers/Engineers
