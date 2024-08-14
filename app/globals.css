@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MyFont";
+  src: url("/giga-sans-cufonfonts/GigaSansBlack.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "MyFont", sans-serif;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -250,4 +261,13 @@ tbody tr:last-child td {
   .text-container {
     background: none;
   }
+}
+
+.hero-grad-dark {
+  background-image: linear-gradient(
+    to right,
+    #021429 4%,
+    #052447 50%,
+    #021429 92%
+  );
 }

@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
+import { useContext } from "react";
 
+import { DarkmodeContext } from "@/context/DarkMode";
 import TableComponent from "./TableComponent";
 import { TabStepComponentProps } from "@/types";
 import { fridayAgenda, saturdayAgenda } from "@/utils/data";
@@ -18,6 +20,7 @@ export const Agenda = ({ isHomePage }: { isHomePage?: boolean }) => {
   ];
 
   const [activeTab, setActiveTab] = useState<number>(1);
+  const { isDarkmode } = useContext(DarkmodeContext);
 
   const stepComponents: TabStepComponentProps = {
     1: (
@@ -45,7 +48,11 @@ export const Agenda = ({ isHomePage }: { isHomePage?: boolean }) => {
             <button
               key={step.id}
               className={`py-3 px-5 text-sm font-bold ${
-                activeTab === step.id ? "text-blue-200" : "text-neutral-700"
+                activeTab === step.id
+                  ? "text-blue-200"
+                  : isDarkmode
+                  ? "text-neutral-300"
+                  : "text-neutral-700"
               }`}
               onClick={() => setActiveTab(step.id)}
             >

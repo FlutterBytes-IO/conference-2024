@@ -31,9 +31,9 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
     return (
       <nav
         ref={ref}
-        className={`px-5 md:px-10 top-0 bg-opacity-[88%] blur-[4%] ${
-          scrollPosition! > 50 ? "bg-transparent" : "bg-transparent"
-        } py-5 transition-all z-20 duration-500 flex items-center justify-between fixed w-screen ${
+        className={`px-5 md:px-10 top-0 bg-opacity-[10%] backdrop-blur-[10px] ${
+          scrollPosition! > 50 ? "bg-white" : "bg-transparent"
+        } py-5 transition-all z-30 duration-500 flex items-center justify-between fixed w-screen ${
           isDarkmode
             ? "border-[#1167B1] hero-grad-dark"
             : "border-[#D0EFFF] bg-transparent"
@@ -52,28 +52,42 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
         <button className="lg:hidden">
           <HamburgerIcon />
         </button>
-        <div className="hidden z-10 lg:flex items-center gap-x-3 px-3 py-1 rounded-[60px] border border-fbc_blue-100 bg-white bg-opacity-[84%] nav-shadow">
+        <div
+          className={`hidden z-10 lg:flex items-center gap-x-3 px-3 py-1 rounded-[60px] border ${
+            isDarkmode
+              ? "bg-[#1167B1CC] border-blue-300 bg-opacity-100"
+              : "bg-white border-fbc_blue-100 bg-opacity-[84%]"
+          } nav-shadow`}
+        >
           <Link
             href="/volunteer"
-            className="py-1 px-3 rounded-[40px] text-sm text-neutral-500 font-semibold leading-6"
+            className={`${
+              isDarkmode ? "text-neutral-400" : "text-neutral-500"
+            } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6`}
           >
             Apply to volunteer
           </Link>
           <Link
             href="/speakers-application"
-            className="py-1 px-3 rounded-[40px] text-sm text-neutral-500 font-semibold leading-6"
+            className={`${
+              isDarkmode ? "text-neutral-400" : "text-neutral-500"
+            } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6`}
           >
             Apply to speak
           </Link>
           <Link
             href="/sponsorships"
-            className="py-1 px-3 rounded-[40px] text-sm text-neutral-500 font-semibold leading-6"
+            className={`${
+              isDarkmode ? "text-neutral-400" : "text-neutral-500"
+            } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6`}
           >
             Be a sponsor
           </Link>
           <Link
             href="/about"
-            className="py-1 px-3 rounded-[40px] text-sm text-neutral-500 font-semibold leading-6"
+            className={`${
+              isDarkmode ? "text-neutral-400" : "text-neutral-500"
+            } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6`}
           >
             About us
           </Link>

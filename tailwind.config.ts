@@ -42,6 +42,8 @@ const config = {
           "linear-gradient(to right, rgba(0, 194, 103, 0.6) 4%, rgba(255, 255, 255, 0.6) 45%, rgba(0, 194, 103, 0.6) 100%)",
         "blue-grad":
           "linear-gradient(to right, rgba(69, 209, 253, 0.6) 4%, rgba(8, 89, 157, 0.6) 97%)",
+        "hero-grad-dark":
+          "linear-gradient(to right, #021429 4%, #052447 50%, #021429 92%)",
       },
       gridTemplateColumns: {
         agenda: "80px 1fr",
