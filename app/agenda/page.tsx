@@ -10,7 +10,7 @@ export default function AgendaPage() {
     <div
       className={`${
         isDarkmode ? "hero-grad-dark z-20" : ""
-      } max-md:px-5 md:pt-[200px]`}
+      } max-md:px-5 pt-[200px]`}
     >
       <section
         className={`min-h-screen ${

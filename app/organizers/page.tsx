@@ -30,7 +30,7 @@ export default function Organizers() {
     <main
       className={`min-h-screen ${
         isDarkmode ? "hero-grad-dark" : "gradient-no-grid"
-      } md:pt-[200px]`}
+      } pt-[200px]`}
     >
       <div className="relative z-10">
         <h2 className="font-gigaSans flex mx-auto w-fit text-center py-[10px] px-5 border-y-[1.5px] border-fbc_blue-100 text-xl md:text-[32px] font-semibold relative z-10 heading-text">

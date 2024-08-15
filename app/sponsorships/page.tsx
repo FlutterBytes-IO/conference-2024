@@ -14,7 +14,7 @@ export default function Sponsorships() {
     <div
       className={`${
         isDarkmode ? "hero-grad-dark z-20" : ""
-      } max-md:px-5 md:pt-[200px]`}
+      } max-md:px-5 pt-[200px]`}
     >
       <section
         className={`min-h-screen ${
@@ -52,7 +52,7 @@ export default function Sponsorships() {
                 sponsorship packages and opportunities.{" "}
               </p>
             </div>
-            <div className="flex w-full flex-col justify-center items-center sm:flex-row gap-4 mt-10">
+            <div className="flex w-full justify-center items-center flex-row-reverse sm:flex-row gap-4 mt-10">
               <Button
                 variant="contained"
                 otherstyles="text-base font-semibold"
