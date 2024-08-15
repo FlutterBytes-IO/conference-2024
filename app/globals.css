@@ -241,10 +241,10 @@ tbody tr:last-child td {
 
 .text-container {
   background-image: url("/images/flutter-grid.svg");
-  background-color: #ebf8ff;
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
+  position: relative;
 }
 
 .btn-grad:hover {

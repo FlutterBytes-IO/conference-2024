@@ -53,10 +53,10 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
           <HamburgerIcon />
         </button>
         <div
-          className={`hidden z-10 lg:flex items-center gap-x-3 px-3 py-1 rounded-[60px] border ${
+          className={`hidden z-10 lg:flex items-center bg-opacity-[84%] gap-x-3 px-3 py-1 rounded-[60px] border ${
             isDarkmode
-              ? "bg-[#1167B1CC] border-blue-300 bg-opacity-100"
-              : "bg-white border-fbc_blue-100 bg-opacity-[84%]"
+              ? "bg-[#1167B1CC] border-blue-300"
+              : "bg-white border-fbc_blue-100"
           } nav-shadow`}
         >
           <Link

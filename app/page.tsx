@@ -17,9 +17,9 @@ export default function Home() {
   const { isDarkmode } = useContext(DarkmodeContext);
   return (
     <section
-      className={`flex min-h-screen flex-col gradient-no-grid w-full mx-auto p-5 md:p-0`}
+      className={`flex min-h-screen flex-col gradient-no-grid w-full mx-auto`}
     >
-      <div className={`${isDarkmode ? "hero-grad-dark z-20" : ""}`}>
+      <div className={`${isDarkmode ? "hero-grad-dark z-20" : ""} max-md:px-5`}>
         <div
           className={`max-w-[758px] relative mx-auto w-full flex flex-col md:justify-center items-center mt-[140px] md:pb-[200px] max-md:mb-[120px] px-5 z-10 md:min-h-[60vh]`}
         >
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className={`pb-[120px] flex justify-center relative z-10 ${
+        className={`pb-[120px] flex justify-center relative z-10 px-5 ${
           isDarkmode ? "hero-grad-dark" : ""
         }`}
       >
@@ -154,7 +154,7 @@ export default function Home() {
         <Agenda isHomePage={true} />
       </div>
       <div
-        className={`flex flex-col items-center relative z-10 py-[120px] ${
+        className={`flex flex-col items-center max-md:px-5 relative z-10 py-[120px] ${
           isDarkmode ? "hero-grad-dark" : ""
         }`}
       >
@@ -253,7 +253,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className={`flex flex-col items-center relative z-10 pb-[120px] ${
+        className={`flex  max-md:px-5 flex-col items-center relative z-10 pb-[120px] ${
           isDarkmode ? "hero-grad-dark" : ""
         }`}
       >
@@ -449,18 +449,20 @@ export default function Home() {
           isDarkmode ? "hero-grad-dark" : ""
         } gap-y-[52px] flex-col items-center relative z-10 pt-[120px] w-screen -mx-[50vw] right-1/2 left-1/2`}
       >
-        <h3
-          className={`text-center ${
-            isDarkmode ? "text-neutral-400" : "text-neutral-600"
-          } w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold`}
-        >
-          Testimonials and Pictures from Previous Editions of FlutterBytes
-          Conference
-        </h3>
+        <div className="max-md:px-5">
+          <h3
+            className={`text-center ${
+              isDarkmode ? "text-neutral-400" : "text-neutral-600"
+            } w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold`}
+          >
+            Testimonials and Pictures from Previous Editions of FlutterBytes
+            Conference
+          </h3>
+        </div>
         <GallerySection />
       </div>
       <div
-        className={`flex flex-col items-center relative z-10 p-[120px] lg:px-[200px] hero-grad-dark ${
+        className={`flex flex-col items-center relative z-10 px-5 py-[120px] md:px-[120px] lg:px-[200px] hero-grad-dark ${
           isDarkmode ? " hero-grad-dark" : ""
         }`}
       >

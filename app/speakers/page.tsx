@@ -1,10 +1,14 @@
 "use client"; // This is a client component
+import { useEffect, useState } from "react";
+import { useContext } from "react";
+
+import { DarkmodeContext } from "@/context/DarkMode";
 import Lineup from "@/components/Lineup";
 import { currentSpeakers, pastSpeakers } from "@/utils/data";
-import { useEffect, useState } from "react";
 
 export default function Speakers() {
   const [itemsPerRow, setItemsPerRow] = useState(4);
+  const { isDarkmode } = useContext(DarkmodeContext);
 
   useEffect(() => {
     const updateItemsPerRow = () => {
@@ -23,9 +27,13 @@ export default function Speakers() {
   }, []);
 
   return (
-    <main className="min-h-screen gradient-no-grid">
+    <main
+      className={`min-h-screen ${
+        isDarkmode ? "hero-grad-dark" : "gradient-no-grid"
+      } md:pt-[200px]`}
+    >
       <div className="relative z-10">
-        <h1 className="font-gigaSans flex mx-auto w-fit text-center mt-[140px] py-[10px] px-5 border-y-[1.5px] border-[#D0EFFF] md:text-[32px] text-[20px] font-semibold relative z-10 heading-text">
+        <h1 className="font-gigaSans flex mx-auto w-fit text-center py-[10px] px-5 border-y-[1.5px] border-[#D0EFFF] md:text-[32px] text-[20px] font-semibold relative z-10 heading-text">
           Meet the amazing lineup of Speakers
         </h1>
         <div className="max-w-[920px] mx-auto mt-[40px]">

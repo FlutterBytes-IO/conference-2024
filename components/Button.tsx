@@ -1,5 +1,8 @@
+"use client";
 import Link from "next/link";
+import { useContext } from "react";
 
+import { DarkmodeContext } from "@/context/DarkMode";
 import { ButtonProps } from "@/types";
 
 export default function Button({
@@ -15,6 +18,7 @@ export default function Button({
   href,
 }: ButtonProps) {
   const validHref = href || "#";
+  const { isDarkmode } = useContext(DarkmodeContext);
   return (
     <>
       {component === "link" ? (
@@ -40,7 +44,9 @@ export default function Button({
           } w-fit py-2 px-2 md:px-4 flex items-center gap-2 font-medium text-xs md:text-sm btn-grad transition-all duration-500 ${
             variant === "contained"
               ? "bg-blue-200 text-white"
-              : "bg-white border border-blue-200 text-blue-200"
+              : `${
+                  isDarkmode ? "bg-transparent hover:!bg-none" : "bg-white"
+                } border border-blue-200 text-blue-200`
           } ${otherstyles}`}
         >
           {leftIcon && leftIcon} {children} {icon && icon}
