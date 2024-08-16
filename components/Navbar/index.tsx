@@ -14,7 +14,7 @@ import DarkModeIcon, { LightModeIcon } from "../vectors/ModeIcon";
 import HamburgerIcon from "../vectors/HamburgerIcon";
 import CancelIcon from "../vectors/CancelIcon";
 import { NavbarProps } from "@/types";
-import RightArrow, { RightArrow2 } from "../vectors/RightArrow";
+import { RightArrow2 } from "../vectors/RightArrow";
 
 const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
   ({ handleClick }, ref) => {
@@ -65,8 +65,8 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             {showMobileNav ? <CancelIcon /> : <HamburgerIcon />}
           </button>
           <div
-            className={`absolute top-14 left-0 py-3 px-5 md:hidden w-full flex !bg-opacity-100 justify-between ${
-              showMobileNav ? "h-auto" : "h-0 hidden"
+            className={`absolute top-14 left-0 py-3 px-5 md:hidden w-full flex !bg-opacity-100 justify-between transition duration-500 ${
+              showMobileNav ? "translate-x-0" : "-translate-x-full"
             } ${isDarkmode ? "bg-hero-grad-dark" : "bg-neutral-50"}`}
           >
             <div
