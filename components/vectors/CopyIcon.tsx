@@ -11,6 +11,7 @@ export default function CopyIcon() {
         <path
           d="M16 1H2V17H4V3H16V1ZM21 5H6V23H21V5ZM19 21H8V7H19V21Z"
           fill="#2A9DF4"
+          className="group-hover:fill-white transiton duration-500"
         />
       </g>
       <defs>

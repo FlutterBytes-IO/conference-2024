@@ -9,13 +9,13 @@ import { RightArrow2 } from "@/components/vectors/RightArrow";
 export default function About() {
   const { isDarkmode } = useContext(DarkmodeContext);
   return (
-    <div
+    <section
       className={`${
         isDarkmode ? "hero-grad-dark z-20" : ""
-      } max-md:px-5 pt-[200px]`}
+      } max-md:px-5 pt-[170px] md:pt-[200px]`}
     >
-      <section
-        className={`flex flex-col min-h-screen ${
+      <div        
+        className={`flex flex-col ${
           isDarkmode ? "" : "gradient-no-grid"
         } max-w-[920px] mx-auto w-[calc(100%_-_32px)] sm:w-[calc(100%_-_50px)] md:w-[calc(100%_-_64px)]`}
       >
@@ -152,14 +152,14 @@ export default function About() {
               component="link"
               href="/organizers"
               variant="outlined"
-              otherstyles="text-base font-semibold"
+              otherstyles="text-base font-semibold hover:text-[#fff] group"
               icon={<RightArrow2 />}
             >
               See full committee
             </Button>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

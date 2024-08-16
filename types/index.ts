@@ -20,6 +20,8 @@ export interface ButtonProps {
 	children: React.ReactNode;
 	component?: "button" | "link";
 	href?: string;
+	target?: string;
+	rel?: string;
 }
 
 export interface IconContainerProps {

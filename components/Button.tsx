@@ -16,6 +16,8 @@ export default function Button({
   disabled,
   component = "button",
   href,
+  target,
+  rel
 }: ButtonProps) {
   const validHref = href || "#";
   const { isDarkmode } = useContext(DarkmodeContext);
@@ -24,6 +26,8 @@ export default function Button({
       {component === "link" ? (
         <Link
           href={validHref}
+          target={target}
+          rel={rel}
           className={`rounded-[30px] ${
             icon && "!pr-3"
           } w-fit py-2 px-2 md:px-4 flex items-center gap-2 font-medium text-xs md:text-sm btn-grad transition-all duration-500 ${
@@ -45,7 +49,7 @@ export default function Button({
             variant === "contained"
               ? "bg-blue-200 text-white"
               : `${
-                  isDarkmode ? "bg-transparent hover:!bg-none" : "bg-white"
+                  isDarkmode ? "bg-transparent hover:btn-grad" : "bg-white"
                 } border border-blue-200 text-blue-200`
           } ${otherstyles}`}
         >

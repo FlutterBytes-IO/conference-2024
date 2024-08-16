@@ -14,10 +14,10 @@ export default function Sponsorships() {
     <div
       className={`${
         isDarkmode ? "hero-grad-dark z-20" : ""
-      } max-md:px-5 pt-[200px]`}
+      } max-md:px-5 pt-[170px] md:pt-[200px]`}
     >
       <section
-        className={`min-h-screen ${
+        className={`${
           isDarkmode ? "" : "gradient-no-grid"
         } max-w-[922px] mx-auto`}
       >
@@ -52,7 +52,7 @@ export default function Sponsorships() {
                 sponsorship packages and opportunities.{" "}
               </p>
             </div>
-            <div className="flex w-full justify-center items-center flex-row-reverse sm:flex-row gap-4 mt-10">
+            <div className="flex w-full justify-center items-center flex-col sm:flex-row-reverse md:flex-row gap-4 mt-10">
               <Button
                 variant="contained"
                 otherstyles="text-base font-semibold"
@@ -61,8 +61,10 @@ export default function Sponsorships() {
                 Send us a mail
               </Button>
               <Button
+                component="button"
+                onClick={()=>navigator.clipboard}
                 variant="outlined"
-                otherstyles="text-base font-semibold"
+                otherstyles="text-base font-semibold bg-white hover:text-[#fff] group"
                 icon={<CopyIcon />}
               >
                 Copy phone number
