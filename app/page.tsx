@@ -30,20 +30,41 @@ export default function Home() {
             alt="beyond-borders"
             className="object-contain z-10"
           />
-          <Image
-            src="/images/GlobeAnimation.gif"
-            width={140}
-            height={140}
-            alt="beyond-borders"
-            className="object-contain hidden md:block absolute left-[265px] top-[130px]"
-          />
-          <Image
-            src="/images/GlobeAnimationsml.gif"
-            width={80}
-            height={80}
-            alt="beyond-borders"
-            className="object-contain md:hidden absolute top-[60px] max-xs:left-[125px] left-[130px]"
-          />
+
+          {isDarkmode ? (
+            <Image
+              src="/images/LargeDarkGlobe.gif"
+              width={140}
+              height={140}
+              alt="beyond-borders"
+              className="object-contain hidden md:block absolute left-[265px] top-[130px]"
+            />
+          ) : (
+            <Image
+              src="/images/GlobeAnimation.gif"
+              width={140}
+              height={140}
+              alt="beyond-borders"
+              className="object-contain hidden md:block absolute left-[265px] top-[130px]"
+            />
+          )}
+          {isDarkmode ? (
+            <Image
+              src="/images/SmallDarkGlobe.gif"
+              width={80}
+              height={80}
+              alt="beyond-borders"
+              className="object-contain md:hidden absolute top-[60px] max-xs:left-[125px] left-[130px]"
+            />
+          ) : (
+            <Image
+              src="/images/GlobeAnimationsml.gif"
+              width={80}
+              height={80}
+              alt="beyond-borders"
+              className="object-contain md:hidden absolute top-[60px] max-xs:left-[125px] left-[130px]"
+            />
+          )}
           {/* <p className="text-neutral-700 text-center md:text-xl font-medium px-6 pb-3 border-b mb-3 italic">
           The Global Impact of African Flutter Developers/Engineers
         </p> */}
@@ -57,7 +78,7 @@ export default function Home() {
           <Button
             variant="contained"
             icon={<RightArrow2 color="#fff" />}
-            otherstyles="font-semibold text-2xl"
+            otherstyles="font-semibold text-2xl py-4 px-8 max-md:px-4"
           >
             Get Ticket
           </Button>
