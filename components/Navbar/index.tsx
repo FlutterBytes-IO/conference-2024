@@ -49,9 +49,14 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             className="transition-all duration-500 h-6 md:h-auto w-[122.53px] md:w-auto"
           />
         </Link>
-        <button className="lg:hidden">
+        <div className="lg:hidden gap-3 flex">
+        <button onClick={() => setIsDarkmode((prev) => !prev)}>
+            {isDarkmode ? <DarkModeIcon /> : <LightModeIcon />}
+          </button>
+        <button>
           <HamburgerIcon />
         </button>
+        </div>
         <div
           className={`hidden z-10 lg:flex items-center bg-opacity-[84%] gap-x-3 px-3 py-1 rounded-[60px] border ${
             isDarkmode

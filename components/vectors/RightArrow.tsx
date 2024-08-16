@@ -36,6 +36,7 @@ export function RightArrow2({ color }: { color?: string }) {
 				strokeWidth="1.5"
 				strokeLinecap="round"
 				strokeLinejoin="round"
+				className="group-hover:stroke-white transiton duration-500"
 			/>
 		</svg>
 	);

@@ -3,17 +3,20 @@ import Image from "next/image";
 import { useContext } from "react";
 
 import { DarkmodeContext } from "@/context/DarkMode";
+import Link from "next/link";
+import Button from "@/components/Button";
+import { RightArrow2 } from "@/components/vectors/RightArrow";
 
 export default function Speakers() {
   const { isDarkmode } = useContext(DarkmodeContext);
   return (
-    <div
+    <section
       className={`${
         isDarkmode ? "hero-grad-dark z-20" : ""
-      } max-md:px-5 pt-[200px]`}
+      } max-md:px-5 pb-[120px] pt-[170px] md:py-[200px]`}
     >
-      <section
-        className={`min-h-screen ${
+      <div
+        className={`${
           isDarkmode ? "" : "gradient-no-grid"
         } flex flex-col w-[calc(100%_-_32px)] sm:w-[calc(100%_-_50px)] md:w-[calc(100%_-_64px)] mx-auto`}
       >
@@ -24,13 +27,13 @@ export default function Speakers() {
           <div className="w-full sm:w-[45%] flex justify-center items-center">
             <Image
               src={"/images/speaker-hero.png"}
-              width={394}
-              height={300}
+              width={1188}
+              height={906}
               alt="A speaker making presentation"
               className="w-full border border-fbc_blue-100 rounded-lg"
             />
           </div>
-          <div className="flex flex-col pt-11 md:py-7 w-full sm:w-[55%] space-y-10">
+          <div className="flex flex-col pt-11 md:py-7 w-full sm:w-[55%] space-y-6">
             <p
               className={`${
                 isDarkmode ? "text-fbc_blue-100" : "text-blue-500"
@@ -43,29 +46,27 @@ export default function Speakers() {
               collaboration, and growth, fostering a community that drives
               progress and innovation.
             </p>
+            <Button
+              component="link"
+              href="https://sessionize.com/flutterbytes-conference-2024"
+              target="_blank" rel="noopener,noreferrer"
+              variant="contained"
+              otherstyles="text-base font-semibold mx-auto sm:mx-0"
+              icon={<RightArrow2 color="#fff" />}
+            >
+              Apply to speak
+            </Button>
             <p
               className={`${
                 isDarkmode ? "text-white" : "text-[#424E57]"
-              } text-lg font-medium mb-3 md:mb-0`}
+              } text-lg font-medium mb-3 md:mb-0 text-center sm:text-left`}
             >
               Deadline: Monday, July 2nd, 2024
             </p>
           </div>
         </div>
-        {/* <div className="bg-[#EBF8FF] pt-[120px]"> */}
-        <div className="pt-10 md:pt-[120px] pb-[211px]">
-          <div className="flex justify-center rounded-xl border border-blue-200 bg-gray-100 max-w-[920px] mx-auto relative z-10 py-10">
-            <iframe
-              src="https://sessionize.com/flutterbytes-conference-2024/viewform?embedded=true"
-              width="640"
-              height="790"
-              className="w-full flex pr-1"
-            >
-              Loading…
-            </iframe>
-          </div>
-        </div>
-      </section>
-    </div>
+        
+      </div>
+    </section>
   );
 }
