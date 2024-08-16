@@ -4,6 +4,7 @@
 import { useContext, forwardRef, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { DarkmodeContext } from "@/context/DarkMode";
 
 import Button from "../Button";
@@ -11,13 +12,16 @@ import NavLogoDark from "@/public/images/NavLogoDark.svg";
 import NavLogoLight from "@/public/images/NavLogoLight.svg";
 import DarkModeIcon, { LightModeIcon } from "../vectors/ModeIcon";
 import HamburgerIcon from "../vectors/HamburgerIcon";
+import CancelIcon from "../vectors/CancelIcon";
 import { NavbarProps } from "@/types";
+import RightArrow, { RightArrow2 } from "../vectors/RightArrow";
 
 const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
   ({ handleClick }, ref) => {
     const { isDarkmode, setIsDarkmode } = useContext(DarkmodeContext);
     const [scrollPosition, setScrollPosition] = useState<number | null>(null);
-
+    const [showMobileNav, setShowMobileNav] = useState(false);
+    const pathname = usePathname();
     const updateScrollPosition = () => {
       setScrollPosition(window.scrollY);
     };
@@ -27,6 +31,10 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
 
       return () => window.removeEventListener("scroll", updateScrollPosition);
     }, []);
+
+    useEffect(() => {
+      setShowMobileNav(false);
+    }, [pathname]);
 
     return (
       <nav
@@ -50,12 +58,66 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
           />
         </Link>
         <div className="lg:hidden gap-3 flex">
-        <button onClick={() => setIsDarkmode((prev) => !prev)}>
+          <button onClick={() => setIsDarkmode((prev) => !prev)}>
             {isDarkmode ? <DarkModeIcon /> : <LightModeIcon />}
           </button>
-        <button>
-          <HamburgerIcon />
-        </button>
+          <button onClick={() => setShowMobileNav((prev) => !prev)}>
+            {showMobileNav ? <CancelIcon /> : <HamburgerIcon />}
+          </button>
+          <div
+            className={`absolute top-14 left-0 py-3 px-5 md:hidden w-full flex !bg-opacity-100 justify-between ${
+              showMobileNav ? "h-auto" : "h-0 hidden"
+            } ${isDarkmode ? "bg-hero-grad-dark" : "bg-neutral-50"}`}
+          >
+            <div
+              className={`flex flex-col gap-y-[9px] py-2 pl-3 border-l ${
+                isDarkmode ? "border-blue-200" : "border-neutral-400"
+              }`}
+            >
+              <Link
+                href="/volunteer"
+                className={`flex items-center py-1.5 px-1 w-[150px] justify-between text-[11px] font-semibold ${
+                  isDarkmode ? "text-blue-300" : "text-neutral-500"
+                }`}
+              >
+                Apply to volunteer
+                <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
+              </Link>
+              <Link
+                href="/speakers-application"
+                className={`flex items-center py-1.5 px-1 w-[150px] justify-between text-[11px] font-semibold ${
+                  isDarkmode ? "text-blue-300" : "text-neutral-500"
+                }`}
+              >
+                Apply to speak
+                <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
+              </Link>
+            </div>
+            <div
+              className={`flex flex-col gap-y-[9px] py-2 pl-3 border-l ${
+                isDarkmode ? "border-blue-200" : "border-neutral-400"
+              }`}
+            >
+              <Link
+                href="/about"
+                className={`flex items-center py-1.5 px-1 w-[150px] justify-between text-[11px] font-semibold ${
+                  isDarkmode ? "text-blue-300" : "text-neutral-500"
+                }`}
+              >
+                About us
+                <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
+              </Link>
+              <Link
+                href="/sponsorships"
+                className={`flex items-center py-1.5 px-1 w-[150px] justify-between text-[11px] font-semibold ${
+                  isDarkmode ? "text-blue-300" : "text-neutral-500"
+                }`}
+              >
+                Be a sponsor
+                <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
+              </Link>
+            </div>
+          </div>
         </div>
         <div
           className={`hidden z-10 lg:flex items-center bg-opacity-[84%] gap-x-3 px-3 py-1 rounded-[60px] border ${
