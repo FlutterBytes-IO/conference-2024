@@ -63,6 +63,7 @@ export default function Home() {
               height={80}
               alt="beyond-borders"
               className="object-contain md:hidden absolute top-[60px] max-xs:left-[125px] left-[130px]"
+              unoptimized
             />
           )}
           {/* <p className="text-neutral-700 text-center md:text-xl font-medium px-6 pb-3 border-b mb-3 italic">
