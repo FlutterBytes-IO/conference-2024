@@ -19,7 +19,10 @@ const config = {
     },
     extend: {
       screens: {
-        xs: "413px",
+        x0: "361px",
+        x1: "390px",
+        xs: "412px",
+        x2: "430px",
       },
       keyframes: {
         "accordion-down": {

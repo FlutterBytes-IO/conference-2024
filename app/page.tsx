@@ -54,7 +54,7 @@ export default function Home() {
               width={80}
               height={80}
               alt="beyond-borders"
-              className="object-contain md:hidden absolute top-[60px] max-xs:left-[125px] left-[130px]"
+              className="object-contain md:hidden absolute top-[60px] max-x0:top-[50px] max-x0:left-[110px] max-x0:w-16 max-x0-h-16 x1:left-[115px] xs:left-[125px] x2:left-[132.5px]"
             />
           ) : (
             <Image
