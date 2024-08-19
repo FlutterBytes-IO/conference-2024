@@ -231,6 +231,20 @@ tbody tr:last-child td {
   -webkit-text-fill-color: transparent;
 }
 
+.heading-text-dark {
+  background: linear-gradient(
+    95deg,
+    #98cfff 6.27%,
+    #8ac7fa 29.61%,
+    #6fc0fd 42.57%,
+    #44a9fc 69.86%,
+    #33a1ff 92.36%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .inner-shadow {
   box-shadow: inset 0 7px 24px 0 #1891f357;
 }

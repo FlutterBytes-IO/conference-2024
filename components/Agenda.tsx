@@ -39,7 +39,11 @@ export const Agenda = ({ isHomePage }: { isHomePage?: boolean }) => {
 
   return (
     <>
-      <h2 className="font-gigaSans flex mx-auto w-fit text-center py-[10px] px-5 border-y-[1.5px] border-fbc_blue-100 text-xl md:text-[32px] font-semibold relative z-10 heading-text">
+      <h2
+        className={`font-gigaSans flex mx-auto w-fit text-center py-[10px] px-5 border-y-[1.5px] border-fbc_blue-100 text-xl md:text-[32px] font-semibold relative z-10 ${
+          isDarkmode ? "heading-text-dark" : "heading-text"
+        }`}
+      >
         Agenda for FlutterBytes Conference 2024
       </h2>
       <div className="flex flex-col gap-y-10 mt-[52px]">
