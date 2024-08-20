@@ -12,6 +12,7 @@ import TicketIcon from "@/components/vectors/TicketIcon";
 import BeyondTheBorders from "@/components/vectors/BeyondTheBorders";
 import { Agenda } from "../components/Agenda";
 import { DarkmodeContext } from "@/context/DarkMode";
+import { currentSpeakers } from "@/utils/data";
 
 export default function Home() {
   const { isDarkmode } = useContext(DarkmodeContext);
@@ -54,7 +55,7 @@ export default function Home() {
               width={80}
               height={80}
               alt="beyond-borders"
-              className="object-contain md:hidden absolute top-[60px] max-x0:top-[50px] max-x0:left-[110px] max-x0:w-16 max-x0-h-16 x1:left-[115px] xs:left-[125px] x2:left-[132.5px]"
+              className="object-contain md:hidden absolute x3:top-20 x0:top-[60px] max-x0:top-[50px] max-x0:left-[110px] max-x0:w-16 max-x0-h-16 x1:left-[115px] xs:left-[125px] x2:left-[132.5px] x3:left-[155.5px]"
             />
           ) : (
             <Image
@@ -62,7 +63,7 @@ export default function Home() {
               width={80}
               height={80}
               alt="beyond-borders"
-              className="object-contain md:hidden absolute top-[60px] max-xs:left-[125px] left-[130px]"
+              className="object-contain md:hidden absolute x3:top-20 x0:top-[60px] max-x0:top-[50px] max-x0:left-[110px] max-x0:w-16 max-x0-h-16 x1:left-[115px] xs:left-[125px] x2:left-[132.5px] x3:left-[155.5px]"
               unoptimized
             />
           )}
@@ -79,7 +80,7 @@ export default function Home() {
           <Button
             variant="contained"
             icon={<RightArrow2 color="#fff" />}
-            otherstyles="font-semibold text-2xl py-4 px-8 max-md:px-4"
+            otherstyles="font-semibold text-2xl !rounded-[40px] !py-4 !px-8 !text-base !md:text-2xl !font-semibold"
           >
             Get Ticket
           </Button>
@@ -134,11 +135,9 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col text-center place-content-center">
                   <p className="font-semibold text-[2rem] leading-[38px] text-gradient">
-                    09
+                    02
                   </p>
-                  <p className="text-neutral-500 font-medium text-base">
-                    Gifts
-                  </p>
+                  <p className="text-neutral-500 font-medium text-base">Days</p>
                 </div>
               </div>
             </div>
@@ -183,75 +182,27 @@ export default function Home() {
         <h3 className="text-center mb-[52px] heading-text w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[2rem] leading-[38px] font-semibold">
           Meet the amazing lineup of Speakers
         </h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
-          <div className="flex flex-col items-center">
-            <StyledImageContainer />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Rebecca Omolabake
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Senior Flutter Developer, EdenLife
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledImageContainer />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Rebecca Omolabake
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Senior Flutter Developer, EdenLife
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledImageContainer />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Rebecca Omolabake
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Senior Flutter Developer, EdenLife
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledImageContainer />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Rebecca Omolabake
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Senior Flutter Developer, EdenLife
-            </p>
-          </div>
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10"> */}
+        <div className="flex justify-center mb-10">
+          {currentSpeakers?.map((speaker) => (
+            <div key={speaker.name} className="flex flex-col items-center">
+              <StyledImageContainer src={speaker?.image} />
+              <p
+                className={`mt-3 mb-1 font-semibold ${
+                  isDarkmode ? "text-neutral-300" : "text-neutral-700"
+                }`}
+              >
+                {speaker?.name}
+              </p>
+              <p
+                className={`text-sm ${
+                  isDarkmode ? "text-neutral-300" : "text-neutral-700"
+                } text-center`}
+              >
+                {speaker?.role}
+              </p>
+            </div>
+          ))}
         </div>
         <div className="self-center flex items-center gap-x-10">
           <Button
@@ -286,8 +237,9 @@ export default function Home() {
         >
           FlutterBytes Conference 2024 is being sponsored by:
         </h3>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-5 md:gap-10 mb-12">
-          <div className="flex flex-col items-center">
+        {/* <div className="grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-5 md:gap-10 mb-12"> */}
+        <div className="flex justify-center mb-12">
+          {/* <div className="flex flex-col items-center">
             <StyledLogoContainer
               src="/images/Google.png"
               otherstyles="!w-[150px] !h-[180px] p-2.5"
@@ -308,8 +260,8 @@ export default function Home() {
             >
               Platinum Sponsor
             </p>
-          </div>
-          <div className="flex flex-col items-center">
+          </div> */}
+          {/* <div className="flex flex-col items-center">
             <StyledLogoContainer
               src="/images/Eden-life.png"
               otherstyles="!w-[150px] !h-[180px] p-2.5"
@@ -330,7 +282,7 @@ export default function Home() {
             >
               Platinum Sponsor
             </p>
-          </div>
+          </div> */}
           <div className="flex flex-col items-center">
             <StyledLogoContainer
               src="/images/Flutter.png"
@@ -343,7 +295,7 @@ export default function Home() {
                 isDarkmode ? "text-neutral-300" : "text-neutral-700"
               }`}
             >
-              Google
+              Flutter
             </p>
             <p
               className={`text-sm ${
@@ -353,7 +305,7 @@ export default function Home() {
               Platinum Sponsor
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          {/* <div className="flex flex-col items-center">
             <StyledLogoContainer
               src="/images/Google.png"
               otherstyles="!w-[150px] !h-[180px] p-2.5"
@@ -374,8 +326,8 @@ export default function Home() {
             >
               Platinum Sponsor
             </p>
-          </div>
-          <div className="flex flex-col items-center col-span-2 md:col-span-1">
+          </div> */}
+          {/* <div className="flex flex-col items-center col-span-2 md:col-span-1">
             <StyledLogoContainer
               src="/images/Google.png"
               otherstyles="!w-[150px] !h-[180px] p-2.5"
@@ -396,9 +348,9 @@ export default function Home() {
             >
               Platinum Sponsor
             </p>
-          </div>
+          </div> */}
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-7 gap-y-10 gap-x-4 md:gap-10 place-content-center mb-12">
+        {/* <div className="grid grid-cols-3 md:grid-cols-7 gap-y-10 gap-x-4 md:gap-10 place-content-center mb-12">
           <div className="flex flex-col items-center">
             <StyledLogoContainer
               src="/images/Flutter.png"
@@ -454,7 +406,7 @@ export default function Home() {
               bgStyles="bg-multicolor-grad"
             />
           </div>
-        </div>
+        </div> */}
         <div className="flex justify-center">
           <Button
             component="link"

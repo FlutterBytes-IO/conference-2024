@@ -93,7 +93,7 @@ body {
   }
 }
 
-.background-styles {
+/* .background-styles {
   position: relative;
   border-radius: 250px;
   background: linear-gradient(
@@ -111,7 +111,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 8px;
-}
+} */
 
 .main-container {
   background: url("/images/flutter-grid.svg");
