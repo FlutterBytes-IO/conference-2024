@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import { DarkmodeContext } from "@/context/DarkMode";
 import Button from "@/components/Button";
@@ -10,6 +10,8 @@ import CopyIcon from "@/components/vectors/CopyIcon";
 
 export default function Sponsorships() {
   const { isDarkmode } = useContext(DarkmodeContext);
+  const [copied, setCopied] = useState(false);
+
   return (
     <div
       className={`${
@@ -37,8 +39,8 @@ export default function Sponsorships() {
                   isDarkmode ? "text-fbc_blue-100" : "text-blue-500"
                 }`}
               >
-                Join us as a sponsor at Conference Name and connect with a
-                targeted audience of number professionals, thought leaders, and
+                Join us as a sponsor at FlutterBytes Conference and connect with a
+                targeted audience of 700+ professionals, thought leaders, and
                 innovators.
               </p>
               <br />
@@ -55,6 +57,8 @@ export default function Sponsorships() {
             <div className="flex w-full justify-center items-center flex-col sm:flex-row-reverse md:flex-row gap-4 mt-10">
               <Button
                 variant="contained"
+                component="link"
+                href="mailto:contact.flutterbytes@gmail.com"
                 otherstyles="text-base font-semibold"
                 icon={<RightArrow2 color="#fff" />}
               >
@@ -62,7 +66,7 @@ export default function Sponsorships() {
               </Button>
               <Button
                 component="button"
-                onClick={()=>navigator.clipboard}
+                onClick={()=>navigator.clipboard.writeText('+23490000000')}
                 variant="outlined"
                 otherstyles="text-base font-semibold bg-white hover:text-[#fff] group"
                 icon={<CopyIcon />}

@@ -61,11 +61,10 @@ export default function Speakers() {
                 isDarkmode ? "text-white" : "text-[#424E57]"
               } text-lg font-medium mb-3 md:mb-0 text-center sm:text-left`}
             >
-              Deadline: Monday, July 2nd, 2024
+              Deadline: Sunday, September 1st, 2024
             </p>
           </div>
         </div>
-        
       </div>
     </section>
   );
