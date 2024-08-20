@@ -23,6 +23,8 @@ const config = {
         x1: "390px",
         xs: "412px",
         x2: "430px",
+        x3: "480px",
+        x4: "482px",
       },
       keyframes: {
         "accordion-down": {

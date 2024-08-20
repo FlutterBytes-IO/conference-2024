@@ -38,9 +38,10 @@ export default function Speakers() {
         </h1>
         <div className="max-w-[920px] mx-auto mt-[40px]">
           {currentSpeakers.length <= 4 ? (
-            <div
-              className={`grid gap-x-8 pb-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2`}
-            >
+            // <div
+            //   className={`grid gap-x-8 pb-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2`}
+            // >
+            <div className="flex justify-center">
               {currentSpeakers.map((item, index) => (
                 <Lineup
                   key={index}
