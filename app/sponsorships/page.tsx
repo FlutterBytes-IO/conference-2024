@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import { DarkmodeContext } from "@/context/DarkMode";
 import Button from "@/components/Button";
@@ -10,6 +10,8 @@ import CopyIcon from "@/components/vectors/CopyIcon";
 
 export default function Sponsorships() {
   const { isDarkmode } = useContext(DarkmodeContext);
+  const [copied, setCopied] = useState(false);
+
   return (
     <div
       className={`${
