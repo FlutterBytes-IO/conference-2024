@@ -40,7 +40,7 @@ export const links2 = [
 export const saturdayAgenda = Array(1)
   .fill("")
   .map((_, i) => ({
-    timeline: "8:00am 5:00pm",
+    timeline: "8:00am - 5:00pm",
     session: "Coming Soon",
     anchor: "Coming Soon",
     day: "Friday",
@@ -50,7 +50,7 @@ export const saturdayAgenda = Array(1)
 export const fridayAgenda = Array(1)
   .fill("")
   .map((_, i) => ({
-    timeline: "8:00am 5:00pm",
+    timeline: "8:00am - 5:00pm",
     session: "Coming Soon",
     anchor: "Coming Soon",
     day: "Friday",
@@ -69,17 +69,17 @@ export const currentSpeakers = Array(1)
 export const pastSpeakers = Array(8)
   .fill("")
   .map((_, i) => ({
-    name: "Rebecca Omolabake",
-    role: "Senior Flutter Developer, EdenLife",
-    image: "/images/Avatar.png",
+    name: "Data Unsent",
+    role: "Flutter Developer, FBC",
+    image: "https://robohash.org/flutterbyte.png",
     key: `key-${i + 1}`,
   }));
 
 export const committee = Array(8)
   .fill("")
   .map((_, i) => ({
-    name: "Rebecca Omolabake",
-    role: "Senior Flutter Developer, EdenLife",
-    image: "/images/Avatar.png",
+    name: "Data Unsent",
+    role: "Flutter Developer, FBC",
+    image: "https://robohash.org/flutterbyte.png",
     key: `key-${i + 1}`,
   }));
