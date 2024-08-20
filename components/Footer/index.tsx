@@ -44,7 +44,7 @@ export default function Footer() {
             />
           </div>
           <p className="text-xs text-neutral-500">
-            ©{new Date().getFullYear()} Copyrights FlutterBytes
+            &copy;{new Date().getFullYear()} Copyrights FlutterBytes
           </p>
         </div>
         <div className="flex gap-10 max-md:mt-10">

@@ -39,7 +39,7 @@ export default function Sponsorships() {
                   isDarkmode ? "text-fbc_blue-100" : "text-blue-500"
                 }`}
               >
-                Join us as a sponsor at Conference Name and connect with a
+                Join us as a sponsor at FlutterBytes Conference and connect with a
                 targeted audience of 700+ professionals, thought leaders, and
                 innovators.
               </p>
