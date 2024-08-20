@@ -53,6 +53,7 @@ export default function Footer() {
               <Link
                 key={item.link}
                 href={item.link}
+                target={item.target && item.target}
                 className="py-1 px-3 text-xs text-neutral-500 font-semibold"
               >
                 {item.value}

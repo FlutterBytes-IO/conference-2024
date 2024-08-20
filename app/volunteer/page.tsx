@@ -37,7 +37,7 @@ export default function Volunteer() {
                 isDarkmode ? "text-white" : "text-[#424E57]"
               } text-lg font-medium`}
             >
-              Deadline: Monday, July 2nd, 2024
+              Deadline: Wednesday, October 30th, 2024
             </p>
           </div>
           <Image

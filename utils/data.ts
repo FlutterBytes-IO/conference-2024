@@ -8,8 +8,9 @@ export const links1 = [
 		link: "/volunteer",
 	},
 	{
-		value: "About us",
-		link: "/about",
+		value: "FlutterBytes Hackathon",
+		link: "https://drive.google.com/file/d/1fy53GKvSgOuhk6ZqjcWthuhFCHVomHve/view?usp=sharing",
+		target: "_blank"
 	},
 	{
 		value: "Be a sponsor",

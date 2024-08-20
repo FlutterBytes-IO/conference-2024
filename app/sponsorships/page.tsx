@@ -38,7 +38,7 @@ export default function Sponsorships() {
                 }`}
               >
                 Join us as a sponsor at Conference Name and connect with a
-                targeted audience of number professionals, thought leaders, and
+                targeted audience of 700+ professionals, thought leaders, and
                 innovators.
               </p>
               <br />
@@ -55,6 +55,8 @@ export default function Sponsorships() {
             <div className="flex w-full justify-center items-center flex-col sm:flex-row-reverse md:flex-row gap-4 mt-10">
               <Button
                 variant="contained"
+                component="link"
+                href="mailto:contact.flutterbytes@gmail.com"
                 otherstyles="text-base font-semibold"
                 icon={<RightArrow2 color="#fff" />}
               >
@@ -62,7 +64,7 @@ export default function Sponsorships() {
               </Button>
               <Button
                 component="button"
-                onClick={()=>navigator.clipboard}
+                onClick={()=>navigator.clipboard.writeText('+23490000000')}
                 variant="outlined"
                 otherstyles="text-base font-semibold bg-white hover:text-[#fff] group"
                 icon={<CopyIcon />}
