@@ -44,7 +44,7 @@ export default function Footer() {
             />
           </div>
           <p className="text-xs text-neutral-500">
-            ©{new Date().getFullYear()} Copyrights FlutterBytes
+            &copy;{new Date().getFullYear()} Copyrights FlutterBytes
           </p>
         </div>
         <div className="flex gap-10 max-md:mt-10">
@@ -53,6 +53,7 @@ export default function Footer() {
               <Link
                 key={item.link}
                 href={item.link}
+                target={item.target && item.target}
                 className="py-1 px-3 text-xs text-neutral-500 font-semibold"
               >
                 {item.value}
