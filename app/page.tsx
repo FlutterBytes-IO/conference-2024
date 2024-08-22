@@ -79,6 +79,9 @@ export default function Home() {
           </p>
           <Button
             variant="contained"
+            component="link"
+            href="https://eventprime.co/e/flutter-bytes-conference-2024"
+            target="_blank"
             icon={<RightArrow2 color="#fff" />}
             otherstyles="font-semibold text-2xl !rounded-[40px] !py-4 !px-8 !text-base !md:text-2xl !font-semibold"
           >
