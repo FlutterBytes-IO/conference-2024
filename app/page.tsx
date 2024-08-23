@@ -161,6 +161,9 @@ export default function Home() {
               Don’t miss out on all the fun!
             </p>
             <Button
+              component="link"
+              href="https://eventprime.co/e/flutter-bytes-conference-2024"
+              target="_blank"
               leftIcon={<TicketIcon />}
               icon={<RightArrow2 color="#fff" />}
               otherstyles="gap-x-3"
