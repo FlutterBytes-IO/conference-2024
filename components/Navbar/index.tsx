@@ -65,18 +65,18 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             {showMobileNav ? <CancelIcon /> : <HamburgerIcon />}
           </button>
           <div
-            className={`absolute top-14 left-0 py-3 px-5 md:hidden w-full flex !bg-opacity-100 justify-between transition duration-500 ${
+            className={`absolute top-14 -left-3 xs:left-0 py-3 px-5 md:hidden w-full flex !bg-opacity-100 justify-between transition duration-500 ${
               showMobileNav ? "translate-x-0" : "-translate-x-full"
             } ${isDarkmode ? "bg-hero-grad-dark" : "bg-neutral-50"}`}
           >
             <div
-              className={`flex flex-col gap-y-[9px] py-2 pl-3 border-l ${
+              className={`flex flex-col gap-y-[9px] py-2  ml-1 xs:ml-0 pl-2 xs:pl-3 border-l ${
                 isDarkmode ? "border-blue-200" : "border-neutral-400"
               }`}
             >
               <Link
                 href="/volunteer"
-                className={`flex items-center py-1.5 px-1 w-[150px] justify-between text-[11px] font-semibold ${
+                className={`flex items-center py-1.5 px-1 w-[140px] justify-between text-[11px] font-semibold ${
                   isDarkmode ? "text-blue-300" : "text-neutral-500"
                 }`}
               >
@@ -85,7 +85,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
               </Link>
               <Link
                 href="/speakers-application"
-                className={`flex items-center py-1.5 px-1 w-[150px] justify-between text-[11px] font-semibold ${
+                className={`flex items-center py-1.5 px-1 w-[140px] justify-between text-[11px] font-semibold ${
                   isDarkmode ? "text-blue-300" : "text-neutral-500"
                 }`}
               >
@@ -94,13 +94,13 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
               </Link>
             </div>
             <div
-              className={`flex flex-col gap-y-[9px] py-2 pl-3 border-l ${
+              className={`flex flex-col gap-y-[9px] py-2 ml-1 xs:ml-0 pl-2 xs:pl-3 border-l ${
                 isDarkmode ? "border-blue-200" : "border-neutral-400"
               }`}
             >
               <Link
                 href="/about"
-                className={`flex items-center py-1.5 px-1 w-[150px] justify-between text-[11px] font-semibold ${
+                className={`flex items-center py-1.5 px-1 w-[130px] justify-between text-[11px] font-semibold ${
                   isDarkmode ? "text-blue-300" : "text-neutral-500"
                 }`}
               >
@@ -109,7 +109,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
               </Link>
               <Link
                 href="/sponsorships"
-                className={`flex items-center py-1.5 px-1 w-[150px] justify-between text-[11px] font-semibold ${
+                className={`flex items-center py-1.5 px-1 w-[130px] justify-between text-[11px] font-semibold ${
                   isDarkmode ? "text-blue-300" : "text-neutral-500"
                 }`}
               >

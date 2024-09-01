@@ -83,6 +83,12 @@ export const pastSpeakers = [
     key: `key-1`,
   },
   {
+    name: "Nikki Eke",
+    role: "Flutter Developer",
+    image: "https://i.ibb.co/VVgR67S/nikki.jpg",
+    key: `key-6`,
+  },
+  {
     name: "Nelson Eze",
     role: "Co-Founder/Tech Lead, Nestuge",
     image: "https://i.ibb.co/vZ06JtY/IMG-6608.jpg",
@@ -111,12 +117,6 @@ export const pastSpeakers = [
     role: "Software Engineer",
     image: "https://i.ibb.co/CWGH3cR/speaker-1.png",
     key: `key-3`,
-  },
-  {
-    name: "Nikki Eke",
-    role: "Flutter Developer",
-    image: "https://i.ibb.co/VVgR67S/nikki.jpg",
-    key: `key-6`,
   },
   {
     name: "Ogbonna Emmanuella Ijeoma",

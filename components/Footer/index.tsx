@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <div className={`${isDarkmode ? "hero-grad-dark" : ""}`}>
       <footer
-        className={`flex pt-7 pb-5 flex-col md:flex-row justify-between mx-10 md:mx-[100px] md:px-[110px] md:pb-10 border-t border-blue-200`}
+        className={`flex pt-7 pb-5 gap-10 flex-col md:flex-row justify-between mx-10 md:mx-[100px] md:px-[80px] lg:px-[110px] md:pb-10 border-t border-blue-200`}
       >
         <div className="flex flex-col gap-y-[27.5px] max-md:self-center max-md:text-center">
           <Image
@@ -47,25 +47,25 @@ export default function Footer() {
             &copy;{new Date().getFullYear()} Copyrights FlutterBytes
           </p>
         </div>
-        <div className="flex gap-10 max-md:mt-10">
-          <div className="py-3 px-2 flex flex-col justify-between md:border-l md:border-l-blue-300 border-neutral-300 max-md:border-t-[0.5px]">
+        <div className="flex justify-center gap-10 max-md:mt-10">
+          <div className="py-3 xs:px-2 flex flex-col justify-between md:border-l md:border-l-blue-300 border-neutral-300 max-md:border-t-[0.5px]">
             {links1.map((item) => (
               <Link
                 key={item.link}
                 href={item.link}
                 target={item.target && item.target}
-                className="py-1 px-3 text-xs text-neutral-500 font-semibold"
+                className="py-1 xs:px-3 text-xs text-neutral-500 font-semibold"
               >
                 {item.value}
               </Link>
             ))}
           </div>
-          <div className="py-3 px-2 flex flex-col justify-between md:border-l md:border-l-blue-300 border-neutral-300 max-md:border-t-[0.5px]">
+          <div className="py-3 xs:px-2 flex flex-col justify-between md:border-l md:border-l-blue-300 border-neutral-300 max-md:border-t-[0.5px]">
             {links2.map((item) => (
               <Link
                 key={item.link}
                 href={item.link}
-                className="py-1 px-3 text-xs text-neutral-500 font-semibold"
+                className="py-1 xs:px-3 text-xs text-neutral-500 font-semibold"
               >
                 {item.value}
               </Link>
