@@ -25,7 +25,7 @@ export const links2 = [
   },
   {
     value: "Gallery & Testimonials",
-    link: "#gallery",
+    link: "/#gallery",
   },
   {
     value: "Speakers",
