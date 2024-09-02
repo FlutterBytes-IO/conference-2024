@@ -451,7 +451,41 @@ export default function Home() {
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
           <div className="flex flex-col items-center">
-            <StyledImageContainer />
+            <StyledImageContainer src="https://i.ibb.co/vZ557kN/7-Bamigboye-Ti-Oluwani.jpg" />
+            <p
+              className={`mt-3 mb-1 font-semibold ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              }`}
+            >
+              Bamigboye TiOluwani
+            </p>
+            <p
+              className={`text-sm ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              } text-center`}
+            >
+              Host
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <StyledImageContainer src="https://i.ibb.co/dtPX4by/image00007-1-copy-Shalom-Adebola.jpg" />
+            <p
+              className={`mt-3 mb-1 font-semibold ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              }`}
+            >
+              Shalom Adebola
+            </p>
+            <p
+              className={`text-sm ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              } text-center`}
+            >
+              Host
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <StyledImageContainer src="https://i.ibb.co/Wk71k9H/IMG-7013-Flutter-Bytes.jpg" />
             <p
               className={`mt-3 mb-1 font-semibold ${
                 isDarkmode ? "text-neutral-300" : "text-neutral-700"
@@ -464,45 +498,11 @@ export default function Home() {
                 isDarkmode ? "text-neutral-300" : "text-neutral-700"
               } text-center`}
             >
-              Senior Flutter Developer, EdenLife
+              Convener
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <StyledImageContainer />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              David Adegoke
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Engineering Manager, Raptures Entertainment
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledImageContainer />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Mariam Hamzat
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Rich woman with multiple roles
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledImageContainer />
+            <StyledImageContainer src="https://robohash.org/flutterbyte.png" />
             <p
               className={`mt-3 mb-1 font-semibold ${
                 isDarkmode ? "text-neutral-300" : "text-neutral-700"
@@ -533,7 +533,7 @@ export default function Home() {
             component="link"
             href="/organizers"
             variant="outlined"
-            otherstyles="text-base font-semibold py-3 px-5"
+            otherstyles="text-base font-semibold hover:text-[#fff] group py-3 px-5"
             icon={<RightArrow2 />}
           >
             See full committee

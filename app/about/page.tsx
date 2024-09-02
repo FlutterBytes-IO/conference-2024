@@ -14,7 +14,7 @@ export default function About() {
         isDarkmode ? "hero-grad-dark z-20" : ""
       } max-md:px-5 pt-[170px] md:pt-[200px]`}
     >
-      <div        
+      <div
         className={`flex flex-col ${
           isDarkmode ? "" : "gradient-no-grid"
         } max-w-[920px] mx-auto w-[calc(100%_-_32px)] sm:w-[calc(100%_-_50px)] md:w-[calc(100%_-_64px)]`}
@@ -64,64 +64,64 @@ export default function About() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col gap-y-10 mb-[100px] ">
+        <div className="flex flex-col gap-y-10 mb-[100px]">
           <h3 className="border-y-[1.5px] w-fit self-center border-fbc_blue-100 text-[28px] leading-[42px] text-center py-2.5 px-5 text-gradient font-semibold">
             Meet the Organizing Committee
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
             <div className="flex flex-col items-center">
-              <StyledImageContainer />
+              <StyledImageContainer src="https://i.ibb.co/vZ557kN/7-Bamigboye-Ti-Oluwani.jpg" />
               <p
                 className={`mt-3 mb-1 font-semibold ${
                   isDarkmode ? "text-neutral-300" : "text-neutral-700"
                 }`}
               >
-                Rebecca Omolabake
+                Bamigboye TiOluwani
               </p>
               <p
                 className={`text-sm ${
                   isDarkmode ? "text-neutral-300" : "text-neutral-700"
                 } text-center`}
               >
-                Senior Flutter Developer, EdenLife
+                Host
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <StyledImageContainer />
+              <StyledImageContainer src="https://i.ibb.co/dtPX4by/image00007-1-copy-Shalom-Adebola.jpg" />
               <p
                 className={`mt-3 mb-1 font-semibold ${
                   isDarkmode ? "text-neutral-300" : "text-neutral-700"
                 }`}
               >
-                Rebecca Omolabake
+                Shalom Adebola
               </p>
               <p
                 className={`text-sm ${
                   isDarkmode ? "text-neutral-300" : "text-neutral-700"
                 } text-center`}
               >
-                Senior Flutter Developer, EdenLife
+                Host
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <StyledImageContainer />
+              <StyledImageContainer src="https://i.ibb.co/Wk71k9H/IMG-7013-Flutter-Bytes.jpg" />
               <p
                 className={`mt-3 mb-1 font-semibold ${
                   isDarkmode ? "text-neutral-300" : "text-neutral-700"
                 }`}
               >
-                Rebecca Omolabake
+                Jamiu Okanlawon
               </p>
               <p
                 className={`text-sm ${
                   isDarkmode ? "text-neutral-300" : "text-neutral-700"
                 } text-center`}
               >
-                Senior Flutter Developer, EdenLife
+                Convener
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <StyledImageContainer />
+              <StyledImageContainer src="https://robohash.org/flutterbyte.png" />
               <p
                 className={`mt-3 mb-1 font-semibold ${
                   isDarkmode ? "text-neutral-300" : "text-neutral-700"
