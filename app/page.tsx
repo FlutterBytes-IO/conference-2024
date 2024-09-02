@@ -188,7 +188,6 @@ export default function Home() {
         <h3 className="text-center mb-[52px] heading-text w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[2rem] leading-[38px] font-semibold">
           Meet the amazing lineup of Speakers
         </h3>
-        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10"> */}
         <div className="flex justify-center mb-10">
           {currentSpeakers?.map((speaker) => (
             <div key={speaker.name} className="flex flex-col items-center">
@@ -425,6 +424,7 @@ export default function Home() {
         </div>
       </div>
       <div
+        id="gallery"
         className={`flex ${
           isDarkmode ? "hero-grad-dark" : ""
         } gap-y-[52px] flex-col items-center relative z-10 pt-[120px] w-screen -mx-[50vw] right-1/2 left-1/2`}
