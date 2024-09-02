@@ -16,7 +16,7 @@ export default function Lineup({ image, name, role }: Details) {
     <div className="flex flex-col items-center">
       <StyledImageContainer src={image} />
       <p
-        className={`mt-3 mb-1 font-semibold ${
+        className={`mt-3 mb-1 text-center font-semibold ${
           isDarkmode ? "text-neutral-300" : "text-neutral-700"
         }`}
       >

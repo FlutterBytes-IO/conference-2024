@@ -107,6 +107,12 @@ export const committee = [
     key: `key-4`,
   },
   {
+    name: "Olamilekan Akinjobi",
+    role: "Project Team Lead",
+    image: "https://i.ibb.co/N7mhpKD/20240902-111536-Sodiq-Akinjobi.jpg",
+    key: `key-17`,
+  },
+  {
     name: "Favour Tolulope Mustapha",
     role: "Design Lead",
     image: "https://i.ibb.co/6wBb4Lp/crpped-FAV-2-1-Favour-Mustapha.png",
