@@ -25,7 +25,7 @@ export const links2 = [
   },
   {
     value: "Gallery & Testimonials",
-    link: "#gallery",
+    link: "/#gallery",
   },
   {
     value: "Speakers",
@@ -66,7 +66,7 @@ export const currentSpeakers = Array(1)
     key: `key-${i + 1}`,
   }));
 
-export const pastSpeakers = Array(8)
+export const pastSpeakers2 = Array(8)
   .fill("")
   .map((_, i) => ({
     name: "Data Unsent",
@@ -182,5 +182,73 @@ export const committee = [
     role: "Designer",
     image: "https://i.ibb.co/pPCbWD4/MET-8031x-BW-1-Joshua-Ayoola.jpg",
     key: `key-16`,
+  },
+];
+export const pastSpeakers = [
+  {
+    name: "Jesse Osile",
+    role: "Mobile App Developer",
+    image: "https://i.ibb.co/VvCwdm1/jesse.jpg",
+    key: `key-1`,
+  },
+  {
+    name: "Nikki Eke",
+    role: "Flutter Developer",
+    image: "https://i.ibb.co/VVgR67S/nikki.jpg",
+    key: `key-6`,
+  },
+  {
+    name: "Nelson Eze",
+    role: "Co-Founder/Tech Lead, Nestuge",
+    image: "https://i.ibb.co/vZ06JtY/IMG-6608.jpg",
+    key: `key-5`,
+  },
+  {
+    name: "Kausar Moshood",
+    role: "Flutter Developer",
+    image: "https://i.ibb.co/4svnmWL/Kausar.jpg",
+    key: `key-4`,
+  },
+  {
+    name: "Ayodeji Michael Ogundairo",
+    role: "Mobile Engineer",
+    image: "https://i.ibb.co/BN0rb2v/micheal.jpg",
+    key: `key-2`,
+  },
+  {
+    name: "Anuoluwapo Famakinwa",
+    role: "Mobile Developer",
+    image: "https://i.ibb.co/QPPXDfR/mercyjae.jpg",
+    key: `key-5`,
+  },
+  {
+    name: "Pieter Carel Scholtz",
+    role: "Software Engineer",
+    image: "https://i.ibb.co/CWGH3cR/speaker-1.png",
+    key: `key-3`,
+  },
+  {
+    name: "Ogbonna Emmanuella Ijeoma",
+    role: "Mobile Developer",
+    image: "https://i.ibb.co/5cxZwBb/emmanuella.jpg",
+    key: `key-7`,
+  },
+];
+
+export const sponsors = [
+  {
+    company: "Flutter",
+    level: "Platinum",
+    image: "/images/Flutter.png",
+  },
+  {
+    company: "Cake Labs",
+    level: "Platinum",
+    image: "https://i.ibb.co/0r4KM8w/Horizontal-Tag-Logo-Adegoke-David.png",
+  },
+  {
+    company: "Codemagic",
+    level: "Silver",
+    image: "https://i.ibb.co/TcYHRh4/image-43-Mariam-Hamzat.png",
   },
 ];

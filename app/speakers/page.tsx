@@ -38,9 +38,6 @@ export default function Speakers() {
         </h1>
         <div className="max-w-[920px] mx-auto mt-[40px]">
           {currentSpeakers.length <= 4 ? (
-            // <div
-            //   className={`grid gap-x-8 pb-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2`}
-            // >
             <div className="flex justify-center">
               {currentSpeakers.map((item, index) => (
                 <Lineup
@@ -92,7 +89,7 @@ export default function Speakers() {
         <div className="max-w-[920px] mx-auto mt-[40px]">
           {pastSpeakers.length === 4 ? (
             <div
-              className={`grid gap-x-8 pb-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2`}
+              className={`grid gap-x-8 pb-4 lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 grid-cols-1`}
             >
               {pastSpeakers.map((item, index) => (
                 <Lineup
@@ -108,12 +105,12 @@ export default function Speakers() {
               index % itemsPerRow === 0 ? (
                 <div
                   key={index}
-                  className={`grid gap-x-8 pb-4 ${
+                  className={`grid gap-x-2 sm:gap-x-8 pb-4 ${
                     itemsPerRow === 4
                       ? "lg:grid-cols-4"
                       : itemsPerRow === 3
                       ? "md:grid-cols-3"
-                      : "grid-cols-2"
+                      : "grid-cols-1 xs:grid-cols-2"
                   } ${
                     index + itemsPerRow < pastSpeakers.length
                       ? "mb-8 md:border-b md:border-gray-300"
