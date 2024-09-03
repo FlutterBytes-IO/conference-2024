@@ -12,7 +12,7 @@ import TicketIcon from "@/components/vectors/TicketIcon";
 import BeyondTheBorders from "@/components/vectors/BeyondTheBorders";
 import { Agenda } from "../components/Agenda";
 import { DarkmodeContext } from "@/context/DarkMode";
-import { currentSpeakers } from "@/utils/data";
+import { currentSpeakers, sponsors } from "@/utils/data";
 
 export default function Home() {
   const { isDarkmode } = useContext(DarkmodeContext);
@@ -243,175 +243,32 @@ export default function Home() {
           FlutterBytes Conference 2024 is being sponsored by:
         </h3>
         {/* <div className="grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-5 md:gap-10 mb-12"> */}
-        <div className="flex justify-center mb-12">
-          {/* <div className="flex flex-col items-center">
-            <StyledLogoContainer
-              src="/images/Google.png"
-              otherstyles="!w-[150px] !h-[180px] p-2.5"
-              innerstyles="border-4 border-white"
-              bgStyles="bg-multicolor-grad"
-            />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Google
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Platinum Sponsor
-            </p>
-          </div> */}
-          {/* <div className="flex flex-col items-center">
-            <StyledLogoContainer
-              src="/images/Eden-life.png"
-              otherstyles="!w-[150px] !h-[180px] p-2.5"
-              innerstyles="border-4 border-white"
-              bgStyles="bg-green-grad"
-            />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Google
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Platinum Sponsor
-            </p>
-          </div> */}
-          <div className="flex flex-col items-center">
-            <StyledLogoContainer
-              src="/images/Flutter.png"
-              otherstyles="!w-[150px] !h-[180px] p-2.5"
-              innerstyles="border-4 border-white"
-              bgStyles="bg-multicolor-grad"
-            />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Flutter
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Platinum Sponsor
-            </p>
-          </div>
-          {/* <div className="flex flex-col items-center">
-            <StyledLogoContainer
-              src="/images/Google.png"
-              otherstyles="!w-[150px] !h-[180px] p-2.5"
-              innerstyles="border-4 border-white"
-              bgStyles="bg-multicolor-grad"
-            />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Google
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Platinum Sponsor
-            </p>
-          </div> */}
-          {/* <div className="flex flex-col items-center col-span-2 md:col-span-1">
-            <StyledLogoContainer
-              src="/images/Google.png"
-              otherstyles="!w-[150px] !h-[180px] p-2.5"
-              innerstyles="border-4 border-white"
-              bgStyles="bg-multicolor-grad"
-            />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Google
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Platinum Sponsor
-            </p>
-          </div> */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 place-content-center mb-12">
+          {sponsors.map((sponsor, index) => (
+            <div className="flex flex-col items-center" key={`key-${index++}`}>
+              <StyledLogoContainer
+                src={sponsor.image}
+                otherstyles="!w-[150px] !h-[180px] p-2.5"
+                innerstyles="border-4 border-white"
+                bgStyles="bg-multicolor-grad"
+              />
+              <p
+                className={`mt-3 mb-1 font-semibold ${
+                  isDarkmode ? "text-neutral-300" : "text-neutral-700"
+                }`}
+              >
+                {sponsor.company}
+              </p>
+              <p
+                className={`text-sm ${
+                  isDarkmode ? "text-neutral-300" : "text-neutral-700"
+                } text-center`}
+              >
+                {sponsor.level} Sponsor
+              </p>
+            </div>
+          ))}
         </div>
-        {/* <div className="grid grid-cols-3 md:grid-cols-7 gap-y-10 gap-x-4 md:gap-10 place-content-center mb-12">
-          <div className="flex flex-col items-center">
-            <StyledLogoContainer
-              src="/images/Flutter.png"
-              otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-              innerstyles="border-4 border-white"
-              bgStyles="bg-blue-grad"
-            />
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledLogoContainer
-              src="/images/Honeycomb.png"
-              otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-              innerstyles="border-4 border-white"
-              bgStyles="!bg-black/60"
-            />
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledLogoContainer
-              src="/images/Flutter-like.png"
-              otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-              innerstyles="border-4 border-white"
-              bgStyles="bg-blue-grad"
-            />
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledLogoContainer
-              src="/images/F-logo.png"
-              otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-              innerstyles="border-4 border-white"
-            />
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledLogoContainer
-              src="/images/Google.png"
-              otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-              innerstyles="border-4 border-white"
-              bgStyles="bg-multicolor-grad"
-            />
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledLogoContainer
-              src="/images/Google.png"
-              otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-              innerstyles="border-4 border-white"
-              bgStyles="bg-multicolor-grad"
-            />
-          </div>
-          <div className="flex flex-col items-center col-span-3 md:col-span-1">
-            <StyledLogoContainer
-              src="/images/Google.png"
-              otherstyles="!w-[116.67px] !h-[140px] p-2.5 border-blue-500"
-              innerstyles="border-4 border-white"
-              bgStyles="bg-multicolor-grad"
-            />
-          </div>
-        </div> */}
         <div className="flex justify-center">
           <Button
             component="link"
@@ -451,7 +308,41 @@ export default function Home() {
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
           <div className="flex flex-col items-center">
-            <StyledImageContainer />
+            <StyledImageContainer src="https://i.ibb.co/vZ557kN/7-Bamigboye-Ti-Oluwani.jpg" />
+            <p
+              className={`mt-3 mb-1 font-semibold ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              }`}
+            >
+              Bamigboye TiOluwani
+            </p>
+            <p
+              className={`text-sm ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              } text-center`}
+            >
+              Host
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <StyledImageContainer src="https://i.ibb.co/dtPX4by/image00007-1-copy-Shalom-Adebola.jpg" />
+            <p
+              className={`mt-3 mb-1 font-semibold ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              }`}
+            >
+              Shalom Adebola
+            </p>
+            <p
+              className={`text-sm ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              } text-center`}
+            >
+              Host
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <StyledImageContainer src="https://i.ibb.co/Wk71k9H/IMG-7013-Flutter-Bytes.jpg" />
             <p
               className={`mt-3 mb-1 font-semibold ${
                 isDarkmode ? "text-neutral-300" : "text-neutral-700"
@@ -464,45 +355,11 @@ export default function Home() {
                 isDarkmode ? "text-neutral-300" : "text-neutral-700"
               } text-center`}
             >
-              Senior Flutter Developer, EdenLife
+              Convener
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <StyledImageContainer />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              David Adegoke
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Engineering Manager, Raptures Entertainment
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledImageContainer />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Mariam Hamzat
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Rich woman with multiple roles
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledImageContainer />
+            <StyledImageContainer src="https://robohash.org/flutterbyte.png" />
             <p
               className={`mt-3 mb-1 font-semibold ${
                 isDarkmode ? "text-neutral-300" : "text-neutral-700"
@@ -533,7 +390,7 @@ export default function Home() {
             component="link"
             href="/organizers"
             variant="outlined"
-            otherstyles="text-base font-semibold py-3 px-5"
+            otherstyles="text-base font-semibold hover:text-[#fff] group py-3 px-5"
             icon={<RightArrow2 />}
           >
             See full committee

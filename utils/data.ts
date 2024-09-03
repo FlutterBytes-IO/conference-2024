@@ -74,8 +74,117 @@ export const pastSpeakers2 = Array(8)
     image: "https://robohash.org/flutterbyte.png",
     key: `key-${i + 1}`,
   }));
+
+export const committee = [
+  {
+    name: "Bamigboye TiOluwani",
+    role: "Host",
+    image: "https://i.ibb.co/vZ557kN/7-Bamigboye-Ti-Oluwani.jpg",
+    key: `key-1`,
+  },
+  {
+    name: "Shalom Adebola",
+    role: "Host",
+    image: "https://i.ibb.co/dtPX4by/image00007-1-copy-Shalom-Adebola.jpg",
+    key: `key-2`,
+  },
+  {
+    name: "Jamiu Okanlawon",
+    role: "Convener",
+    image: "https://i.ibb.co/Wk71k9H/IMG-7013-Flutter-Bytes.jpg",
+    key: `key-3`,
+  },
+  {
+    name: "Rebecca Saka",
+    role: "Programs Organizer",
+    image: "https://i.ibb.co/8BmQP2h/844-A3648-Rebecca-Saka.jpg",
+    key: `key-5`,
+  },
+  {
+    name: "David Adegoke",
+    role: "Organizing Team Lead",
+    image: "https://i.ibb.co/GvHmn6y/professional-headshot-Adegoke-David.jpg",
+    key: `key-4`,
+  },
+  {
+    name: "Olamilekan Akinjobi",
+    role: "Project Team Lead",
+    image: "https://i.ibb.co/N7mhpKD/20240902-111536-Sodiq-Akinjobi.jpg",
+    key: `key-17`,
+  },
+  {
+    name: "Favour Tolulope Mustapha",
+    role: "Design Lead",
+    image: "https://i.ibb.co/6wBb4Lp/crpped-FAV-2-1-Favour-Mustapha.png",
+    key: `key-7`,
+  },
+  {
+    name: "Damilola Alimi",
+    role: "Volunteer Lead",
+    image:
+      "https://i.ibb.co/vkMFGfy/PHOTO-2024-08-22-10-07-39-Yusirat-Damilola-Alimi.jpg",
+    key: `key-8`,
+  },
+  {
+    name: "David Olagookun",
+    role: "Volunteer Lead",
+    image: "https://i.ibb.co/Ks369x7/IMG-339-BAE102733-1-David-Olagookun.jpg",
+    key: `key-9`,
+  },
+  {
+    name: "Maryblessing Okolie",
+    role: "Welfare Lead",
+    image: "https://i.ibb.co/YZ8DnD2/53797236778-b4e1378c27-c-Maryblessing.jpg",
+    key: `key-10`,
+  },
+  {
+    name: "Peter Nathaniel",
+    role: "Infrastructure Lead",
+    image:
+      "https://i.ibb.co/qFbmsg6/Whats-App-Image-2023-11-16-at-9-39-23-AM-Peter-Nathaniel.jpg",
+    key: `key-11`,
+  },
+  {
+    name: "Mariam Hamzat (BusyBee)",
+    role: "PowerHouse",
+    image:
+      "https://i.ibb.co/FHFNHQY/IMG-20230110-002128-829-Mariam-Hamzat.webp",
+    key: `key-6`,
+  },
+  {
+    name: "Emmanuella ijeoma 0gbonna",
+    role: "Content/PR",
+    image:
+      "https://i.ibb.co/bvJQV6Z/15-BE7-B7-B-31-AE-4-C01-BC6-C-2-B415-C978-D12-Ijeoma-Ogbonna.jpg",
+    key: `key-12`,
+  },
+  {
+    name: "Christopher Nwosu-Madueke",
+    role: "Hackathon Co-Ordinator",
+    image:
+      "https://i.ibb.co/0rdqzx1/Whats-App-Image-2024-04-18-at-10-22-32-Christopher-Nwosu-Madueke.jpg",
+    key: `key-13`,
+  },
+  {
+    name: "Kendi J",
+    role: "FlutterBytes Ladies Communities Co-Ordinator",
+    image: "https://i.ibb.co/Q8RMRMn/IMG-1428-Kendi-J.jpg",
+    key: `key-14`,
+  },
+  {
+    name: "Adebowale Oluwatobi",
+    role: "Designer",
+    image: "https://i.ibb.co/n015gy4/1715996483849-Oluwatobi-Samson.jpg",
+    key: `key-15`,
+  },
+  {
+    name: "Joshua Ayoola",
+    role: "Designer",
+    image: "https://i.ibb.co/pPCbWD4/MET-8031x-BW-1-Joshua-Ayoola.jpg",
+    key: `key-16`,
+  },
+];
 export const pastSpeakers = [
-  
   {
     name: "Jesse Osile",
     role: "Mobile App Developer",
@@ -124,12 +233,22 @@ export const pastSpeakers = [
     image: "https://i.ibb.co/5cxZwBb/emmanuella.jpg",
     key: `key-7`,
   },
-]
-export const committee = Array(8)
-  .fill("")
-  .map((_, i) => ({
-    name: "Data Unsent",
-    role: "Flutter Developer, FBC",
-    image: "https://robohash.org/flutterbyte.png",
-    key: `key-${i + 1}`,
-  }));
+];
+
+export const sponsors = [
+  {
+    company: "Flutter",
+    level: "Platinum",
+    image: "/images/Flutter.png",
+  },
+  {
+    company: "Cake Labs",
+    level: "Platinum",
+    image: "https://i.ibb.co/0r4KM8w/Horizontal-Tag-Logo-Adegoke-David.png",
+  },
+  {
+    company: "Codemagic",
+    level: "Silver",
+    image: "https://i.ibb.co/TcYHRh4/image-43-Mariam-Hamzat.png",
+  },
+];
