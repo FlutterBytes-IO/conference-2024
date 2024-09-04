@@ -317,40 +317,6 @@ export default function Home() {
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
           <div className="flex flex-col items-center">
-            <StyledImageContainer src="https://i.ibb.co/vZ557kN/7-Bamigboye-Ti-Oluwani.jpg" />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Bamigboye TiOluwani
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Host
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledImageContainer src="https://i.ibb.co/dtPX4by/image00007-1-copy-Shalom-Adebola.jpg" />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Shalom Adebola
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Host
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
             <StyledImageContainer src="https://i.ibb.co/Wk71k9H/IMG-7013-Flutter-Bytes.jpg" />
             <p
               className={`mt-3 mb-1 font-semibold ${
@@ -365,6 +331,40 @@ export default function Home() {
               } text-center`}
             >
               Convener
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <StyledImageContainer src="https://i.ibb.co/GvHmn6y/professional-headshot-Adegoke-David.jpg" />
+            <p
+              className={`mt-3 mb-1 font-semibold ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              }`}
+            >
+              David Adegoke
+            </p>
+            <p
+              className={`text-sm ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              } text-center`}
+            >
+              Co-Convener/Organizing Committee Lead
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <StyledImageContainer src="https://i.ibb.co/FHFNHQY/IMG-20230110-002128-829-Mariam-Hamzat.webp" />
+            <p
+              className={`mt-3 mb-1 font-semibold ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              }`}
+            >
+              Mariam Hamzat (BusyBee)
+            </p>
+            <p
+              className={`text-sm ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              } text-center`}
+            >
+              Co-Convener/PowerHouse
             </p>
           </div>
           <div className="flex flex-col items-center">
