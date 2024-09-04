@@ -39,8 +39,8 @@ export default function Sponsorships() {
                   isDarkmode ? "text-fbc_blue-100" : "text-blue-500"
                 }`}
               >
-                Join us as a sponsor at FlutterBytes Conference and connect with a
-                targeted audience of 700+ professionals, thought leaders, and
+                Join us as a sponsor at FlutterBytes Conference and connect with
+                a targeted audience of 700+ professionals, thought leaders, and
                 innovators.
               </p>
               <br />
@@ -66,7 +66,7 @@ export default function Sponsorships() {
               </Button>
               <Button
                 component="button"
-                onClick={()=>navigator.clipboard.writeText('+23490000000')}
+                onClick={() => navigator.clipboard.writeText("+2348108627764”")}
                 variant="outlined"
                 otherstyles="text-base font-semibold bg-white hover:text-[#fff] group"
                 icon={<CopyIcon />}
