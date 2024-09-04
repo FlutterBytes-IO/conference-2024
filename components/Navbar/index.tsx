@@ -49,7 +49,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
       >
         <Link
           href="/"
-          className="relative max-xl:after:hidden after:absolute after:content-[''] after:left-full after:top-1/2 after:-translate-y-1/2 after:w-[170%] after:overflow-hidden after:h-px after:bg-fbc_blue-100"
+          className="relative max-xl:after:hidden after:absolute after:content-[''] after:left-full after:top-1/2 after:-translate-y-1/2 after:w-[90%] after:overflow-hidden after:h-px after:bg-fbc_blue-100"
         >
           <Image
             src={isDarkmode ? NavLogoDark : NavLogoLight}
@@ -65,7 +65,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             {showMobileNav ? <CancelIcon /> : <HamburgerIcon />}
           </button>
           <div
-            className={`absolute top-14 -left-3 xs:left-0 py-3 px-5 md:hidden w-full flex !bg-opacity-100 justify-between transition duration-500 ${
+            className={`absolute top-14 -left-3 xs:left-0 py-3 px-5 lg:hidden w-full flex !bg-opacity-100 justify-between transition duration-500 ${
               showMobileNav ? "translate-x-0" : "-translate-x-full"
             } ${isDarkmode ? "bg-hero-grad-dark" : "bg-neutral-50"}`}
           >
@@ -176,7 +176,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             About us
           </Link>
         </div>
-        <div className="hidden lg:flex items-center gap-x-3 relative before:max-xl:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[170%] before:h-px before:bg-fbc_blue-100">
+        <div className="hidden lg:flex items-center gap-x-3 relative before:max-xl:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[125%] before:h-px before:bg-fbc_blue-100">
           <Button
             component="link"
             href="https://eventprime.co/e/flutter-bytes-conference-2024"
