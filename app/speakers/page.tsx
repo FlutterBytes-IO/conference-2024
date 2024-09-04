@@ -32,10 +32,14 @@ export default function Speakers() {
         isDarkmode ? "hero-grad-dark" : "gradient-no-grid"
       } pt-[200px]`}
     >
-      <div className="relative z-10">
-        <h1 className="font-gigaSans flex mx-auto w-fit text-center py-[10px] px-5 border-y-[1.5px] border-[#D0EFFF] md:text-[32px] text-[20px] font-semibold relative z-10 heading-text">
+      <div
+        className={`flex flex-col ${
+          isDarkmode ? "" : "gradient-no-grid"
+        } max-w-[920px] mx-auto w-[calc(100%_-_32px)] sm:w-[calc(100%_-_50px)] md:w-[calc(100%_-_64px)]`}
+      >
+        <h2 className="font-gigaSans flex mx-auto w-fit text-center py-[10px] px-5 border-y-[1.5px] border-fbc_blue-100 text-xl md:text-[32px] font-semibold relative z-10 heading-text">
           Meet the amazing lineup of Speakers
-        </h1>
+        </h2>
         <div className="max-w-[920px] mx-auto mt-[40px]">
           {currentSpeakers.length <= 4 ? (
             <div className="flex justify-center">
