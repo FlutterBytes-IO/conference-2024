@@ -1,4 +1,4 @@
-"use client"; // This is a client component
+"use client";
 import { useEffect, useState } from "react";
 import { useContext } from "react";
 
@@ -57,7 +57,7 @@ export default function Speakers() {
               index % itemsPerRow === 0 ? (
                 <div
                   key={index}
-                  className={`grid gap-x-8 pb-4 ${
+                  className={`grid gap-x-8 pb-0 xs:pb-4 ${
                     itemsPerRow === 4
                       ? "lg:grid-cols-4"
                       : itemsPerRow === 3
@@ -65,7 +65,7 @@ export default function Speakers() {
                       : "grid-cols-2"
                   } ${
                     index + itemsPerRow < currentSpeakers.length
-                      ? "mb-8 md:border-b md:border-gray-300"
+                      ? "mb-0 xs:mb-8 md:border-b md:border-gray-300"
                       : ""
                   }`}
                 >
