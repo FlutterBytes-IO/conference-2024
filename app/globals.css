@@ -289,39 +289,45 @@ tbody tr:last-child td {
     #021429 92%
   );
 }
+/* 460, 512, 744 */ 
 
-@media (max-width: 390px) {
+@media (max-width: 768px) {
   .globe {
-    width: 65px !important;
-    height: 65px !important;
-    left: 122.5px !important;
-    top: 60px !important;
+    width: 120px;
+    height: 120px;
+    left: 250.5px;
+    top: 130px;
   }
 }
-
-@media (max-width: 375px) {
+@media (max-width: 744px) {
   .globe {
-    width: 65px !important;
-    height: 65px !important;
-    left: 115px !important;
-    top: 60px !important;
+    width: 120px;
+    height: 120px;
+    left: 250.5px;
+    top: 130px;
   }
 }
-
-@media (max-width: 360px) {
+@media (max-width: 512px) {
   .globe {
-    width: 60px !important;
-    height: 60px !important;
-    left: 110.5px !important;
-    top: 55px !important;
+    width: 80px;
+    height: 80px;
+    left: 160.5px;
+    top: 90px;
   }
 }
-
+@media (max-width: 460px) {
+  .globe {
+    width: 70px;
+    height: 70px;
+    left: 140.5px;
+    top: 70px;
+  }
+}
 @media (max-width: 430px) {
   .globe {
     width: 70px;
     height: 70px;
-    left: 137.5px;
+    left: 130.5px;
     top: 70px;
   }
 }
@@ -330,8 +336,52 @@ tbody tr:last-child td {
   .globe {
     width: 70px;
     height: 70px;
-    left: 130px;
-    top: 65px;
+    left: 120px;
+    top: 60px;
+  }
+}
+
+@media (max-width: 390px) {
+  .globe {
+    width: 65px !important;
+    height: 65px !important;
+    left: 112.5px !important;
+    top: 58px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .globe {
+    width: 65px !important;
+    height: 65px !important;
+    left: 105px !important;
+    top: 52px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .globe {
+    width: 60px !important;
+    height: 60px !important;
+    left: 102.5px !important;
+    top: 55px !important;
+  }
+}
+@media (max-width: 350px) {
+  .globe {
+    width: 60px !important;
+    height: 60px !important;
+    left: 97px !important;
+    top: 47px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .globe {
+    width: 50px !important;
+    height: 50px !important;
+    left: 100px !important;
+    top: 45px !important;
   }
 }
 
@@ -339,7 +389,7 @@ tbody tr:last-child td {
   .globe {
     width: 50px !important;
     height: 50px !important;
-    left: 100px !important;
+    left: 90px !important;
     top: 45px !important;
   }
 }
