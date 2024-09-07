@@ -224,7 +224,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="self-center flex items-center gap-x-10">
+        <div className="self-center flex flex-col max-sm:gap-y-5 sm:flex-row items-center gap-x-10">
           <Button
             component="link"
             href="/speakers-application"
@@ -293,7 +293,7 @@ export default function Home() {
             component="link"
             href="/sponsorships"
             icon={<RightArrow2 color="#fff" />}
-            otherstyles="py-4 w-full"
+            otherstyles="w-full py-3 px-5"
           >
             Be a sponsor
           </Button>
@@ -326,7 +326,7 @@ export default function Home() {
           Meet the Organizing Committee
         </h3>
         <div className="grid grid-cols-1 x1:grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-center">
             <StyledImageContainer src="https://i.ibb.co/Wk71k9H/IMG-7013-Flutter-Bytes.jpg" />
             <p
               className={`mt-3 mb-1 font-semibold ${
@@ -343,7 +343,7 @@ export default function Home() {
               Convener
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-center">
             <StyledImageContainer src="https://i.ibb.co/GvHmn6y/professional-headshot-Adegoke-David.jpg" />
             <p
               className={`mt-3 mb-1 font-semibold ${
@@ -360,7 +360,7 @@ export default function Home() {
               Co-Convener/Organizing Committee Lead
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-center">
             <StyledImageContainer src="https://i.ibb.co/FHFNHQY/IMG-20230110-002128-829-Mariam-Hamzat.webp" />
             <p
               className={`mt-3 mb-1 font-semibold ${
@@ -377,7 +377,7 @@ export default function Home() {
               Co-Convener/PowerHouse
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-center">
             <StyledImageContainer src="https://robohash.org/flutterbyte.png" />
             <p
               className={`mt-3 mb-1 font-semibold ${

@@ -246,7 +246,7 @@ export const sponsors = [
   {
     company: "Cake Wallet",
     level: "Platinum",
-    image: "https://i.ibb.co/k3ZLVsw/Vertical-Tag-Logo-Adegoke-David.png",
+    image: "https://i.ibb.co/s1YRvzr/Round-Logo.png",
     link: "https://cakewallet.com",
   },
   {
