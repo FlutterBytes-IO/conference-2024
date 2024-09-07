@@ -25,13 +25,23 @@ export default function Home() {
         <div
           className={`max-w-[758px] relative mx-auto w-full flex flex-col md:justify-center items-center mt-[140px] md:pb-[200px] max-md:mb-[120px] px-5 z-10 md:min-h-[60vh]`}
         >
-          <Image
-            src="/images/BeyondBordersText.png"
-            width={644}
-            height={335}
-            alt="beyond-borders"
-            className="object-contain z-10"
-          />
+          {isDarkmode ? (
+            <Image
+              src="/images/BeyondBordersTextDark.png"
+              width={644}
+              height={335}
+              alt="beyond-borders"
+              className="object-contain z-10"
+            />
+          ) : (
+            <Image
+              src="/images/BeyondBordersText.png"
+              width={644}
+              height={335}
+              alt="beyond-borders"
+              className="object-contain z-10"
+            />
+          )}
 
           {isDarkmode ? (
             <Image
