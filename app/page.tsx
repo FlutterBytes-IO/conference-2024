@@ -13,6 +13,7 @@ import BeyondTheBorders from "@/components/vectors/BeyondTheBorders";
 import { Agenda } from "../components/Agenda";
 import { DarkmodeContext } from "@/context/DarkMode";
 import { currentSpeakers, sponsors } from "@/utils/data";
+import Link from "next/link";
 
 export default function Home() {
   const { isDarkmode } = useContext(DarkmodeContext);
@@ -24,13 +25,23 @@ export default function Home() {
         <div
           className={`max-w-[758px] relative mx-auto w-full flex flex-col md:justify-center items-center mt-[140px] md:pb-[200px] max-md:mb-[120px] px-5 z-10 md:min-h-[60vh]`}
         >
-          <Image
-            src="/images/BeyondBordersText.png"
-            width={644}
-            height={335}
-            alt="beyond-borders"
-            className="object-contain z-10"
-          />
+          {isDarkmode ? (
+            <Image
+              src="/images/BeyondBordersTextDark.png"
+              width={644}
+              height={335}
+              alt="beyond-borders"
+              className="object-contain z-10"
+            />
+          ) : (
+            <Image
+              src="/images/BeyondBordersText.png"
+              width={644}
+              height={335}
+              alt="beyond-borders"
+              className="object-contain z-10"
+            />
+          )}
 
           {isDarkmode ? (
             <Image
@@ -55,7 +66,7 @@ export default function Home() {
               width={80}
               height={80}
               alt="beyond-borders"
-              className="object-contain md:hidden absolute x3:top-20 x0:top-[60px] max-x0:top-[50px] max-x0:left-[110px] max-x0:w-16 max-x0-h-16 x1:left-[115px] xs:left-[125px] x2:left-[132.5px] x3:left-[155.5px]"
+              className="object-contain globe md:hidden absolute"
             />
           ) : (
             <Image
@@ -63,7 +74,7 @@ export default function Home() {
               width={80}
               height={80}
               alt="beyond-borders"
-              className="object-contain md:hidden absolute x3:top-20 x0:top-[60px] max-x0:top-[50px] max-x0:left-[110px] max-x0:w-16 max-x0-h-16 x1:left-[115px] xs:left-[125px] x2:left-[132.5px] x3:left-[155.5px]"
+              className="object-contain globe md:hidden absolute"
               unoptimized
             />
           )}
@@ -83,7 +94,7 @@ export default function Home() {
             href="https://eventprime.co/e/flutter-bytes-conference-2024"
             target="_blank"
             icon={<RightArrow2 color="#fff" />}
-            otherstyles="font-semibold text-2xl !rounded-[40px] !py-4 !px-8 !text-base !md:text-2xl !font-semibold"
+            otherstyles="font-semibold text-2xl !rounded-[40px] !py-4 !pl-8 !pr-8 !text-base !md:text-2xl !font-semibold"
           >
             Get Ticket
           </Button>
@@ -122,7 +133,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col text-center place-content-center">
                   <p className="font-semibold text-[2rem] leading-[38px] text-gradient">
-                    900
+                    500
                   </p>
                   <p className="text-neutral-500 font-medium text-base">
                     Flutter Devs
@@ -144,7 +155,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="md:basis-[57%] max-md:h-[280px] flex bg-[url('/images/map-bg.png')] rounded-2xl bg-center bg-cover place-content-center border border-neutral-400">
+            <Link
+              href="https://www.google.com/maps/dir//Plot+9+Gbagada+Industrial+Scheme,+Beside+UPS,+Gbagada+Expressway/@6.5514241,3.2944381,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x103b8d73a658782b:0x7a1de11d89cccc84!2m2!1d3.37684!2d6.5514308?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              className="md:basis-[57%] max-md:h-[280px] flex bg-[url('/images/map-bg.png')] rounded-2xl bg-center bg-cover place-content-center border border-neutral-400"
+            >
               <div className="flex flex-col justify-end pb-5">
                 <Image
                   src="/images/somewhere-in-lag.png"
@@ -154,7 +169,7 @@ export default function Home() {
                   className="object-contain"
                 />
               </div>
-            </div>
+            </Link>
           </div>
           <div className="row-auto bg-fbc_blue-100 rounded-2xl py-9 px-9 flex flex-col gap-3 md:flex-row items-start md:items-center justify-between">
             <p className="text-blue-500 font-semibold text-[28px] leading-[33.6px] max-w-[270px]">
@@ -245,7 +260,11 @@ export default function Home() {
         {/* <div className="grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-5 md:gap-10 mb-12"> */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 place-content-center mb-12">
           {sponsors.map((sponsor, index) => (
-            <div className="flex flex-col items-center" key={`key-${index++}`}>
+            <Link
+              href={sponsor.link}
+              className="flex flex-col items-center"
+              key={`key-${index++}`}
+            >
               <StyledLogoContainer
                 src={sponsor.image}
                 otherstyles="!w-[150px] !h-[180px] p-2.5"
@@ -266,7 +285,7 @@ export default function Home() {
               >
                 {sponsor.level} Sponsor
               </p>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="flex justify-center">
@@ -306,41 +325,7 @@ export default function Home() {
         <h3 className="text-center mb-[52px] heading-text w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold">
           Meet the Organizing Committee
         </h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
-          <div className="flex flex-col items-center">
-            <StyledImageContainer src="https://i.ibb.co/vZ557kN/7-Bamigboye-Ti-Oluwani.jpg" />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Bamigboye TiOluwani
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Host
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <StyledImageContainer src="https://i.ibb.co/dtPX4by/image00007-1-copy-Shalom-Adebola.jpg" />
-            <p
-              className={`mt-3 mb-1 font-semibold ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              }`}
-            >
-              Shalom Adebola
-            </p>
-            <p
-              className={`text-sm ${
-                isDarkmode ? "text-neutral-300" : "text-neutral-700"
-              } text-center`}
-            >
-              Host
-            </p>
-          </div>
+        <div className="grid grid-cols-1 x1:grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
           <div className="flex flex-col items-center">
             <StyledImageContainer src="https://i.ibb.co/Wk71k9H/IMG-7013-Flutter-Bytes.jpg" />
             <p
@@ -356,6 +341,40 @@ export default function Home() {
               } text-center`}
             >
               Convener
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <StyledImageContainer src="https://i.ibb.co/GvHmn6y/professional-headshot-Adegoke-David.jpg" />
+            <p
+              className={`mt-3 mb-1 font-semibold ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              }`}
+            >
+              David Adegoke
+            </p>
+            <p
+              className={`text-sm ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              } text-center`}
+            >
+              Co-Convener/Organizing Committee Lead
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <StyledImageContainer src="https://i.ibb.co/FHFNHQY/IMG-20230110-002128-829-Mariam-Hamzat.webp" />
+            <p
+              className={`mt-3 mb-1 font-semibold ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              }`}
+            >
+              Mariam Hamzat (BusyBee)
+            </p>
+            <p
+              className={`text-sm ${
+                isDarkmode ? "text-neutral-300" : "text-neutral-700"
+              } text-center`}
+            >
+              Co-Convener/PowerHouse
             </p>
           </div>
           <div className="flex flex-col items-center">

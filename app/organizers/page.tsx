@@ -45,7 +45,7 @@ export default function Organizers() {
           </p>
         </div>
         <div className="flex flex-col gap-y-10 mb-[100px]">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
+          <div className="grid grid-cols-1 x1:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
             {committee.map((item, index) => (
               <Lineup
                 key={index}
