@@ -64,8 +64,8 @@ export const Agenda = ({ isHomePage }: { isHomePage?: boolean }) => {
             </button>
           ))}
         </div>
-        {stepComponents[activeTab]}
-        {!isHomePage && (
+        <div className="self-center">{stepComponents[activeTab]}</div>
+        {!isHomePage && steps?.length > 9 && (
           <div className="flex items-center border border-blue-200 rounded-[40px] divide-x w-fit self-center">
             {steps.map((step) => (
               <button
