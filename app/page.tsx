@@ -71,9 +71,9 @@ export default function Home() {
           The Global Impact of African Flutter Developers/Engineers
         </p> */}
           <p
-            className={`text-xl max-md:font-medium md:text-4xl ${
+            className={`text-lg xs:text-xl max-md:font-medium md:text-4xl ${
               isDarkmode ? "text-neutral-400" : "text-neutral-500"
-            } leading-[67.2px] text-center mb-8`}
+            } mt-4 xs:mt-0 leading-normal xs:leading-[67.2px] whitespace-nowrap xs:whitespace-normal text-center mb-8`}
           >
             &#123;FlutterBytes Conference 2024&#125;
           </p>
@@ -231,7 +231,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className={`flex  max-md:px-5 flex-col items-center relative z-10 pb-[120px] ${
+        className={`flex max-md:px-5 flex-col items-center relative z-10 pb-[120px] ${
           isDarkmode ? "hero-grad-dark" : ""
         }`}
       >
@@ -449,7 +449,7 @@ export default function Home() {
         <h3 className="text-center mb-[52px] heading-text w-fit py-2.5 px-5 border-y-[1.5px] border-fbc_blue-100 text-[28px] leading-[42px] font-semibold">
           Meet the Organizing Committee
         </h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 md:gap-10 mb-10">
           <div className="flex flex-col items-center">
             <StyledImageContainer />
             <p

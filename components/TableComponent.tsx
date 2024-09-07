@@ -40,7 +40,7 @@ export default function TableComponent({
     <div
       className={`border-[0.5px] border-neutral-500 ${
         isDarkmode ? "text-neutral-300" : "text-neutral-700"
-      } rounded-[40px] w-[400px] md:w-full md:max-w-[877px] flex flex-col`}
+      } rounded-[40px] xs:w-[400px] md:w-full md:max-w-[877px] flex flex-col`}
     >
       <table className="w-full max-md:flex max-md:flex-col max-md:gap-y-6 overflow-hidden">
         <thead className="font-semibold">

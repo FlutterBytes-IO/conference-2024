@@ -33,7 +33,6 @@ export default function Lineup({ image, name, role }: Details) {
           {role}
         </p>
       </div>
-      {/* </div> */}
     </div>
   );
 }
