@@ -179,7 +179,7 @@ export const committee = [
   },
   {
     name: "Bamigboye TiOluwani",
-    role: "C0-Host",
+    role: "Co-Host",
     image: "https://i.ibb.co/vZ557kN/7-Bamigboye-Ti-Oluwani.jpg",
     key: `key-17`,
   },
