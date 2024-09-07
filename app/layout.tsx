@@ -9,26 +9,29 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FLUTTERBYTES CONFERENCE 2024",
+  title: "FlutterBytes Conference 2024",
   description:
-    "Join us at Flutterbytes conference to gain technical knowledge, and network with quality people.",
+    "Join us at FlutterBytes conference to gain technical knowledge, and network with like minds.",
   keywords: [
-    "Flutterbytes, Tech conference",
+    "Flutterbytes", 
+    "Tech conference",
     "Technical knowledge",
-    "Pitch ideas",
+    "Hackathon",
+    "Lagos Tech Event",
+    "Mobile apps",
     "Networking",
     "Techies",
   ],
   openGraph: {
-    title: "FLUTTERBYTES CONFERENCE 2024",
+    title: "FlutterBytes Conference 2024",
     description:
-      "Join us at Flutterbytes conference to gain technical knowledge, and network with quality people.",
+      "Join us at FlutterBytes conference to gain technical knowledge, and network with like minds.",
     images: [
       {
-        url: "https://i.ibb.co/qs64th1/opengraph-image.png",
+        url: "https://i.ibb.co/Dz7KvHy/FBC-Meta-Data-Thumbnail-1.png",
         width: 800,
         height: 600,
-        alt: "Flutterbytes Conference 2024",
+        alt: "FlutterBytes Conference 2024",
       },
     ],
     type: "website",
