@@ -82,9 +82,9 @@ export default function Home() {
           The Global Impact of African Flutter Developers/Engineers
         </p> */}
           <p
-            className={`text-xl max-md:font-medium md:text-4xl ${
+            className={`text-lg xs:text-xl max-md:font-medium md:text-4xl ${
               isDarkmode ? "text-neutral-400" : "text-neutral-500"
-            } leading-[67.2px] text-center mb-8`}
+            } mt-4 xs:mt-0 leading-normal xs:leading-[67.2px] whitespace-nowrap xs:whitespace-normal text-center mb-8`}
           >
             &#123;FlutterBytes Conference 2024&#125;
           </p>
@@ -246,7 +246,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className={`flex  max-md:px-5 flex-col items-center relative z-10 pb-[120px] ${
+        className={`flex max-md:px-5 flex-col items-center relative z-10 pb-[120px] ${
           isDarkmode ? "hero-grad-dark" : ""
         }`}
       >

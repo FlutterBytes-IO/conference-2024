@@ -13,8 +13,8 @@ export const links1 = [
     target: "_blank",
   },
   {
-    value: "Be a sponsor",
-    link: "/sponsorships",
+    value: "Hackathon Submission",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfpojn_FKK7tJIS-rDNoiWTOFjTGFOPys61J6Gu1HzXLgvS4w/viewform",
   },
 ];
 
