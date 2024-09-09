@@ -125,6 +125,15 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
                 Be a sponsor
                 <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
               </Link>
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfpojn_FKK7tJIS-rDNoiWTOFjTGFOPys61J6Gu1HzXLgvS4w/viewform"
+                className={`flex items-center py-1.5 px-1 w-[130px] justify-between text-[11px] font-semibold ${
+                  isDarkmode ? "text-blue-300" : "text-neutral-500"
+                }`}
+              >
+                Hackathon Submission
+                <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
+              </Link>
             </div>
           </div>
         </div>
@@ -166,6 +175,14 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6 text-center`}
           >
             Hackathon
+          </Link>
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfpojn_FKK7tJIS-rDNoiWTOFjTGFOPys61J6Gu1HzXLgvS4w/viewform"
+            className={`${
+              isDarkmode ? "text-neutral-400" : "text-neutral-500"
+            } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6 text-center`}
+          >
+            Hackathon Submission
           </Link>
           <Link
             href="/about"
