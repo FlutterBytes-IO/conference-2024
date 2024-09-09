@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   images: {
     remotePatterns: [
       {
@@ -11,6 +12,7 @@ const nextConfig = {
         hostname: "i.ibb.co",
       },
     ],
+    unoptimized: true,
   },
 };
 
