@@ -153,12 +153,12 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             Apply to volunteer
           </Link>
           <Link
-            href="/speakers-application"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc8NVvyUfiSlrJpC-WAHrH_1T1j-KAGvToEDYX11xeYo02rjQ/viewform"
             className={`${
               isDarkmode ? "text-neutral-400" : "text-neutral-500"
             } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6 text-center`}
           >
-            Apply to speak
+            FlutterBytes Product Showcase Registration
           </Link>
           <Link
             href="/sponsorships"
