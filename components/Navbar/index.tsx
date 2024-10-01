@@ -84,12 +84,12 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
                 <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
               </Link>
               <Link
-                href="/speakers-application"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc8NVvyUfiSlrJpC-WAHrH_1T1j-KAGvToEDYX11xeYo02rjQ/viewform"
                 className={`flex items-center py-1.5 px-1 w-[140px] justify-between text-[11px] font-semibold ${
                   isDarkmode ? "text-blue-300" : "text-neutral-500"
                 }`}
               >
-                Apply to speak
+                FlutterBytes Product Showcase Registration
                 <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
               </Link>
               <Link
