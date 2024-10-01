@@ -89,7 +89,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
                   isDarkmode ? "text-blue-300" : "text-neutral-500"
                 }`}
               >
-                FlutterBytes Product Showcase Registration
+                Product Showcase
                 <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
               </Link>
               <Link
@@ -158,7 +158,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
               isDarkmode ? "text-neutral-400" : "text-neutral-500"
             } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6 text-center`}
           >
-            FlutterBytes Product Showcase Registration
+            Product Showcase
           </Link>
           <Link
             href="/sponsorships"
