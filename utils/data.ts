@@ -37,15 +37,30 @@ export const links2 = [
   },
 ];
 
-export const saturdayAgenda = Array(1)
-  .fill("")
-  .map((_, i) => ({
-    timeline: "8:00am - 5:00pm",
-    session: "Coming Soon",
-    anchor: "Coming Soon",
-    day: "Friday",
-    key: `key-${i + 1}`,
-  }));
+export const saturdayAgenda = [
+  { timeline: "8:30 AM", session: "Registration", anchor: "", day: "Saturday", key: `key-1` },
+  { timeline: "9:00 AM - 9:15 AM", session: "Opening", anchor: "Host", day: "Saturday", key: `key-2` },
+  { timeline: "9:15 AM - 9:30 AM", session: "Lightning Talk 1: Building Scalable Backend Services with Firebase and Dart for Flutter Apps", anchor: "", day: "Saturday", key: `key-3` },
+  { timeline: "9:35 AM - 9:55 AM", session: "Lightning Talk 2: Code Generation in Flutter: Introducing Macros", anchor: "", day: "Saturday", key: `key-4` },
+  { timeline: "10:00 AM - 10:25 AM", session: "Keynote 1", anchor: "Femi Taiwo", day: "Saturday", key: `key-5` },
+  { timeline: "10:25 AM - 10:40 AM", session: "Group Photos", anchor: "", day: "Saturday", key: `key-6` },
+  { timeline: "10:40 AM - 11:20 AM", session: "Workshops: Building High-Quality Games with Flutter Flame, Flutter Aesthetics, Dynamic Rive Animations", anchor: "", day: "Saturday", key: `key-7` },
+  { timeline: "11:25 AM - 11:45 AM", session: "Breakout Sessions: Building a Watch Party App, Cybersecurity and Flutter, Designing Offline-First Flutter Apps", anchor: "", day: "Saturday", key: `key-8` },
+  { timeline: "11:50 AM - 12:10 PM", session: "Breakout Sessions: Flutter Fever: Catch the Testing Bug!, Bringing Blockchain & Web3 into Flutter, AR on Maps", anchor: "", day: "Saturday", key: `key-9` },
+  { timeline: "12:15 PM - 12:55 PM", session: "Workshops: Building High-Performance Flutter Plugins, State Restoration, Decoding Dart", anchor: "", day: "Saturday", key: `key-10` },
+  { timeline: "1:00 PM - 1:20 PM", session: "Keynote 2", anchor: "Cake Wallet", day: "Saturday", key: `key-11` },
+  { timeline: "1:25 PM - 1:30 PM", session: "Product Demo", anchor: "Code Magic", day: "Saturday", key: `key-12` },
+  { timeline: "1:30 PM - 1:50 PM", session: "Networking/Break", anchor: "", day: "Saturday", key: `key-13` },
+  { timeline: "1:50 PM - 2:05 PM", session: "Lightning Talk 3: Building and Deploying a Scalable Design System in Flutter", anchor: "", day: "Saturday", key: `key-14` },
+  { timeline: "2:10 PM - 2:35 PM", session: "Product Showcase", anchor: "Chris", day: "Saturday", key: `key-15` },
+  { timeline: "2:40 PM - 3:25 PM", session: "Hackathon Presentation", anchor: "Chris", day: "Saturday", key: `key-16` },
+  { timeline: "3:30 PM - 3:45 PM", session: "Lightning Talk 4: UI and Geometry", anchor: "", day: "Saturday", key: `key-17` },
+  { timeline: "3:50 PM - 4:20 PM", session: "Games", anchor: "", day: "Saturday", key: `key-18` },
+  { timeline: "4:20 PM - 4:35 PM", session: "Gift Presentation", anchor: "", day: "Saturday", key: `key-19` },
+  { timeline: "4:35 PM - 4:50 PM", session: "Presenting the Organizing Team", anchor: "", day: "Saturday", key: `key-20` },
+  { timeline: "4:50 PM - 5:00 PM", session: "Vote of Thanks", anchor: "", day: "Saturday", key: `key-21` },
+];
+
 
 export const fridayAgenda = Array(1)
   .fill("")
