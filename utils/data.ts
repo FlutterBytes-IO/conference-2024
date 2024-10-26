@@ -257,16 +257,78 @@ export const links2 = [
     },
   ];
 
-
-export const fridayAgenda = Array(1)
-  .fill("")
-  .map((_, i) => ({
-    timeline: "8:00am - 5:00pm",
-    session: "Coming Soon",
-    anchor: "Coming Soon",
-    day: "Friday",
-    key: `key-${i + 1}`,
-  }));
+  export const fridayAgenda = [
+    {
+      timeline: "2:30 PM - 3:00 PM",
+      session: "Arrivals",
+      anchor: "Anuoluwapo Famakinwa & Moyin",
+      hall: "Ruby Hall",
+      key: "key-1",
+    },
+    {
+      timeline: "2:30 PM - 3:00 PM",
+      session: "Lunch on Entry",
+      anchor: "",
+      hall: "Ruby Hall",
+      key: "key-2",
+    },
+    {
+      timeline: "3:00 PM - 3:10 PM",
+      session: "Games",
+      anchor: "Ogbonna Emmanuella Ijeoma",
+      hall: "Ruby Hall",
+      key: "key-3",
+    },
+    {
+      timeline: "3:15 PM - 3:35 PM",
+      session: "Technical Session",
+      anchor: "Mariam Hamzat",
+      hall: "Ruby Hall",
+      key: "key-4",
+    },
+    {
+      timeline: "3:40 PM - 3:50 PM",
+      session: "Slido Games",
+      anchor: "Nikki Eke & Ogbonna Emmanuella Ijeoma",
+      hall: "Ruby Hall",
+      key: "key-5",
+    },
+    {
+      timeline: "3:55 PM - 4:35 PM",
+      session: "Fireside Chat",
+      anchor: "Moderator - Chukwukwe, Deborah Kosisochukwu\nNikki Eke\nDamilola Alimi\nKendi J\nGrace Youpele\nKausar Moshood",
+      hall: "Ruby Hall",
+      key: "key-6",
+    },
+    {
+      timeline: "4:35 PM - 4:45 PM",
+      session: "Group Photo",
+      anchor: "Anuoluwapo Famakinwa & Moyin",
+      hall: "Ruby Hall",
+      key: "key-7",
+    },
+    {
+      timeline: "4:45 PM - 5:15 PM",
+      session: "Breakout Sessions",
+      anchor: "All Organizing Team",
+      hall: "Ruby Hall",
+      key: "key-8",
+    },
+    {
+      timeline: "5:20 PM - 5:30 PM",
+      session: "Awarding Game Winners",
+      anchor: "Anuoluwapo Famakinwa & Moyin",
+      hall: "Ruby Hall",
+      key: "key-9",
+    },
+    {
+      timeline: "5:30 PM - 5:35 PM",
+      session: "Closing Remarks",
+      anchor: "Organizing Team",
+      hall: "Ruby Hall",
+      key: "key-10",
+    },
+  ];
 
 export const currentSpeakers = Array(1)
   .fill("")

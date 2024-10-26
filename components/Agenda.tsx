@@ -11,11 +11,11 @@ export const Agenda = ({ isHomePage }: { isHomePage?: boolean }) => {
   const steps = [
     {
       id: 1,
-      name: "Friday agenda",
+      name: "Ladies Event [Friday]",
     },
     {
       id: 2,
-      name: "Saturday agenda",
+      name: "Saturday Agenda",
     },
   ];
 
