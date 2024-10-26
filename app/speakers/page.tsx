@@ -62,7 +62,7 @@ export default function Speakers() {
                       ? "lg:grid-cols-4"
                       : itemsPerRow === 3
                       ? "md:grid-cols-3"
-                      : "grid-cols-2"
+                      : "grid-cols-1 xs:grid-cols-2"
                   } ${
                     index + itemsPerRow < currentSpeakers.length
                       ? "mb-0 xs:mb-8 md:border-b md:border-gray-300"
