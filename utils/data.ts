@@ -330,7 +330,7 @@ export const links2 = [
     },
   ];
 
-export const currentSpeakers = Array(1)
+export const currentSpeakers1 = Array(1)
   .fill("")
   .map((_, i) => ({
     name: "Speaker 1",
@@ -339,14 +339,118 @@ export const currentSpeakers = Array(1)
     key: `key-${i + 1}`,
   }));
 
-export const pastSpeakers2 = Array(8)
-  .fill("")
-  .map((_, i) => ({
-    name: "Data Unsent",
-    role: "Flutter Developer, FBC",
-    image: "https://robohash.org/flutterbyte.png",
-    key: `key-${i + 1}`,
-  }));
+export const currentSpeakers = [
+  {
+    name: "Wisdom Matthew",
+    role: "Nala, Senior Backend Engineer",
+    image: "https://sessionize.com/image/39d9-400o400o1-TA2i8mZyL3qAyu5smcTm8K.jpg",
+  },
+  {
+    name: "Emmanuel Aliyu",
+    role: "Software Engineer",
+    image: "https://sessionize.com/image/d596-400o400o1-7V81joFTY6qWJrYLU8Tya8.jpg",
+  },
+  {
+    name: "Samuel Mayowa",
+    role: "Flutter Engineer",
+    image: "https://sessionize.com/image/b836-400o400o1-Haq2732bfh4zm6bGxG55Af.jpg"
+  },
+  {
+    name: "Kiishi Dedeke",
+    role: "Flutter Developer at Accelerated Frontiers",
+    image: "https://sessionize.com/image/4b7b-400o400o1-K1guMgT44JPjt9cRt9LcEc.jpg"
+  },
+  {
+    name: "Yunwen Eric",
+    role: "Building the Future with Flutter | Web Developer | Community Lead | STEM Advocate",
+    image: "https://sessionize.com/image/dcdc-400o400o1-MXVc4SKEVuzK99MpiCT3Fe.jpg"
+  },
+  {
+    name: "Tomiwa Idowu",
+    role: "Mobile Engineer",
+    image: "https://sessionize.com/image/b06e-400o400o1-PZ4hDFbhBNxRyhVHmn4AMT.png"
+  },
+  {
+    name: "Nikki Eke",
+    role: "Mobile Engineer, Rive Ambassador",
+    image: "https://sessionize.com/image/7ef1-400o400o1-E1o2tpq9RpMeWC9fVnMwbJ.jpg"
+  },
+  {
+    name: "Ijeoma Ogbonna",
+    role: "Flutter developer",
+    image: "https://sessionize.com/image/7028-400o400o1-Nd5Aq16vbEs5kpqZWYwgR2.jpg"
+  },
+  {
+    name: "Deborah Kolawole",
+    role: "Flutter developer",
+    image: "https://sessionize.com/image/ac15-400o400o1-sFv7MGvZfQBkiz1SnHsPjG.jpg"
+  },
+  {
+    name: "Peter Aleksander Bizjak",
+    role: "Software developer and cybersecurity specialist",
+    image: "https://sessionize.com/image/50c9-400o400o1-TYkVVbKBn85tu1ZFi7Drmz.png"
+  },
+  {
+    name: "Christopher Nwosu-Madueke",
+    role: "Mobile Engineer",
+    image: "https://sessionize.com/image/1293-400o400o1-natnEz9Y2bu3tL3XnzPVSm.jpg"
+  },
+  {
+    name: "Nelson Eze",
+    role: "Senior Flutter Developer, Noveo",
+    image: "https://sessionize.com/image/4b6a-400o400o1-fFwPoocrbVRBbtre6Ud4zr.png"
+  },
+  {
+    name: "Oluwaseyi Ajadi",
+    role: "Quality and Security Tester - INITS Limited",
+    image: "https://sessionize.com/image/c66a-400o400o1-4BBEgnyxupwSzcUDhUBNvb.jpg"
+  },
+  {
+    name: "Jesse Osile",
+    role: "Mobile App Developer - INITS Limited",
+    image: "https://sessionize.com/image/b8e8-400o400o1-aCr3aQSVZF82q5EjvgM3v6.jpg"
+  },
+  {
+    name: "Obumuneme Nwabude",
+    role: "GDE Dart & Flutter || Software Engineer",
+    image: "https://sessionize.com/image/739d-400o400o1-wKic3BwWMS8Wt27hE7jbEy.png"
+  },
+  {
+    name: "Kendi J",
+    role: "Flutter Developer",
+    image: "https://sessionize.com/image/c1cf-400o400o1-HrgrCTPgBU8CiBSZjzPxK1.jpg"
+  },
+  {
+    name: "Sebastine Odeh",
+    role: "Senior Mobile Engineer",
+    image: "https://sessionize.com/image/ae9b-400o400o1-XzEmpb6DVsohUqXs1CA273.jpg"
+  },
+  {
+    name: "Samuel Abada",
+    role: "Google Developer Expert, Flutter & Dart",
+    image: "https://sessionize.com/image/d8dc-400o400o1-RdnyeV51SSyuUjxQkEQzep.png"
+  },
+  {
+    name: "Festus Olusegun",
+    role: "Software Engineer ",
+    image: "https://sessionize.com/image/99c3-400o400o1-QWkAvSMHQtpp6BxLcPxgN6.png"
+  },
+  {
+    name: "Kudus Rufai",
+    role: "Sterling Bank Ng, Mobile Engineer",
+    image: "https://sessionize.com/image/6b4d-400o400o1-DqK1R5aW3oN7kESPTenJWy.png"
+  },
+  {
+    name: "Ahmad Yusuf",
+    role: "ALLWELL, Mobile App Developer",
+    image: "https://sessionize.com/image/a06c-400o400o1-38byTJ2CP5mTxz5VULJUpT.jpg"
+  },
+  {
+    name: "Gbogo Babalola",
+    role: "Software Engineer",
+    image: "https://sessionize.com/image/ed31-400o400o1-LhfCpbriVsUaNmPm9o1uLS.jpg"
+  },
+];
 
 export const committee = [
   {
