@@ -12,7 +12,7 @@ import TicketIcon from "@/components/vectors/TicketIcon";
 import BeyondTheBorders from "@/components/vectors/BeyondTheBorders";
 import { Agenda } from "../components/Agenda";
 import { DarkmodeContext } from "@/context/DarkMode";
-import { currentSpeakers, sponsors } from "@/utils/data";
+import { currentSpeakers, homepageSpeakers, sponsors } from "@/utils/data";
 import Link from "next/link";
 
 export default function Home() {
@@ -204,7 +204,7 @@ export default function Home() {
           Meet the amazing lineup of Speakers
         </h3>
         <div className="grid grid-cols-1 xs:grid-cols-2 justify-center mb-10">
-          {currentSpeakers?.slice(0,4).map((speaker) => (
+          {homepageSpeakers.map((speaker) => (
             <div key={speaker.name} className="flex flex-col items-center">
               <StyledImageContainer src={speaker?.image} />
               <p

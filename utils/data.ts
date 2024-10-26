@@ -296,7 +296,7 @@ export const links2 = [
     {
       timeline: "3:55 PM - 4:35 PM",
       session: "Fireside Chat",
-      anchor: "Moderator - Chukwukwe, Deborah Kosisochukwu\nNikki Eke\nDamilola Alimi\nKendi J\nGrace Youpele\nKausar Moshood",
+      anchor: "Moderators - Chukwukwe, Deborah Kosisochukwu, \n Nikki Eke, \n Damilola Alimi, \n Kendi J, \n Grace Youpele and \n Kausar Moshood",
       hall: "Ruby Hall",
       key: "key-6",
     },
@@ -339,6 +339,28 @@ export const currentSpeakers1 = Array(1)
     key: `key-${i + 1}`,
   }));
 
+  export const homepageSpeakers = [
+    {
+      name: "Peter Aleksander Bizjak",
+      role: "Software developer and cybersecurity specialist",
+      image: "https://sessionize.com/image/50c9-400o400o1-TYkVVbKBn85tu1ZFi7Drmz.png"
+    },
+    {
+      name: "Nikki Eke",
+      role: "Mobile Engineer, Rive Ambassador",
+      image: "https://sessionize.com/image/7ef1-400o400o1-E1o2tpq9RpMeWC9fVnMwbJ.jpg"
+    },
+    {
+      name: "Emmanuel Aliyu",
+      role: "Software Engineer",
+      image: "https://sessionize.com/image/d596-400o400o1-7V81joFTY6qWJrYLU8Tya8.jpg",
+    },
+    {
+      name: "Kendi J",
+      role: "Flutter Developer",
+      image: "https://sessionize.com/image/c1cf-400o400o1-HrgrCTPgBU8CiBSZjzPxK1.jpg"
+    },
+  ]
 export const currentSpeakers = [
   {
     name: "Wisdom Matthew",
@@ -349,6 +371,11 @@ export const currentSpeakers = [
     name: "Emmanuel Aliyu",
     role: "Software Engineer",
     image: "https://sessionize.com/image/d596-400o400o1-7V81joFTY6qWJrYLU8Tya8.jpg",
+  },
+  {
+    name: "Nikki Eke",
+    role: "Mobile Engineer, Rive Ambassador",
+    image: "https://sessionize.com/image/7ef1-400o400o1-E1o2tpq9RpMeWC9fVnMwbJ.jpg"
   },
   {
     name: "Samuel Mayowa",
@@ -366,24 +393,14 @@ export const currentSpeakers = [
     image: "https://sessionize.com/image/dcdc-400o400o1-MXVc4SKEVuzK99MpiCT3Fe.jpg"
   },
   {
+    name: "Ijeoma Ogbonna",
+    role: "Flutter developer",
+    image: "/images/emmanuella.jpg"
+  },
+  {
     name: "Tomiwa Idowu",
     role: "Mobile Engineer",
     image: "https://sessionize.com/image/b06e-400o400o1-PZ4hDFbhBNxRyhVHmn4AMT.png"
-  },
-  {
-    name: "Nikki Eke",
-    role: "Mobile Engineer, Rive Ambassador",
-    image: "https://sessionize.com/image/7ef1-400o400o1-E1o2tpq9RpMeWC9fVnMwbJ.jpg"
-  },
-  {
-    name: "Ijeoma Ogbonna",
-    role: "Flutter developer",
-    image: "https://sessionize.com/image/7028-400o400o1-Nd5Aq16vbEs5kpqZWYwgR2.jpg"
-  },
-  {
-    name: "Deborah Kolawole",
-    role: "Flutter developer",
-    image: "https://sessionize.com/image/ac15-400o400o1-sFv7MGvZfQBkiz1SnHsPjG.jpg"
   },
   {
     name: "Peter Aleksander Bizjak",
@@ -394,6 +411,11 @@ export const currentSpeakers = [
     name: "Christopher Nwosu-Madueke",
     role: "Mobile Engineer",
     image: "https://sessionize.com/image/1293-400o400o1-natnEz9Y2bu3tL3XnzPVSm.jpg"
+  },
+  {
+    name: "Deborah Kolawole",
+    role: "Flutter developer",
+    image: "https://sessionize.com/image/ac15-400o400o1-sFv7MGvZfQBkiz1SnHsPjG.jpg"
   },
   {
     name: "Nelson Eze",
