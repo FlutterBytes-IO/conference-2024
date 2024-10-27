@@ -37,27 +37,300 @@ export const links2 = [
   },
 ];
 
-export const saturdayAgenda = Array(1)
-  .fill("")
-  .map((_, i) => ({
-    timeline: "8:00am - 5:00pm",
-    session: "Coming Soon",
-    anchor: "Coming Soon",
-    day: "Friday",
-    key: `key-${i + 1}`,
-  }));
+  export const saturdayAgenda = [
+    {
+      timeline: "8:30 AM - 9:00 AM",
+      session: "Registration",
+      anchor: "N/A",
+      hall: "Ruby Hall",
+      key: "key-1",
+    },
+    {
+      timeline: "9:00 AM - 9:15 AM",
+      session: "Opening",
+      anchor: "Host",
+      hall: "Ruby Hall",
+      key: "key-2",
+    },
+    {
+      timeline: "9:15 AM - 9:30 AM",
+      session: "Lightning Talk 1: Building Scalable Backend Services with Firebase and Dart for Flutter Apps",
+      anchor: "Wisdom Matthew",
+      hall: "Ruby Hall",
+      key: "key-3",
+    },
+    {
+      timeline: "9:35 AM - 9:55 AM",
+      session: "Lightning Talk 2: Code Generation in Flutter: Introducing Macros",
+      anchor: "Emmanuel Aliyu",
+      hall: "Ruby Hall",
+      key: "key-4",
+    },
+    {
+      timeline: "10:00 AM - 10:25 AM",
+      session: "Keynote 1",
+      anchor: "Femi Taiwo",
+      hall: "Ruby Hall",
+      key: "key-5",
+    },
+    {
+      timeline: "10:25 AM - 10:40 AM",
+      session: "Group Photos",
+      anchor: "",
+      hall: "Ruby Hall",
+      key: "key-6",
+    },
+    {
+      timeline: "10:40 AM - 11:20 AM",
+      session: "Workshop: Building High-Quality Games with Flutter Flame",
+      anchor: "Samuel Mayowa & Kiishi Dedeke",
+      hall: "Ruby Hall",
+      key: "key-7",
+    },
+    {
+      timeline: "10:40 AM - 11:20 AM",
+      session: "Workshop: Flutter Aesthetics",
+      anchor: "Yunwen Eric & Tomiwa Idowu",
+      hall: "Emerald Hall",
+      key: "key-8",
+    },
+    {
+      timeline: "10:40 AM - 11:20 AM",
+      session: "Workshop: Dynamic Rive Animations",
+      anchor: "Nikki Eke",
+      hall: "Sapphire Hall",
+      key: "key-9",
+    },
+    {
+      timeline: "11:25 AM - 11:45 AM",
+      session: "Breakout Session: Building a Watch Party App",
+      anchor: "Ijeoma Ogbonna & Deborah kolawole",
+      hall: "Ruby Hall",
+      key: "key-10",
+    },
+    {
+      timeline: "11:25 AM - 11:45 AM",
+      session: "Securing Flutter Apps: How I can hack Yours and How you can stop me",
+      anchor: "Rexford Asamoah",
+      hall: "Emerald Hall",
+      key: "key-11",
+    },
+    {
+      timeline: "11:25 AM - 11:45 AM",
+      session: "Breakout Session: Designing Offline-First Flutter Apps",
+      anchor: "Christopher Nwosu-Madueke & Nelson Eze",
+      hall: "Sapphire Hall",
+      key: "key-12",
+    },
+    {
+      timeline: "11:50 AM - 12:10 PM",
+      session: "Breakout Session: Flutter Fever - Catch the Testing Bug!",
+      anchor: "Oluwaseyi Ajadi & Jesse Osile",
+      hall: "Ruby Hall",
+      key: "key-13",
+    },
+    {
+      timeline: "11:50 AM - 12:10 PM",
+      session: "Breakout Session: Bringing Blockchain & Web3 into Flutter",
+      anchor: "Obumuneme Nwabude",
+      hall: "Emerald Hall",
+      key: "key-14",
+    },
+    {
+      timeline: "11:50 AM - 12:10 PM",
+      session: "Breakout Session: AR on Maps",
+      anchor: "Kendi J",
+      hall: "Sapphire Hall",
+      key: "key-15",
+    },
+    {
+      timeline: "12:15 PM - 12:55 PM",
+      session: "Workshop: State Restoration - Making The Dead State Live Again",
+      anchor: "Samuel Abada",
+      hall: "Ruby Hall",
+      key: "key-16",
+    },
+    {
+      timeline: "12:15 PM - 12:55 PM",
+      session: "Workshop: FFI the right way – Delivering messages with Pigeon",
+      anchor: "Sebastine Odeh",
+      hall: "Emerald Hall",
+      key: "key-17",
+    },
+    {
+      timeline: "12:15 PM - 12:55 PM",
+      session: "Workshop: Decoding Dart: An In-Depth Look at DartVM",
+      anchor: "Festus Olusegun",
+      hall: "Sapphire Hall",
+      key: "key-18",
+    },
+    {
+      timeline: "1:00 PM - 1:20 PM",
+      session: "Keynote 2",
+      anchor: "Cake Wallet",
+      hall: "Ruby Hall",
+      key: "key-19",
+    },
+    {
+      timeline: "1:25 PM - 1:30 PM",
+      session: "Product Demo",
+      anchor: "Code Magic",
+      hall: "Ruby Hall",
+      key: "key-20",
+    },
+    {
+      timeline: "1:30 PM - 1:50 PM",
+      session: "Networking/Break",
+      anchor: "",
+      hall: "Ruby Hall",
+      key: "key-21",
+    },
+    {
+      timeline: "1:50 PM - 2:05 PM",
+      session: "Lightning Talk 3: Building and Deploying a Scalable Design System in Flutter",
+      anchor: "Ahmad Yusuf & Kudus Rufai",
+      hall: "Ruby Hall",
+      key: "key-22",
+    },
+    {
+      timeline: "2:10 PM - 2:35 PM",
+      session: "Product Showcase",
+      anchor: "Christopher Nwosu-Madueke",
+      hall: "Ruby Hall",
+      key: "key-23",
+    },
+    {
+      timeline: "2:40 PM - 2:55 PM",
+      session: "Lightning Talk 4: UI and Geometry",
+      anchor: "Gbogo Babalola",
+      hall: "Ruby Hall",
+      key: "key-24",
+    },
+    {
+      timeline: "3:00 PM - 3:40 PM",
+      session: "Hackathon Presentation",
+      anchor: "Christopher Nwosu-Madueke",
+      hall: "Ruby Hall",
+      key: "key-25",
+    },
+    {
+      timeline: "3:45 PM - 3:50 PM",
+      session: "Announce Partner",
+      anchor: "Hosts",
+      hall: "Ruby Hall",
+      key: "key-26",
+    },
+    {
+      timeline: "3:50 PM - 3:55 PM",
+      session: "Community Partner (ALX) Presentation",
+      anchor: "Adebimpe Odulana",
+      hall: "Ruby Hall",
+      key: "key-27",
+    },
+    {
+      timeline: "3:55 PM - 4:25 PM",
+      session: "Games",
+      anchor: "Hosts",
+      hall: "Ruby Hall",
+      key: "key-28",
+    },
+    {
+      timeline: "4:25 PM - 4:40 PM",
+      session: "Gift Presentation",
+      anchor: "Hosts",
+      hall: "Ruby Hall",
+      key: "key-29",
+    },
+    {
+      timeline: "4:45 PM - 4:55 PM",
+      session: "Presenting the Organizing Team",
+      anchor: "Jamiu Okanlawon",
+      hall: "Ruby Hall",
+      key: "key-30",
+    },
+    {
+      timeline: "4:55 PM - 5:00 PM",
+      session: "Vote of Thanks",
+      anchor: "Adegoke David",
+      hall: "Ruby Hall",
+      key: "key-31",
+    },
+  ];
 
-export const fridayAgenda = Array(1)
-  .fill("")
-  .map((_, i) => ({
-    timeline: "8:00am - 5:00pm",
-    session: "Coming Soon",
-    anchor: "Coming Soon",
-    day: "Friday",
-    key: `key-${i + 1}`,
-  }));
+  export const fridayAgenda = [
+    {
+      timeline: "2:30 PM - 3:00 PM",
+      session: "Arrivals",
+      anchor: "Anuoluwapo Famakinwa & Moyin",
+      hall: "Ruby Hall",
+      key: "key-1",
+    },
+    {
+      timeline: "2:30 PM - 3:00 PM",
+      session: "Lunch on Entry",
+      anchor: "",
+      hall: "Ruby Hall",
+      key: "key-2",
+    },
+    {
+      timeline: "3:00 PM - 3:10 PM",
+      session: "Games",
+      anchor: "Ogbonna Emmanuella Ijeoma",
+      hall: "Ruby Hall",
+      key: "key-3",
+    },
+    {
+      timeline: "3:15 PM - 3:35 PM",
+      session: "Technical Session",
+      anchor: "Mariam Hamzat",
+      hall: "Ruby Hall",
+      key: "key-4",
+    },
+    {
+      timeline: "3:40 PM - 3:50 PM",
+      session: "Slido Games",
+      anchor: "Nikki Eke & Ogbonna Emmanuella Ijeoma",
+      hall: "Ruby Hall",
+      key: "key-5",
+    },
+    {
+      timeline: "3:55 PM - 4:35 PM",
+      session: "Fireside Chat",
+      anchor: "Moderators - Chukwukwe, Deborah Kosisochukwu, \n Nikki Eke, \n Damilola Alimi, \n Kendi J, \n Grace Youpele and \n Kausar Moshood",
+      hall: "Ruby Hall",
+      key: "key-6",
+    },
+    {
+      timeline: "4:35 PM - 4:45 PM",
+      session: "Group Photo",
+      anchor: "Anuoluwapo Famakinwa & Moyin",
+      hall: "Ruby Hall",
+      key: "key-7",
+    },
+    {
+      timeline: "4:45 PM - 5:15 PM",
+      session: "Breakout Sessions",
+      anchor: "All Organizing Team",
+      hall: "Ruby Hall",
+      key: "key-8",
+    },
+    {
+      timeline: "5:20 PM - 5:30 PM",
+      session: "Awarding Game Winners",
+      anchor: "Anuoluwapo Famakinwa & Moyin",
+      hall: "Ruby Hall",
+      key: "key-9",
+    },
+    {
+      timeline: "5:30 PM - 5:35 PM",
+      session: "Closing Remarks",
+      anchor: "Organizing Team",
+      hall: "Ruby Hall",
+      key: "key-10",
+    },
+  ];
 
-export const currentSpeakers = Array(1)
+export const currentSpeakers1 = Array(1)
   .fill("")
   .map((_, i) => ({
     name: "Speaker 1",
@@ -66,14 +339,140 @@ export const currentSpeakers = Array(1)
     key: `key-${i + 1}`,
   }));
 
-export const pastSpeakers2 = Array(8)
-  .fill("")
-  .map((_, i) => ({
-    name: "Data Unsent",
-    role: "Flutter Developer, FBC",
-    image: "https://robohash.org/flutterbyte.png",
-    key: `key-${i + 1}`,
-  }));
+  export const homepageSpeakers = [
+    {
+      name: "Nikki Eke",
+      role: "Mobile Engineer, Rive Ambassador",
+      image: "https://sessionize.com/image/7ef1-400o400o1-E1o2tpq9RpMeWC9fVnMwbJ.jpg"
+    },
+    {
+      name: "Emmanuel Aliyu",
+      role: "Software Engineer",
+      image: "https://sessionize.com/image/d596-400o400o1-7V81joFTY6qWJrYLU8Tya8.jpg",
+    },
+    {
+      name: "Kendi J",
+      role: "Flutter Developer",
+      image: "https://sessionize.com/image/c1cf-400o400o1-HrgrCTPgBU8CiBSZjzPxK1.jpg"
+    },
+    {
+      name: "Samuel Mayowa",
+      role: "Flutter Engineer",
+      image: "https://sessionize.com/image/b836-400o400o1-Haq2732bfh4zm6bGxG55Af.jpg"
+    }
+  ]
+export const currentSpeakers = [
+  {
+    name: "Wisdom Matthew",
+    role: "Nala, Senior Backend Engineer",
+    image: "https://sessionize.com/image/39d9-400o400o1-TA2i8mZyL3qAyu5smcTm8K.jpg",
+  },
+  {
+    name: "Emmanuel Aliyu",
+    role: "Software Engineer",
+    image: "https://sessionize.com/image/d596-400o400o1-7V81joFTY6qWJrYLU8Tya8.jpg",
+  },
+  {
+    name: "Nikki Eke",
+    role: "Mobile Engineer, Rive Ambassador",
+    image: "https://sessionize.com/image/7ef1-400o400o1-E1o2tpq9RpMeWC9fVnMwbJ.jpg"
+  },
+  {
+    name: "Samuel Mayowa",
+    role: "Flutter Engineer",
+    image: "https://sessionize.com/image/b836-400o400o1-Haq2732bfh4zm6bGxG55Af.jpg"
+  },
+  {
+    name: "Kiishi Dedeke",
+    role: "Flutter Developer at Accelerated Frontiers",
+    image: "https://sessionize.com/image/4b7b-400o400o1-K1guMgT44JPjt9cRt9LcEc.jpg"
+  },
+  {
+    name: "Yunwen Eric",
+    role: "Building the Future with Flutter | Web Developer | Community Lead | STEM Advocate",
+    image: "https://sessionize.com/image/dcdc-400o400o1-MXVc4SKEVuzK99MpiCT3Fe.jpg"
+  },
+  {
+    name: "Ijeoma Ogbonna",
+    role: "Flutter developer",
+    image: "/images/emmanuella.jpg"
+  },
+  {
+    name: "Tomiwa Idowu",
+    role: "Mobile Engineer",
+    image: "https://sessionize.com/image/b06e-400o400o1-PZ4hDFbhBNxRyhVHmn4AMT.png"
+  },
+  {
+    name: "Christopher Nwosu-Madueke",
+    role: "Mobile Engineer",
+    image: "https://sessionize.com/image/1293-400o400o1-natnEz9Y2bu3tL3XnzPVSm.jpg"
+  },
+  {
+    name: "Deborah Kolawole",
+    role: "Flutter developer",
+    image: "https://sessionize.com/image/ac15-400o400o1-sFv7MGvZfQBkiz1SnHsPjG.jpg"
+  },
+  {
+    name: "Nelson Eze",
+    role: "Senior Flutter Developer, Noveo",
+    image: "https://sessionize.com/image/4b6a-400o400o1-fFwPoocrbVRBbtre6Ud4zr.png"
+  },
+  {
+    name: "Oluwaseyi Ajadi",
+    role: "Quality and Security Tester - INITS Limited",
+    image: "https://sessionize.com/image/c66a-400o400o1-4BBEgnyxupwSzcUDhUBNvb.jpg"
+  },
+  {
+    name: "Jesse Osile",
+    role: "Mobile App Developer - INITS Limited",
+    image: "https://sessionize.com/image/b8e8-400o400o1-aCr3aQSVZF82q5EjvgM3v6.jpg"
+  },
+  {
+    name: "Obumuneme Nwabude",
+    role: "GDE Dart & Flutter || Software Engineer",
+    image: "https://sessionize.com/image/739d-400o400o1-wKic3BwWMS8Wt27hE7jbEy.png"
+  },
+  {
+    name: "Kendi J",
+    role: "Flutter Developer",
+    image: "https://sessionize.com/image/c1cf-400o400o1-HrgrCTPgBU8CiBSZjzPxK1.jpg"
+  },
+  {
+    name: "Sebastine Odeh",
+    role: "Senior Mobile Engineer",
+    image: "https://sessionize.com/image/ae9b-400o400o1-XzEmpb6DVsohUqXs1CA273.jpg"
+  },
+  {
+    name: "Samuel Abada",
+    role: "Google Developer Expert, Flutter & Dart",
+    image: "https://sessionize.com/image/d8dc-400o400o1-RdnyeV51SSyuUjxQkEQzep.png"
+  },
+  {
+    name: "Festus Olusegun",
+    role: "Software Engineer ",
+    image: "https://sessionize.com/image/99c3-400o400o1-QWkAvSMHQtpp6BxLcPxgN6.png"
+  },
+  {
+    name: "Kudus Rufai",
+    role: "Sterling Bank Ng, Mobile Engineer",
+    image: "https://sessionize.com/image/6b4d-400o400o1-DqK1R5aW3oN7kESPTenJWy.png"
+  },
+  {
+    name: "Ahmad Yusuf",
+    role: "ALLWELL, Mobile App Developer",
+    image: "https://sessionize.com/image/a06c-400o400o1-38byTJ2CP5mTxz5VULJUpT.jpg"
+  },
+  {
+    name: "Gbogo Babalola",
+    role: "Software Engineer",
+    image: "https://sessionize.com/image/ed31-400o400o1-LhfCpbriVsUaNmPm9o1uLS.jpg"
+  },
+  {
+    name: "Rexford Asamoah",
+    role: "",
+    image: "https://i.ibb.co/wWPYSRG/pp.jpg"
+  },
+];
 
 export const committee = [
   {

@@ -117,8 +117,8 @@ const headCells = [
     value: "Anchor (s)",
   },
   {
-    key: "day",
-    value: <p className="max-md:text-xs">Day</p>,
+    key: "hall",
+    value: <p className="max-md:text-xs">Hall</p>,
   },
 ];
 
@@ -132,8 +132,8 @@ const headCellsMobile = [
     value: "Session Title",
   },
   {
-    key: "day",
-    value: <p className="max-md:text-xs">Day</p>,
+    key: "hall",
+    value: <p className="max-md:text-xs">Hall</p>,
   },
   {
     key: "anchor",
