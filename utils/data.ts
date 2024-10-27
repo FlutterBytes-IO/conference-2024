@@ -110,8 +110,8 @@ export const links2 = [
     },
     {
       timeline: "11:25 AM - 11:45 AM",
-      session: "Breakout Session: Cybersecurity and Flutter",
-      anchor: "",
+      session: "Securing Flutter Apps: How I can hack Yours and How you can stop me",
+      anchor: "Rexford Asamoah",
       hall: "Emerald Hall",
       key: "key-11",
     },
@@ -466,6 +466,11 @@ export const currentSpeakers = [
     name: "Gbogo Babalola",
     role: "Software Engineer",
     image: "https://sessionize.com/image/ed31-400o400o1-LhfCpbriVsUaNmPm9o1uLS.jpg"
+  },
+  {
+    name: "Rexford Asamoah",
+    role: "",
+    image: "https://i.ibb.co/wWPYSRG/pp.jpg"
   },
 ];
 
