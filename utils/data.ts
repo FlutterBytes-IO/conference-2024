@@ -341,11 +341,6 @@ export const currentSpeakers1 = Array(1)
 
   export const homepageSpeakers = [
     {
-      name: "Peter Aleksander Bizjak",
-      role: "Software developer and cybersecurity specialist",
-      image: "https://sessionize.com/image/50c9-400o400o1-TYkVVbKBn85tu1ZFi7Drmz.png"
-    },
-    {
       name: "Nikki Eke",
       role: "Mobile Engineer, Rive Ambassador",
       image: "https://sessionize.com/image/7ef1-400o400o1-E1o2tpq9RpMeWC9fVnMwbJ.jpg"
@@ -360,6 +355,11 @@ export const currentSpeakers1 = Array(1)
       role: "Flutter Developer",
       image: "https://sessionize.com/image/c1cf-400o400o1-HrgrCTPgBU8CiBSZjzPxK1.jpg"
     },
+    {
+      name: "Samuel Mayowa",
+      role: "Flutter Engineer",
+      image: "https://sessionize.com/image/b836-400o400o1-Haq2732bfh4zm6bGxG55Af.jpg"
+    }
   ]
 export const currentSpeakers = [
   {
@@ -401,11 +401,6 @@ export const currentSpeakers = [
     name: "Tomiwa Idowu",
     role: "Mobile Engineer",
     image: "https://sessionize.com/image/b06e-400o400o1-PZ4hDFbhBNxRyhVHmn4AMT.png"
-  },
-  {
-    name: "Peter Aleksander Bizjak",
-    role: "Software developer and cybersecurity specialist",
-    image: "https://sessionize.com/image/50c9-400o400o1-TYkVVbKBn85tu1ZFi7Drmz.png"
   },
   {
     name: "Christopher Nwosu-Madueke",
