@@ -45,7 +45,7 @@ export default function LivePage() {
         </div>
         <div className="flex flex-col gap-y-10 mb-[100px]">
           <h3 className="border-y-[1.5px] w-fit self-center border-fbc_blue-100 text-[28px] leading-[42px] text-center py-2.5 px-5 text-gradient font-semibold">
-            Meet the Organizing Committee
+            Watch the Event in other Halls
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-5 md:gap-10 mb-10">
             <div className="font-gigaSans space-y-5">
