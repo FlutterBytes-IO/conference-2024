@@ -75,6 +75,24 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
               }`}
             >
               <Link
+                href="/volunteer"
+                className={`flex items-center py-1.5 px-1 w-[140px] justify-between text-[11px] font-semibold ${
+                  isDarkmode ? "text-blue-300" : "text-neutral-500"
+                }`}
+              >
+                Apply to volunteer
+                <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
+              </Link>
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc8NVvyUfiSlrJpC-WAHrH_1T1j-KAGvToEDYX11xeYo02rjQ/viewform"
+                className={`flex items-center py-1.5 px-1 w-[140px] justify-between text-[11px] font-semibold ${
+                  isDarkmode ? "text-blue-300" : "text-neutral-500"
+                }`}
+              >
+                Product Showcase
+                <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
+              </Link>
+              <Link
                 href="https://drive.google.com/file/d/1fy53GKvSgOuhk6ZqjcWthuhFCHVomHve/view?usp=sharing"
                 className={`flex items-center py-1.5 px-1 w-[130px] justify-between text-[11px] font-semibold ${
                   isDarkmode ? "text-blue-300" : "text-neutral-500"
@@ -107,6 +125,15 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
                 Be a sponsor
                 <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
               </Link>
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfpojn_FKK7tJIS-rDNoiWTOFjTGFOPys61J6Gu1HzXLgvS4w/viewform"
+                className={`flex items-center py-1.5 px-1 w-[130px] justify-between text-[11px] font-semibold ${
+                  isDarkmode ? "text-blue-300" : "text-neutral-500"
+                }`}
+              >
+                Hackathon Submission
+                <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
+              </Link>
             </div>
           </div>
         </div>
@@ -117,6 +144,14 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
               : "bg-white border-fbc_blue-100"
           } nav-shadow`}
         >
+          <Link
+            href="/volunteer"
+            className={`${
+              isDarkmode ? "text-neutral-400" : "text-neutral-500"
+            } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6 text-center`}
+          >
+            Apply to volunteer
+          </Link>
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSc8NVvyUfiSlrJpC-WAHrH_1T1j-KAGvToEDYX11xeYo02rjQ/viewform"
             className={`${
@@ -142,6 +177,14 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             Hackathon
           </Link>
           <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfpojn_FKK7tJIS-rDNoiWTOFjTGFOPys61J6Gu1HzXLgvS4w/viewform"
+            className={`${
+              isDarkmode ? "text-neutral-400" : "text-neutral-500"
+            } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6 text-center`}
+          >
+            Hackathon Submission
+          </Link>
+          <Link
             href="/about"
             className={`${
               isDarkmode ? "text-neutral-400" : "text-neutral-500"
@@ -153,10 +196,10 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
         <div className="hidden lg:flex items-center gap-x-3 relative before:max-xl:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[125%] before:h-px before:bg-fbc_blue-100">
           <Button
             component="link"
-            href="/live"
+            href="https://eventprime.co/e/flutter-bytes-conference-2024"
             target="_blank"
           >
-            Watch Live
+            Get Tickets
           </Button>
           <button onClick={() => setIsDarkmode((prev) => !prev)}>
             {isDarkmode ? <DarkModeIcon /> : <LightModeIcon />}
