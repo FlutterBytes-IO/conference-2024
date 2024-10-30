@@ -2,9 +2,6 @@
 import { useContext } from "react";
 
 import { DarkmodeContext } from "@/context/DarkMode";
-import Button from "@/components/Button";
-import StyledImageContainer from "@/components/StyledImageContainer";
-import { RightArrow2 } from "@/components/vectors/RightArrow";
 
 export default function LivePage() {
   const { isDarkmode } = useContext(DarkmodeContext);
@@ -88,48 +85,6 @@ export default function LivePage() {
               </div>
               <p className="text-2xl md:text-3xl font-semibold dark:text-fbc_blue-100 text-blue-400">
                 Sapphire Hall
-              </p>
-            </div>
-            <div className="font-gigaSans space-y-5">
-              <div
-                style={{
-                  backgroundColor: `${isDarkmode ? "#1167B133" : "#D0EFFF"}`,
-                }}
-                className="p-2 border-[0.5px] border-blue-100 rounded-2xl"
-              >
-                <iframe
-                  width="100%"
-                  height="400px"
-                  src="https://www.youtube.com/embed/-xD5zcRgJH8?autoplay=1"
-                  title="YouTube live stream"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="rounded-2xl"
-                ></iframe>
-              </div>
-              <p className="text-2xl md:text-3xl font-semibold dark:text-fbc_blue-100 text-blue-400">
-                Ruby Hall
-              </p>
-            </div>
-            <div className="font-gigaSans space-y-5">
-              <div
-                style={{
-                  backgroundColor: `${isDarkmode ? "#1167B133" : "#D0EFFF"}`,
-                }}
-                className="p-2 border-[0.5px] border-blue-100 rounded-2xl"
-              >
-                <iframe
-                  width="100%"
-                  height="400px"
-                  src="https://www.youtube.com/embed/oX2nflUz3vQ?autoplay=1"
-                  title="YouTube live stream"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="rounded-2xl"
-                ></iframe>
-              </div>
-              <p className="text-2xl md:text-3xl font-semibold dark:text-fbc_blue-100 text-blue-400">
-                Emerald Hall
               </p>
             </div>
           </div>
