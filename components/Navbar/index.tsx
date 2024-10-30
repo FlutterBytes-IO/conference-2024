@@ -118,6 +118,14 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
           } nav-shadow`}
         >
           <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc8NVvyUfiSlrJpC-WAHrH_1T1j-KAGvToEDYX11xeYo02rjQ/viewform"
+            className={`${
+              isDarkmode ? "text-neutral-400" : "text-neutral-500"
+            } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6 text-center`}
+          >
+            Product Showcase
+          </Link>
+          <Link
             href="/sponsorships"
             className={`${
               isDarkmode ? "text-neutral-400" : "text-neutral-500"
@@ -145,10 +153,10 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
         <div className="hidden lg:flex items-center gap-x-3 relative before:max-xl:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[125%] before:h-px before:bg-fbc_blue-100">
           <Button
             component="link"
-            href="https://eventprime.co/e/flutter-bytes-conference-2024"
+            href="/live"
             target="_blank"
           >
-            Get Tickets
+            Watch Live
           </Button>
           <button onClick={() => setIsDarkmode((prev) => !prev)}>
             {isDarkmode ? <DarkModeIcon /> : <LightModeIcon />}
