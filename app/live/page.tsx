@@ -2,9 +2,6 @@
 import { useContext } from "react";
 
 import { DarkmodeContext } from "@/context/DarkMode";
-import Button from "@/components/Button";
-import StyledImageContainer from "@/components/StyledImageContainer";
-import { RightArrow2 } from "@/components/vectors/RightArrow";
 
 export default function LivePage() {
   const { isDarkmode } = useContext(DarkmodeContext);

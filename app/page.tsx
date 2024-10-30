@@ -91,12 +91,12 @@ export default function Home() {
           <Button
             variant="contained"
             component="link"
-            href="https://eventprime.co/e/flutter-bytes-conference-2024"
+            href="/live"
             target="_blank"
             icon={<RightArrow2 color="#fff" />}
             otherstyles="font-semibold text-2xl !rounded-[40px] !py-4 !pl-8 !pr-8 !text-base !md:text-2xl !font-semibold"
           >
-            Get Ticket
+            Watch Live
           </Button>
         </div>
       </div>
