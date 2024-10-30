@@ -20,7 +20,7 @@ export default function LivePage() {
         } max-w-[920px] mx-auto w-[calc(100%_-_32px)] sm:w-[calc(100%_-_50px)] md:w-[calc(100%_-_64px)]`}
       >
         <h2 className="font-gigaSans flex mx-auto w-fit text-center py-[10px] px-5 border-y-[1.5px] border-fbc_blue-100 text-xl md:text-[32px] font-semibold relative z-10 heading-text">
-          Live Page
+          Watch Live
         </h2>
         <div className="font-gigaSans mt-8 md:mt-[52px] mb-[100px] relative z-10 space-y-5">
           <div
@@ -40,7 +40,7 @@ export default function LivePage() {
             ></iframe>
           </div>
           <p className="text-2xl md:text-4xl font-semibold dark:text-fbc_blue-100 text-blue-400">
-            Ruby Hall
+            Hall Eko Arena
           </p>
         </div>
         <div className="flex flex-col gap-y-10 mb-[100px]">
@@ -66,7 +66,7 @@ export default function LivePage() {
                 ></iframe>
               </div>
               <p className="text-2xl md:text-3xl font-semibold dark:text-fbc_blue-100 text-blue-400">
-                Emerald Hall
+                Hall Cape Town
               </p>
             </div>
             <div className="font-gigaSans space-y-5">
@@ -87,49 +87,7 @@ export default function LivePage() {
                 ></iframe>
               </div>
               <p className="text-2xl md:text-3xl font-semibold dark:text-fbc_blue-100 text-blue-400">
-                Sapphire Hall
-              </p>
-            </div>
-            <div className="font-gigaSans space-y-5">
-              <div
-                style={{
-                  backgroundColor: `${isDarkmode ? "#1167B133" : "#D0EFFF"}`,
-                }}
-                className="p-2 border-[0.5px] border-blue-100 rounded-2xl"
-              >
-                <iframe
-                  width="100%"
-                  height="400px"
-                  src="https://www.youtube.com/embed/-xD5zcRgJH8?autoplay=1"
-                  title="YouTube live stream"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="rounded-2xl"
-                ></iframe>
-              </div>
-              <p className="text-2xl md:text-3xl font-semibold dark:text-fbc_blue-100 text-blue-400">
-                Ruby Hall
-              </p>
-            </div>
-            <div className="font-gigaSans space-y-5">
-              <div
-                style={{
-                  backgroundColor: `${isDarkmode ? "#1167B133" : "#D0EFFF"}`,
-                }}
-                className="p-2 border-[0.5px] border-blue-100 rounded-2xl"
-              >
-                <iframe
-                  width="100%"
-                  height="400px"
-                  src="https://www.youtube.com/embed/oX2nflUz3vQ?autoplay=1"
-                  title="YouTube live stream"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="rounded-2xl"
-                ></iframe>
-              </div>
-              <p className="text-2xl md:text-3xl font-semibold dark:text-fbc_blue-100 text-blue-400">
-                Emerald Hall
+                Hall Nairobi
               </p>
             </div>
           </div>
