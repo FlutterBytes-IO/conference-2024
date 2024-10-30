@@ -49,7 +49,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
       >
         <Link
           href="/"
-          className="relative max-xl:after:hidden after:absolute after:content-[''] after:left-full after:top-1/2 after:-translate-y-1/2 after:w-full after:overflow-hidden after:h-px after:bg-fbc_blue-100"
+          className="relative max-xl:after:hidden after:absolute after:content-[''] after:left-full after:top-1/2 after:-translate-y-1/2 after:w-[125%] after:overflow-hidden after:h-px after:bg-fbc_blue-100"
         >
           <Image
             src={isDarkmode ? NavLogoDark : NavLogoLight}
@@ -116,15 +116,6 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
                 Be a sponsor
                 <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
               </Link>
-              <Link
-                href="/live-page"
-                className={`flex items-center py-1.5 px-1 w-[130px] justify-between text-[11px] font-semibold ${
-                  isDarkmode ? "text-blue-300" : "text-neutral-500"
-                }`}
-              >
-                Live Page
-                <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
-              </Link>
             </div>
           </div>
         </div>
@@ -160,14 +151,6 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             Hackathon
           </Link>
           <Link
-            href="/live-page"
-            className={`${
-              isDarkmode ? "text-neutral-400" : "text-neutral-500"
-            } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6 text-center`}
-          >
-            Live Page
-          </Link>
-          <Link
             href="/about"
             className={`${
               isDarkmode ? "text-neutral-400" : "text-neutral-500"
@@ -176,8 +159,8 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             About us
           </Link>
         </div>
-        <div className="hidden lg:flex items-center gap-x-3 relative before:max-xl:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[140%] before:h-px before:bg-fbc_blue-100">
-          <Button component="link" href="/live-page" target="_blank">
+        <div className="hidden lg:flex items-center gap-x-3 relative before:max-xl:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[175%] before:h-px before:bg-fbc_blue-100">
+          <Button component="link" href="/live" target="_blank">
             Watch Live
           </Button>
           <button onClick={() => setIsDarkmode((prev) => !prev)}>
