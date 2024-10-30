@@ -133,26 +133,6 @@ export default function LivePage() {
               </p>
             </div>
           </div>
-          <div className="flex w-full flex-col justify-center items-center sm:flex-row gap-4 mt-10">
-            <Button
-              component="link"
-              href="/volunteer"
-              variant="contained"
-              otherstyles="text-base font-semibold"
-              icon={<RightArrow2 color="#fff" />}
-            >
-              Apply to volunteer
-            </Button>
-            <Button
-              component="link"
-              href="/organizers"
-              variant="outlined"
-              otherstyles="text-base font-semibold hover:text-[#fff] group"
-              icon={<RightArrow2 />}
-            >
-              See full committee
-            </Button>
-          </div>
         </div>
       </div>
     </section>
