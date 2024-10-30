@@ -196,10 +196,9 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
         <div className="hidden lg:flex items-center gap-x-3 relative before:max-xl:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[125%] before:h-px before:bg-fbc_blue-100">
           <Button
             component="link"
-            href="https://eventprime.co/e/flutter-bytes-conference-2024"
-            target="_blank"
+            href="/live"
           >
-            Get Tickets
+            Watch Live
           </Button>
           <button onClick={() => setIsDarkmode((prev) => !prev)}>
             {isDarkmode ? <DarkModeIcon /> : <LightModeIcon />}
