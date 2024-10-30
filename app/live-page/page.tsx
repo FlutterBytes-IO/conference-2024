@@ -36,7 +36,7 @@ export default function LivePage() {
               title="YouTube live stream"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="rounded-2xl"
+              className="rounded-2xl h-[400px] sm:h-[500px]"
             ></iframe>
           </div>
           <p className="text-2xl md:text-4xl font-semibold dark:text-fbc_blue-100 text-blue-400">
