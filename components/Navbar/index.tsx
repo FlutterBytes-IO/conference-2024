@@ -49,7 +49,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
       >
         <Link
           href="/"
-          className="relative max-xl:after:hidden after:absolute after:content-[''] after:left-full after:top-1/2 after:-translate-y-1/2 after:w-[90%] after:overflow-hidden after:h-px after:bg-fbc_blue-100"
+          className="relative max-xl:after:hidden after:absolute after:content-[''] after:left-full after:top-1/2 after:-translate-y-1/2 after:w-[125%] after:overflow-hidden after:h-px after:bg-fbc_blue-100"
         >
           <Image
             src={isDarkmode ? NavLogoDark : NavLogoLight}
@@ -74,15 +74,6 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
                 isDarkmode ? "border-blue-200" : "border-neutral-400"
               }`}
             >
-              <Link
-                href="/volunteer"
-                className={`flex items-center py-1.5 px-1 w-[140px] justify-between text-[11px] font-semibold ${
-                  isDarkmode ? "text-blue-300" : "text-neutral-500"
-                }`}
-              >
-                Apply to volunteer
-                <RightArrow2 color={!isDarkmode ? "#879CAA" : ""} />
-              </Link>
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSc8NVvyUfiSlrJpC-WAHrH_1T1j-KAGvToEDYX11xeYo02rjQ/viewform"
                 className={`flex items-center py-1.5 px-1 w-[140px] justify-between text-[11px] font-semibold ${
@@ -136,14 +127,6 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
           } nav-shadow`}
         >
           <Link
-            href="/volunteer"
-            className={`${
-              isDarkmode ? "text-neutral-400" : "text-neutral-500"
-            } py-1 px-3 rounded-[40px] text-sm font-semibold leading-6 text-center`}
-          >
-            Apply to volunteer
-          </Link>
-          <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSc8NVvyUfiSlrJpC-WAHrH_1T1j-KAGvToEDYX11xeYo02rjQ/viewform"
             className={`${
               isDarkmode ? "text-neutral-400" : "text-neutral-500"
@@ -176,11 +159,8 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
             About us
           </Link>
         </div>
-        <div className="hidden lg:flex items-center gap-x-3 relative before:max-xl:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[125%] before:h-px before:bg-fbc_blue-100">
-          <Button
-            component="link"
-            href="/live"
-          >
+        <div className="hidden lg:flex items-center gap-x-3 relative before:max-xl:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[175%] before:h-px before:bg-fbc_blue-100">
+          <Button component="link" href="/live" target="_blank">
             Watch Live
           </Button>
           <button onClick={() => setIsDarkmode((prev) => !prev)}>
