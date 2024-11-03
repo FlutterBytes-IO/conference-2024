@@ -160,7 +160,7 @@ const Navbar = forwardRef<HTMLDivElement, NavbarProps>(
           </Link>
         </div>
         <div className="hidden lg:flex items-center gap-x-3 relative before:max-xl:hidden before:absolute before:content-[''] before:right-full before:top-1/2 before:-translate-y-1/2 before:w-[175%] before:h-px before:bg-fbc_blue-100">
-          <Button component="link" href="/live" target="_blank">
+          <Button component="link" href="/live">
             Watch Live
           </Button>
           <button onClick={() => setIsDarkmode((prev) => !prev)}>
