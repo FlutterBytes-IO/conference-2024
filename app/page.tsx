@@ -9,10 +9,9 @@ import StyledImageContainer, {
 import { RightArrow2 } from "@/components/vectors/RightArrow";
 import CalendarIcon from "@/components/vectors/CalendarIcon";
 import TicketIcon from "@/components/vectors/TicketIcon";
-import BeyondTheBorders from "@/components/vectors/BeyondTheBorders";
 import { Agenda } from "../components/Agenda";
 import { DarkmodeContext } from "@/context/DarkMode";
-import { currentSpeakers, homepageSpeakers, sponsors } from "@/utils/data";
+import { homepageSpeakers, sponsors } from "@/utils/data";
 import Link from "next/link";
 
 export default function Home() {
@@ -78,9 +77,7 @@ export default function Home() {
               unoptimized
             />
           )}
-          {/* <p className="text-neutral-700 text-center md:text-xl font-medium px-6 pb-3 border-b mb-3 italic">
-          The Global Impact of African Flutter Developers/Engineers
-        </p> */}
+
           <p
             className={`text-lg xs:text-xl max-md:font-medium md:text-4xl ${
               isDarkmode ? "text-neutral-400" : "text-neutral-500"
